@@ -9,3 +9,5 @@
 
 html{scroll-behavior:auto!important}
 .paper-content table{display:block;overflow-x:auto;max-width:100%;width:100%;-webkit-overflow-scrolling:touch}
+
+.embedded-reader .reader-row>a,.embedded-reader .reader-footer,.embedded-reader .reader-meta>a{display:none}.embedded-reader .reader-row{justify-content:flex-end}.embedded-reader .reader-meta{margin:10px auto}.embedded-reader .reader-meta .hint{margin:0}.embedded-reader .reader-nav{padding:8px 14px}
