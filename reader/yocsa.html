@@ -1,0 +1,771 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>YO-CSA-T · 中英阅读</title><style>
+:root{
+  --paper:#fffdf7; --ink:#1a1a1a; --en:#2b2b2b; --zh:#1356b0;
+  --rule:#d9d2c2; --zhbg:#f3f7fd; --figcap:#555; --accent:#8a6d3b;
+}
+*{box-sizing:border-box;}
+body{margin:0;background:#e9e6df;color:var(--ink);
+  font-family:"Georgia","Times New Roman",serif;line-height:1.7;}
+.container{max-width:880px;margin:0 auto;background:var(--paper);
+  padding:40px 48px 64px;box-shadow:0 0 24px rgba(0,0,0,.12);}
+.pair{margin:0 0 9px;padding-left:14px;border-left:3px solid #e6e0d2;}
+.pair .en{margin:0;color:var(--en);font-size:15.5px;}
+.pair .zh{margin:2px 0 0;color:var(--zh);background:var(--zhbg);
+  font-family:"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif;
+  font-size:15px;padding:3px 8px;border-radius:4px;}
+h1.title{text-align:center;font-size:25px;margin:6px 0 2px;line-height:1.3;}
+.title-zh{text-align:center;color:var(--zh);font-family:"PingFang SC","Microsoft YaHei",sans-serif;
+  font-size:18px;margin:0 0 14px;}
+.subtitle{margin:2px 0;text-align:center;font-size:14px;color:#444;}
+.subtitle.zh-sub{color:var(--zh);font-family:"PingFang SC","Microsoft YaHei",sans-serif;font-size:13.5px;}
+h2.h1{font-size:21px;margin:30px 0 2px;color:#111;border-bottom:2px solid var(--rule);padding-bottom:4px;}
+h3.h2{font-size:17.5px;margin:20px 0 2px;color:#222;}
+h4.h3{font-size:15.5px;margin:14px 0 2px;color:#333;font-style:italic;}
+h2.h1 .zh-h,h3.h2 .zh-h,h4.h3 .zh-h{display:block;color:var(--zh);
+  font-family:"PingFang SC","Microsoft YaHei",sans-serif;font-size:.82em;font-weight:normal;margin-top:1px;}
+figure.fig{margin:18px 0;text-align:center;}
+figure.fig img{max-width:100%;height:auto;border:1px solid var(--rule);background:#fff;}
+figcaption{margin-top:6px;color:var(--figcap);font-size:13px;font-family:"PingFang SC","Microsoft YaHei",sans-serif;}
+figcaption .en{display:block;}
+figcaption .zh{display:block;color:var(--zh);margin-top:1px;}
+.ref{font-size:12.5px;color:#333;margin:4px 0 4px 22px;text-indent:-22px;
+  font-family:"Georgia",serif;line-height:1.5;}
+.note{margin:14px 0;padding:8px 12px;background:#fbf4e8;border-left:4px solid #e0b84a;
+  font-family:"PingFang SC","Microsoft YaHei",sans-serif;font-size:14px;color:#5a4a20;}
+.pagebreak{margin:26px 0 8px;border-top:1px dashed var(--rule);padding-top:6px;
+  text-align:right;color:#9a9384;font-size:11px;letter-spacing:1px;}
+.eq{text-align:center;font-family:"Cambria Math","Latin Modern Math","Times New Roman",serif;
+  font-size:14.5px;margin:10px 0;color:#1a1a1a;white-space:pre-wrap;
+  background:#faf8f2;border:1px solid var(--rule);padding:6px 10px;}
+.eq.eqimg{border:0;background:none;padding:2px 0 10px;}
+.eq img{display:inline-block;height:auto;max-width:100%;vertical-align:middle;}
+table.bt{border-collapse:collapse;width:100%;font-size:12.5px;margin-top:6px;
+  font-family:"PingFang SC","Microsoft YaHei",sans-serif;}
+table.bt th,table.bt td{border:1px solid #cfc9ba;padding:5px 7px;text-align:center;vertical-align:middle;}
+table.bt thead th{background:#f1ede1;font-weight:700;color:#222;}
+table.bt .grouprow td{background:#f7f4ec;font-weight:700;text-align:left;color:#333;}
+@media print{.container{box-shadow:none;}}
+
+html{scroll-behavior:smooth} .container{max-width:960px} article{min-width:0}
+h1.ltx_title_document{font-size:26px;text-align:center;line-height:1.4} h2,h3,h4,h5,h6{line-height:1.45;margin-top:30px}
+.zh-head{display:block;color:var(--zh);font-size:.8em;font-family:"Microsoft YaHei",sans-serif;font-weight:normal;margin-top:5px}
+.ltx_authors{text-align:center;font-size:14px}.ltx_personname{font-weight:bold}.ltx_affiliation{display:block;font-size:12px}
+.ltx_author{display:inline-block;margin:8px 12px}.ltx_note_outer{display:inline;font-size:12px}.ltx_note_content{font-size:12px}
+figure{margin:24px 0;padding:10px 0;max-width:100%;overflow-x:auto} figure img{max-width:100%;height:auto}
+figcaption{font-size:13px;color:#555;margin-top:8px} figcaption .pair{margin:4px 0}figcaption .pair .en,figcaption .pair .zh{font-size:13px}
+.ltx_flex_figure{display:flex;flex-wrap:wrap;gap:8px}.ltx_flex_cell{flex:1;min-width:160px}
+table{border-collapse:collapse;max-width:100%;font-size:12px} .ltx_table table{width:100%}
+th,td{padding:5px 6px;vertical-align:middle} .ltx_table td,.ltx_table th{border-bottom:1px solid #ddd}
+.ltx_align_left{text-align:left}.ltx_align_right{text-align:right}.ltx_align_center{text-align:center}
+.cell-zh{display:block;color:var(--zh);font-size:11px;line-height:1.35;font-family:"Microsoft YaHei",sans-serif}
+.ltx_equation,.ltx_equationgroup,.equation{margin:15px auto;text-align:center;max-width:100%;overflow-x:auto}
+.equation img{max-width:100%;max-height:85px;width:auto;height:auto}.ltx_eqn_table{width:100%}
+math{font-family:"Cambria Math",serif;font-size:1em}math[display="block"]{margin:12px auto;overflow-x:auto}
+.ltx_biblist,.references{font-size:12px;line-height:1.55}.ltx_bibitem{margin-bottom:7px}.ltx_bibblock{display:inline}
+.toolbar{position:sticky;top:0;z-index:3;background:#fffdf7f5;padding:8px;border-bottom:1px solid var(--rule);font:13px "Microsoft YaHei",sans-serif}
+button{cursor:pointer;border:1px solid #d9d2c2;border-radius:5px;background:white;margin-right:8px;padding:6px 10px;color:#345}
+.meta{font:13px/1.7 "Microsoft YaHei",sans-serif;padding:14px;background:#f3f7fd;border-radius:6px;margin:18px 0}
+.ltx_pubnotes_meta{display:block;font-size:11px;color:#666}.ltx_note_type{font-style:italic}.ltx_para{margin:10px 0}
+.only-zh .pair>.en{display:none}.only-en .pair>.zh,.only-en .zh-head,.only-en .cell-zh{display:none}
+.references p{white-space:normal}.ltx_ERROR{color:#a33}
+@media(max-width:700px){.container{padding:20px 16px}h1.ltx_title_document{font-size:21px}.pair{padding-left:8px}.pair .en,.pair .zh{font-size:14px}}
+@media print{.toolbar{display:none}.container{padding:0;box-shadow:none}figure,.pair{break-inside:avoid}}
+
+    .ltx_authors{margin:18px 0}.ltx_creator{display:block;margin:5px 0}
+    .ltx_author_notes{display:block;font-size:12px;font-weight:normal;color:#666}
+    .affiliation-zh,.figure-glossary{font:13px/1.65 "Microsoft YaHei",sans-serif;color:#1356b0}
+    .figure-glossary{background:#f3f7fd;padding:8px 12px;border-radius:4px}
+    .table-scroll{overflow-x:auto;max-width:100%}.table-scroll table{min-width:650px}
+    .pdf-equation img{height:auto;width:auto;max-width:100%;max-height:125px}
+    .translator-notes{font:14px/1.8 "Microsoft YaHei",sans-serif;background:#fff3dd;border-left:4px solid #c79b40;padding:15px 20px;margin:22px 0}
+    .translator-notes p{margin:8px 0}.toc{font:14px/1.9 "Microsoft YaHei",sans-serif;padding:12px 16px;background:#f4f1e9}
+    .toc a{margin-right:14px;display:inline-block}figure figure{margin:10px 0}.ltx_caption{font-weight:normal}
+    .only-zh .ltx_bibliography{display:block}.only-en .figure-glossary,.only-en .affiliation-zh{display:none}
+    figure[id="S5.F10"]>.ltx_flex_figure{display:block}
+    figure[id="S5.F10"] .ltx_flex_cell{width:100%;max-width:100%}
+    figure[id="S5.F10"] img{width:100%;height:auto}
+    @media(max-width:700px){.toolbar{position:static}.pdf-equation{min-width:0}figure{padding:4px 0}}
+    </style><link rel="stylesheet" href="../reader.css"></head><body data-paper="yocsa"><header class="reader-nav"><div class="reader-row"><a href="index.html">← 论文书架 · YO-CSA-T</a><button data-mode="both">中英对照</button><button data-mode="zh">仅中文</button><button data-mode="en">仅英文</button><button id="contents" aria-expanded="false">目录</button><button id="fullscreen">全屏</button></div><div class="font-controls"><label for="font-size">字号</label><input id="font-size" type="range" min="12" max="32" step=".5" value="18"><input id="font-number" type="number" min="12" max="32" step=".5" value="18" aria-label="字号数值"><button id="font-reset">重置</button><output id="position">0%</output></div><nav class="reader-toc" hidden><a href="#yocsa-section-2">I INTRODUCTION I 引言</a><a href="#yocsa-section-3">II Related Work II 相关工作</a><a href="#yocsa-section-4">II-A Object Detection II-A 目标检测</a><a href="#yocsa-section-5">II-B Self-Attention Mechanism II-B 自注意力机制</a><a href="#yocsa-section-6">II-C Tracking in Small-Size Ball Sports II-C 小球运动中的跟踪</a><a href="#yocsa-section-7">III Real-time Detection Module III 实时检测模块</a><a href="#yocsa-section-8">III-A Brief Review of YOLO III-A YOLO 简述</a><a href="#yocsa-section-9">III-B Overview of Detection Network III-B 检测网络概述</a><a href="#yocsa-section-10">III-C Contextual Transformer Block with 2 Convolutions III-C 包含两个卷积层的上下文 Transformer 模块</a><a href="#yocsa-section-11">III-D Spatial Attention-Integrated Neck III-D 融合空间注意力的颈部网络</a><a href="#yocsa-section-12">III-E Decouple head with SGE III-E 融合 SGE 的解耦检测头</a><a href="#yocsa-section-13">IV YO-CSA-T System Design IV YO-CSA-T 系统设计</a><a href="#yocsa-section-14">IV-A Hardware Infrastructure of Stereo Vision IV-A 立体视觉硬件平台</a><a href="#yocsa-section-15">IV-B Detection Module IV-B 检测模块</a><a href="#yocsa-section-16">IV-C Comprehensive Tracking Workflow IV-C 完整跟踪流程</a><a href="#yocsa-section-17">IV-D Compensation Module IV-D 补偿模块</a><a href="#yocsa-section-18">V Experiments and Results V 实验与结果</a><a href="#yocsa-section-19">V-A Dataset V-A 数据集</a><a href="#yocsa-section-20">V-B Detection Experiments V-B 检测实验</a><a href="#yocsa-section-21">V-C Tracking Experiments V-C 跟踪实验</a><a href="#yocsa-section-22">VI CONCLUSION AND FUTURE WORK VI 结论与未来工作</a><a href="#yocsa-section-23">References 参考文献（保留原文）</a></nav><div class="reading-progress"><i id="progress"></i></div></header><div class="reader-meta"><a href="../index.html#yocsa">分享讲解 ↗</a><a href="../papers/yocsa.pdf">英文 PDF</a><a href="https://doi.org/10.1109/IROS60139.2025.11246442" target="_blank" rel="noopener">官方来源 ↗</a><div class="hint">全文初译，未经领域专家逐句审定。原文、译文、公式和图表沿用原阅读库；阅读进度仅保存在当前浏览器。点击图示可放大。</div></div><article class="paper-content"><main class="container"><div class="meta"><strong>全文中英对照 · 基于用户提供的 PDF</strong><br>
+    版本：arXiv:2501.06472v1（2025-01-11），8 页作者稿；论文正式发表于 IROS 2025。本译文对应提供的作者稿，不宣称与 IEEE 最终版逐字相同。<br>
+    <a href="../papers/yocsa.pdf">英文 PDF</a> · <a href="https://doi.org/10.1109/IROS60139.2025.11246442">正式发表记录</a> · <a href="../../阅读入口.html">返回阅读库</a><br>
+    Codex 根据用户提供的原文逐句翻译，并核对数字、符号与技术术语；未经过领域专家逐句审定。保留全部正文、图表及公式，参考文献保留英文。图内英文标签保留，关键术语另附中文释义。图片内嵌，可离线阅读。<br>
+    非官方译文，原作者未审定；原文版权与许可不变。本页未标注 CC BY 改编许可。</div><nav class="toc"><a href="#S1">I 引言</a><a href="#S2">II 相关工作</a><a href="#S3">III 检测网络</a><a href="#S4">IV 跟踪系统</a><a href="#S5">V 实验</a><a href="#S6">VI 结论</a><a href="#bib">参考文献</a></nav><aside class="translator-notes"><strong>译者注（与论文原文分开）</strong>
+    <p>1. 本文采用两台相机构成立体视觉系统，三维位置依赖双目几何；不是单目三维重建方法。文中对模型、设备和“当前研究”的描述均对应作者稿写作时点。</p>
+    <p>2. 90.43% mAP@0.75 是二维检测指标。正文中的 7.76% 和 3.49% 按表 I 的差值，应理解为提高 7.76 和 3.49 个百分点；译文据此表述。6.67 ms 降至 5.82 ms 对应耗时下降约 12.74%。</p>
+    <p>3. 跟踪实验未直接对比独立三维真值，而采用平滑度与平均质心偏移作为代理指标。更平滑不必然代表位置更准确。表 IV 列名 Acceleration(%) 未在正文清楚定义，保留原列名；不将它解释为三维准确率。表 IV 的策略 D 未报告 FPS，摘要中的速度陈述保留原文，不能据此推断补偿模块已被独立验证达到该帧率。</p>
+    <p>4. 原稿式（1）的补偿分支写为两个带 α 系数的项相减；式（6）的 z 坐标差项缺少完整闭合及平方标记。此处按 PDF 原样保留，未擅自补成常见插值式或欧氏距离式。复现前应核对作者实现或正式版本。</p>
+    </aside><article class="ltx_document ltx_authors_1line">
+<h1 class="ltx_title ltx_font_bold ltx_title_document" data-bilingual-id="u0000" style="font-size:173%;" id="yocsa-section-1" data-reading-id="1"><span class="heading-en">YO-CSA-T: A Real-time Badminton Tracking System Utilizing YOLO Based on Contextual and Spatial Attention
+</span><span class="zh-head">YO-CSA-T：基于上下文与空间注意力 YOLO 的实时羽毛球跟踪系统</span></h1>
+<div class="ltx_authors">
+<span class="ltx_creator ltx_role_author">
+<span class="ltx_personname">Yuan Lai
+</span><span class="ltx_author_notes"><span class="ltx_author_notes_content">
+<span class="ltx_contact ltx_role_affiliation"><span class="ltx_contact_name">Affiliation: </span> Authors are with School of Computer Science and Technology, Shandong University, Qingdao, Shandong 266237, China <span class="ltx_text ltx_font_typewriter" id="id1" style="font-size:90%;">wtttcl@mail.sdu.edu.cn </span>
+</span></span></span></span>
+<span class="ltx_author_before">  </span><span class="ltx_creator ltx_role_author">
+<span class="ltx_personname">Zhiwei Shi
+</span><span class="ltx_author_notes"><span class="ltx_author_notes_content">
+<span class="ltx_contact ltx_role_affiliation"><span class="ltx_contact_name">Affiliation: </span> Authors are with School of Computer Science and Technology, Shandong University, Qingdao, Shandong 266237, China <span class="ltx_text ltx_font_typewriter" id="id2" style="font-size:90%;">wtttcl@mail.sdu.edu.cn </span>
+</span></span></span></span>
+<span class="ltx_author_before">  </span><span class="ltx_creator ltx_role_author">
+<span class="ltx_personname">Chengxi Zhu
+</span></span><p class="affiliation-zh">作者：Yuan Lai、Zhiwei Shi、Chengxi Zhu。机构：中国山东青岛，山东大学计算机科学与技术学院，266237。</p></div>
+<div class="ltx_abstract" id="abstract1"><h6 class="ltx_title ltx_title_abstract" data-bilingual-id="u0001">Abstract<span class="zh-head">摘要</span></h6>
+<div class="bilingual-paragraph" data-source-unit="u0002" id="abstract1.1"><div class="pair" id="yocsa-paragraph-1" data-reading-id="1"><p class="en">The 3D trajectory of a shuttlecock required for a badminton rally robot for human-robot competition demands real-time performance with high accuracy.</p><p class="zh">面向人机对抗的羽毛球对打机器人，需要实时、准确地获取羽毛球的三维轨迹。</p></div><div class="pair" id="yocsa-paragraph-2" data-reading-id="1"><p class="en">However, the fast flight speed of the shuttlecock, along with various visual effects, and its tendency to blend with environmental elements, such as court lines and lighting, present challenges for rapid and accurate 2D detection.</p><p class="zh">然而，羽毛球飞行速度快，视觉表现多变，而且容易与场地线、灯光等环境元素混淆，这给快速、准确的二维检测带来了挑战。</p></div><div class="pair" id="yocsa-paragraph-3" data-reading-id="1"><p class="en">In this paper, we first propose the YO-CSA detection network, which optimizes and reconfigures the YOLOv8s model’s backbone, neck, and head by incorporating contextual and spatial attention mechanisms to enhance model’s ability in extracting and integrating both global and local features.</p><p class="zh">本文首先提出 YO-CSA 检测网络，通过引入上下文与空间注意力机制，对 YOLOv8s 的主干网络、颈部网络和检测头进行优化与重构，以增强模型对全局及局部特征的提取和融合能力。</p></div><div class="pair" id="yocsa-paragraph-4" data-reading-id="1"><p class="en">Next, we integrate three major sub-tasks—detection, prediction, and compensation—into a real-time 3D shuttlecock trajectory detection system.</p><p class="zh">随后，我们将检测、预测和补偿三项主要子任务整合为一个实时羽毛球三维轨迹检测系统。</p></div><div class="pair" id="yocsa-paragraph-5" data-reading-id="1"><p class="en">Specifically, our system maps the 2D coordinate sequence extracted by YO-CSA into 3D space using stereo vision, then predicts the future 3D coordinates based on historical information, and re-projects them onto the left and right views to update the position constraints for 2D detection.</p><p class="zh">具体而言，系统利用立体视觉，将 YO-CSA 提取的二维坐标序列映射到三维空间，再依据历史信息预测未来的三维坐标，并将预测结果重投影到左右视图，以更新二维检测的位置约束。</p></div><div class="pair" id="yocsa-paragraph-6" data-reading-id="1"><p class="en">Additionally, our system includes a compensation module to fill in missing intermediate frames, ensuring a more complete trajectory.</p><p class="zh">此外，系统还包含补偿模块，用于补齐中间缺失帧，使轨迹更加完整。</p></div><div class="pair" id="yocsa-paragraph-7" data-reading-id="1"><p class="en">We conduct extensive experiments on our own dataset to evaluate both YO-CSA’s performance and system effectiveness.</p><p class="zh">我们在自建数据集上开展了大量实验，以评估 YO-CSA 的性能以及整个系统的有效性。</p></div><div class="pair" id="yocsa-paragraph-8" data-reading-id="1"><p class="en">Experimental results show that YO-CSA achieves a high accuracy of 90.43% mAP@0.75, surpassing both YOLOv8s and YOLO11s.</p><p class="zh">实验结果表明，YO-CSA 的 mAP@0.75 达到 90.43%，优于 YOLOv8s 和 YOLO11s。</p></div><div class="pair" id="yocsa-paragraph-9" data-reading-id="1"><p class="en">Our system performs excellently, maintaining a speed of over 130 fps across 12 test sequences.</p><p class="zh">系统在 12 个测试序列中均保持超过 130 fps 的运行速度，表现良好。</p></div></div>
+</div>
+<section class="ltx_section" id="S1">
+<h2 class="ltx_title ltx_title_section" data-bilingual-id="u0003" id="yocsa-section-2" data-reading-id="1"><span class="heading-en"><span class="ltx_tag ltx_tag_section">I </span><span class="ltx_text ltx_font_smallcaps" id="S1.1">INTRODUCTION</span></span><span class="zh-head">I 引言</span></h2>
+<div class="ltx_para" id="S1.p1">
+<div class="bilingual-paragraph" data-source-unit="u0004" id="S1.p1.1"><div class="pair" id="yocsa-paragraph-10" data-reading-id="1"><p class="en">Over the past decade, deep learning has advanced rapidly and has found widespread applications across numerous fields, sparking multiple high-profile human-machine competitions.</p><p class="zh">过去十年间，深度学习发展迅速，在众多领域得到广泛应用，并催生了多项备受关注的人机竞赛。</p></div></div>
+</div>
+<div class="ltx_para" id="S1.p2">
+<div class="bilingual-paragraph" data-source-unit="u0005" id="S1.p2.1"><div class="pair" id="yocsa-paragraph-11" data-reading-id="1"><p class="en">However, in the field of badminton match, existing research still faces many challenges before achieving realistic human-machine competitions, including real-time extraction of shuttlecock’s 3D trajectory, prediction of its future landing point, formulation, and timely optimization of robotic arm movements and striking strategies.</p><p class="zh">然而，在羽毛球运动领域，要实现真实的人机对抗，现有研究仍面临诸多挑战，包括实时提取羽毛球三维轨迹、预测其未来落点，以及制定并及时优化机械臂动作和击球策略。</p></div><div class="pair" id="yocsa-paragraph-12" data-reading-id="1"><p class="en">Among these, real-time extraction of shuttlecock’s 3D trajectory, as the first step in human-machine competitions, directly impacts the effectiveness of subsequent strategies due to its speed and accuracy.</p><p class="zh">其中，实时提取羽毛球三维轨迹是人机对抗的第一步，其速度与精度会直接影响后续策略的效果。</p></div></div>
+</div>
+<div class="ltx_para" id="S1.p3">
+<div class="bilingual-paragraph" data-source-unit="u0006" id="S1.p3.1"><div class="pair" id="yocsa-paragraph-13" data-reading-id="1"><p class="en">Among various small ball sports, unlike spherical structures such as tennis and table tennis, shuttlecock has a more complex conical structure composed of a cork base and feathers.</p><p class="zh">在各类小球运动中，与网球、乒乓球等球形结构不同，羽毛球由软木球头和羽毛构成，具有更复杂的锥形结构。</p></div><div class="pair" id="yocsa-paragraph-14" data-reading-id="1"><p class="en">During high-speed flight, the shuttlecock’s shape in images varies significantly depending on the viewing angle.</p><p class="zh">高速飞行时，羽毛球在图像中的形态会随观察角度而显著变化。</p></div><div class="pair" id="yocsa-paragraph-15" data-reading-id="1"><p class="en">Additionally, during rallies, its high-speed motion can cause the shuttlecock to blend seamlessly with background elements, such as court lines, or lighting.</p><p class="zh">此外，在对打过程中，高速运动可能使羽毛球与场地线或灯光等背景元素混在一起，难以区分。</p></div><div class="pair" id="yocsa-paragraph-16" data-reading-id="1"><p class="en">This makes even the 2D detection of the shuttlecock quite challenging.</p><p class="zh">因此，即使只是羽毛球的二维检测，也颇具挑战性。</p></div></div>
+</div>
+<div class="ltx_para" id="S1.p4">
+<div class="bilingual-paragraph" data-source-unit="u0007" id="S1.p4.1"><div class="pair" id="yocsa-paragraph-17" data-reading-id="1"><p class="en">Accurately and in real time capturing shuttlecock’s trajectory in 3D space not only provides valuable data for predicting its landing point and formulating a striking strategy for robots, but also enables match data analysis.</p><p class="zh">准确、实时地获取羽毛球在三维空间中的轨迹，不仅能为落点预测和机器人击球策略制定提供重要数据，还可用于比赛数据分析。</p></div><div class="pair" id="yocsa-paragraph-18" data-reading-id="1"><p class="en">This can facilitate the creation of 3D-based automated match analysis systems, helping coaches precisely assess players’ capabilities and develop more focused and efficient training plans for athletes.</p><p class="zh">这有助于构建基于三维信息的自动比赛分析系统，帮助教练准确评估运动员的能力，并制定更有针对性、更高效的训练计划。</p></div></div>
+</div>
+<div class="ltx_para" id="S1.p5">
+<div class="bilingual-paragraph" data-source-unit="u0008" id="S1.p5.1"><div class="pair" id="yocsa-paragraph-19" data-reading-id="1"><p class="en">Against this backdrop, we aim to propose a 3D shuttlecock tracking system that integrates real-time performance with high accuracy.</p><p class="zh">在这一背景下，我们希望提出兼具实时性与高精度的羽毛球三维跟踪系统。</p></div><div class="pair" id="yocsa-paragraph-20" data-reading-id="1"><p class="en">Considering the shuttlecock’s small size and susceptibility to false detection, we propose a 3D shuttlecock tracking system based on YO-CSA detection network.</p><p class="zh">考虑到羽毛球尺寸小且容易发生误检，我们提出了基于 YO-CSA 检测网络的羽毛球三维跟踪系统。</p></div><div class="pair" id="yocsa-paragraph-21" data-reading-id="1"><p class="en">We build a simplified stereo vision system to map 2D trajectories to 3D space.</p><p class="zh">我们搭建了一个简化的立体视觉系统，将二维轨迹映射到三维空间。</p></div><div class="pair" id="yocsa-paragraph-22" data-reading-id="1"><p class="en">Additionally, our tracking algorithm integrates three key modules, shuttlecock detection, prediction, and compensation, to achieve robust and reliable tracking.</p><p class="zh">此外，跟踪算法集成羽毛球检测、预测和补偿三个关键模块，实现稳健、可靠的跟踪。</p></div></div>
+</div>
+<div class="ltx_para" id="S1.p6">
+<div class="bilingual-paragraph" data-source-unit="u0009" id="S1.p6.1"><div class="pair" id="yocsa-paragraph-23" data-reading-id="1"><p class="en">To validate the effectiveness of our system, we compare our detection module against mainstream networks.</p><p class="zh">为验证系统的有效性，我们将检测模块与主流网络进行了比较。</p></div><div class="pair" id="yocsa-paragraph-24" data-reading-id="1"><p class="en">The results show that YO-CSA detection network significantly outperforms these baseline models, particularly in the mAP@0.75 metric.</p><p class="zh">结果表明，YO-CSA 检测网络明显优于这些基线模型，尤其是在 mAP@0.75 指标上。</p></div><div class="pair" id="yocsa-paragraph-25" data-reading-id="1"><p class="en">Additionally, we conduct comparative experiments on our tracking strategy which demonstrate the system’s effectiveness.</p><p class="zh">此外，我们还对跟踪策略开展了对比实验，验证了系统的有效性。</p></div></div>
+</div>
+</section>
+<section class="ltx_section" id="S2">
+<h2 class="ltx_title ltx_title_section" data-bilingual-id="u0010" id="yocsa-section-3" data-reading-id="1"><span class="heading-en"><span class="ltx_tag ltx_tag_section">II </span><span class="ltx_text ltx_font_smallcaps" id="S2.1">Related Work</span></span><span class="zh-head">II 相关工作</span></h2>
+<section class="ltx_subsection" id="S2.SS1">
+<h3 class="ltx_title ltx_title_subsection" data-bilingual-id="u0011" id="yocsa-section-4" data-reading-id="1"><span class="heading-en"><span class="ltx_tag ltx_tag_subsection"><span class="ltx_text" id="S2.SS1.4">II-A</span> </span><span class="ltx_text ltx_font_italic" id="S2.SS1.5">Object Detection</span></span><span class="zh-head">II-A 目标检测</span></h3>
+<div class="ltx_para" id="S2.SS1.p1">
+<div class="bilingual-paragraph" data-source-unit="u0012" id="S2.SS1.p1.1"><div class="pair" id="yocsa-paragraph-26" data-reading-id="1"><p class="en">Object detection has extensive applications, including the identification of nearby pedestrians and vehicles in autonomous driving, and intelligent target tracking in surveillance systems.</p><p class="zh">目标检测应用广泛，例如自动驾驶中的周边行人与车辆识别，以及监控系统中的智能目标跟踪。</p></div><div class="pair" id="yocsa-paragraph-27" data-reading-id="1"><p class="en">Similarly, object detection technology is crucial for badminton rally robots.</p><p class="zh">同样，目标检测技术对羽毛球对打机器人也至关重要。</p></div><div class="pair" id="yocsa-paragraph-28" data-reading-id="1"><p class="en">By providing the coordinates of the shuttlecock, object detection methods enable the robot to predict the future landing location of the shuttlecock, thereby optimizing its movement and return strategies.</p><p class="zh">通过提供羽毛球坐标，目标检测方法使机器人能够预测羽毛球的未来落点，从而优化其移动与回球策略。</p></div></div>
+</div>
+<div class="ltx_para" id="S2.SS1.p2">
+<div class="bilingual-paragraph" data-source-unit="u0013" id="S2.SS1.p2.1"><div class="pair" id="yocsa-paragraph-29" data-reading-id="1"><p class="en">Beginning with R-CNN [ 1 ] , which achieving a mean average precision (mAP) of 53.3% on VOC12 [ 2 ] , object detection has rapidly advanced over the past decade.</p><p class="zh">从在 VOC12 [2] 上取得 53.3% 平均精度均值（mAP）的 R-CNN [1] 开始，目标检测在过去十年中迅速发展。</p></div><div class="pair" id="yocsa-paragraph-30" data-reading-id="1"><p class="en">In 2016, the introduction of YOLO [ 3 ] marks a significant breakthrough, establishing the single-stage model paradigm.</p><p class="zh">2016 年提出的 YOLO [3] 是一次重要突破，确立了单阶段模型范式。</p></div><div class="pair" id="yocsa-paragraph-31" data-reading-id="1"><p class="en">This approach detects objects directly on the entire image, and can simultaneously predict object locations and class probabilities in a single inference.</p><p class="zh">该方法直接在整幅图像上检测目标，能够在一次推理中同时预测目标位置与类别概率。</p></div><div class="pair" id="yocsa-paragraph-32" data-reading-id="1"><p class="en">More recently, popular backbone networks like CenterNet [ 4 ] and EfficientNet [ 5 ] , along with Transformer-based models such as DETR [ 7 ] and Swin Transformer [ 8 ] , gain widespread use.</p><p class="zh">近年来，CenterNet [4]、EfficientNet [5] 等常用主干网络，以及 DETR [7]、Swin Transformer [8] 等基于 Transformer 的模型得到了广泛应用。</p></div><div class="pair" id="yocsa-paragraph-33" data-reading-id="1"><p class="en">The latest YOLO models, including YOLOv8 and YOLO11, continue to push the limits of performance in the field.</p><p class="zh">包括 YOLOv8 和 YOLO11 在内的新一代 YOLO 模型，持续提升该领域的性能水平。</p></div></div>
+</div>
+<div class="ltx_para" id="S2.SS1.p3">
+<div class="bilingual-paragraph" data-source-unit="u0014" id="S2.SS1.p3.1"><div class="pair" id="yocsa-paragraph-34" data-reading-id="1"><p class="en">To address the challenges posed by the high-speed movement of the shuttlecock, we design the YOLO based on contextual and spatial attention (YO-CSA).</p><p class="zh">为应对羽毛球高速运动带来的挑战，我们设计了基于上下文与空间注意力的 YOLO，即 YO-CSA。</p></div><div class="pair" id="yocsa-paragraph-35" data-reading-id="1"><p class="en">This network is built on YOLOv8s, a model known for its high accuracy and fast inference speed, to effectively handle the detection of the shuttlecock under such conditions.</p><p class="zh">该网络以兼具高精度和快速推理能力的 YOLOv8s 为基础，以有效完成上述条件下的羽毛球检测。</p></div></div>
+</div>
+</section>
+<section class="ltx_subsection" id="S2.SS2">
+<h3 class="ltx_title ltx_title_subsection" data-bilingual-id="u0015" id="yocsa-section-5" data-reading-id="1"><span class="heading-en"><span class="ltx_tag ltx_tag_subsection"><span class="ltx_text" id="S2.SS2.4">II-B</span> </span><span class="ltx_text ltx_font_italic" id="S2.SS2.5">Self-Attention Mechanism</span></span><span class="zh-head">II-B 自注意力机制</span></h3>
+<div class="ltx_para" id="S2.SS2.p1">
+<div class="bilingual-paragraph" data-source-unit="u0016" id="S2.SS2.p1.1"><div class="pair" id="yocsa-paragraph-36" data-reading-id="1"><p class="en">The self-attention mechanism, first introduced in [ 6 ] , differs from traditional convolution operations, which process the entire image uniformly.</p><p class="zh">自注意力机制最早在文献 [6] 中提出，与以统一方式处理整幅图像的传统卷积运算不同。</p></div><div class="pair" id="yocsa-paragraph-37" data-reading-id="1"><p class="en">Self-attention allows the network to dynamically adjust its focus on specific regions, enabling it to prioritize target objects while reducing attention to less important areas, such as the back-ground.</p><p class="zh">自注意力使网络能够动态调整对特定区域的关注程度，优先关注目标物体，并减少对背景等次要区域的关注。</p></div><div class="pair" id="yocsa-paragraph-38" data-reading-id="1"><p class="en">It also facilitates the capture of long-range dependencies, overcoming the locality limitations of the convolutional receptive field.</p><p class="zh">它还有助于捕捉长距离依赖，克服卷积感受野的局部性限制。</p></div></div>
+</div>
+<div class="ltx_para" id="S2.SS2.p2">
+<div class="bilingual-paragraph" data-source-unit="u0017" id="S2.SS2.p2.1"><div class="pair" id="yocsa-paragraph-39" data-reading-id="1"><p class="en">Originally developed for natural language processing tasks, the self-attention mechanism has shown promising results in the field of computer vision as well.</p><p class="zh">自注意力机制最初用于自然语言处理任务，在计算机视觉领域也展现出了良好的效果。</p></div><div class="pair" id="yocsa-paragraph-40" data-reading-id="1"><p class="en">ViT [ 9 ] is the first to apply Transformer architecture to image recognition, achieving an accuracy of 88.55% on ImageNet [ 10 ] , even surpassing ResNet [ 11 ] .</p><p class="zh">ViT [9] 首次将 Transformer 架构应用于图像识别，在 ImageNet [10] 上取得 88.55% 的准确率，甚至超过了 ResNet [11]。</p></div><div class="pair" id="yocsa-paragraph-41" data-reading-id="1"><p class="en">[ 12 ] [ 13 ] demonstrate the practical use of Transformers in medical imaging, where they effectively leverage self-attention to capture global features.</p><p class="zh">文献 [12]、[13] 展示了 Transformer 在医学影像中的实际应用，利用自注意力有效捕捉全局特征。</p></div><div class="pair" id="yocsa-paragraph-42" data-reading-id="1"><p class="en">Additionally, [ 14 ] , based on ViT and fully connected conditional random fields, optimize the modeling of point cloud data.</p><p class="zh">此外，文献 [14] 基于 ViT 和全连接条件随机场，改进了点云数据的建模。</p></div><div class="pair" id="yocsa-paragraph-43" data-reading-id="1"><p class="en">In object detection, DETR [ 7 ] entirely eliminates the region proposal, region extraction, and non-maximum suppression steps, achieving end-to-end object detection using a pure Transformer architecture.</p><p class="zh">在目标检测中，DETR [7] 完全移除了候选区域生成、区域提取和非极大值抑制步骤，以纯 Transformer 架构实现端到端目标检测。</p></div><div class="pair" id="yocsa-paragraph-44" data-reading-id="1"><p class="en">Swin Transformer [ 8 ] further addresses the computational inefficiencies of ViT by introducing local windows for self-attention.</p><p class="zh">Swin Transformer [8] 则通过引入局部窗口自注意力，进一步改善了 ViT 的计算效率问题。</p></div></div>
+</div>
+<div class="ltx_para" id="S2.SS2.p3">
+<div class="bilingual-paragraph" data-source-unit="u0018" id="S2.SS2.p3.1"><div class="pair" id="yocsa-paragraph-45" data-reading-id="1"><p class="en">While self-attention mechanisms can greatly improve network performance, pure Transformer-based models typically require large datasets for training, and their high complexity can limit inference speed—factors that do not align with our objectives.</p><p class="zh">尽管自注意力机制能够显著提升网络性能，但纯 Transformer 模型通常需要大规模数据集进行训练，较高的复杂度也可能限制推理速度；这些特点与我们的目标并不一致。</p></div><div class="pair" id="yocsa-paragraph-46" data-reading-id="1"><p class="en">Consequently, we focus on combining the advantages of both convolution and self-attention mechanisms to enable real-time detection of the shuttlecock.</p><p class="zh">因此，我们着重结合卷积和自注意力机制的优势，以实现羽毛球的实时检测。</p></div></div>
+</div>
+</section>
+<section class="ltx_subsection" id="S2.SS3">
+<h3 class="ltx_title ltx_title_subsection" data-bilingual-id="u0019" id="yocsa-section-6" data-reading-id="1"><span class="heading-en"><span class="ltx_tag ltx_tag_subsection"><span class="ltx_text" id="S2.SS3.4">II-C</span> </span><span class="ltx_text ltx_font_italic" id="S2.SS3.5">Tracking in Small-Size Ball Sports</span></span><span class="zh-head">II-C 小球运动中的跟踪</span></h3>
+<div class="ltx_para" id="S2.SS3.p1">
+<div class="bilingual-paragraph" data-source-unit="u0020" id="S2.SS3.p1.1"><div class="pair" id="yocsa-paragraph-47" data-reading-id="1"><p class="en">Small ball sports, such as badminton and table tennis, are globally popular and have attracted significant research interest.</p><p class="zh">羽毛球、乒乓球等小球运动在全球广受欢迎，也吸引了大量研究关注。</p></div><div class="pair" id="yocsa-paragraph-48" data-reading-id="1"><p class="en">Whether as essential data for human-machine competitions or as part of a match video analysis system, extracting the ball’s trajectory is crucial.</p><p class="zh">无论是为人机对抗提供关键数据，还是作为比赛视频分析系统的一部分，提取球的轨迹都至关重要。</p></div></div>
+</div>
+<div class="ltx_para" id="S2.SS3.p2">
+<div class="bilingual-paragraph" data-source-unit="u0021" id="S2.SS3.p2.1"><div class="pair" id="yocsa-paragraph-49" data-reading-id="1"><p class="en">CenterNet detects targets by learning a center heatmap.</p><p class="zh">CenterNet 通过学习中心热图来检测目标。</p></div><div class="pair" id="yocsa-paragraph-50" data-reading-id="1"><p class="en">Similarly, a series of works adapt the same fundamental approach by using heatmaps for precise localization.</p><p class="zh">类似地，一系列工作采用相同的基本思路，利用热图实现精确定位。</p></div><div class="pair" id="yocsa-paragraph-51" data-reading-id="1"><p class="en">TTNet [ 15 ] is a multifunctional neural network designed for high-resolution video, integrating table tennis ball detection, event classification, and semantic segmentation.</p><p class="zh">TTNet [15] 是面向高分辨率视频的多功能神经网络，集成了乒乓球检测、事件分类和语义分割。</p></div><div class="pair" id="yocsa-paragraph-52" data-reading-id="1"><p class="en">It takes consecutive video frames as input, using a pure convolution network and heatmap learning, performs coarse-to-fine detection and segmentation of the ball.</p><p class="zh">它以连续视频帧为输入，利用纯卷积网络和热图学习，由粗到细地检测并分割球体。</p></div><div class="pair" id="yocsa-paragraph-53" data-reading-id="1"><p class="en">TrackNetV2 [ 16 ] , inspired by the UNet [ 18 ] , introduces heatmaps and uses a Gaussian 2D distribution to determine the ball’s location.</p><p class="zh">受 UNet [18] 启发，TrackNetV2 [16] 引入热图，并使用二维高斯分布确定球的位置。</p></div><div class="pair" id="yocsa-paragraph-54" data-reading-id="1"><p class="en">WASB-SBDT [ 17 ] builds a neural network to predict the heatmap of ball coordinates, inspired by HRNet [ 19 ] .</p><p class="zh">WASB-SBDT [17] 受 HRNet [19] 启发，构建了预测球坐标热图的神经网络。</p></div><div class="pair" id="yocsa-paragraph-55" data-reading-id="1"><p class="en">It proposes High-Resolution Modules (HRMs) to address the semantic and spatial resolution loss typically seen in traditional encoder-decoder architectures.</p><p class="zh">它提出高分辨率模块（HRM），以解决传统编码器—解码器架构中常见的语义信息与空间分辨率损失问题。</p></div></div>
+</div>
+<div class="ltx_para" id="S2.SS3.p3">
+<div class="bilingual-paragraph" data-source-unit="u0022" id="S2.SS3.p3.1"><div class="pair" id="yocsa-paragraph-56" data-reading-id="1"><p class="en">On the other hand, some works focus on optimizing existing detection frameworks.</p><p class="zh">另一方面，一些工作致力于优化现有检测框架。</p></div><div class="pair" id="yocsa-paragraph-57" data-reading-id="1"><p class="en">For example, [ 20 ] enhances model training using gradient estimation theory, improving tennis ball recognition accuracy in videos.</p><p class="zh">例如，文献 [20] 利用梯度估计理论改进模型训练，提高了视频中网球的识别精度。</p></div><div class="pair" id="yocsa-paragraph-58" data-reading-id="1"><p class="en">[ 21 ] combines YOLOv3 [ 22 ] with Kalman filter [ 23 ] to achieve a 2D golf ball tracking system.</p><p class="zh">文献 [21] 将 YOLOv3 [22] 与卡尔曼滤波器 [23] 相结合，实现了二维高尔夫球跟踪系统。</p></div><div class="pair" id="yocsa-paragraph-59" data-reading-id="1"><p class="en">[ 24 ] utilizes Transformer-based secondary feature processing to build global information, proposing a target detection algorithm for identifying the table tennis ball and determining its position on the table.</p><p class="zh">文献 [24] 利用基于 Transformer 的二次特征处理构建全局信息，提出了识别乒乓球并确定其在球台上位置的目标检测算法。</p></div></div>
+</div>
+<div class="ltx_para" id="S2.SS3.p4">
+<div class="bilingual-paragraph" data-source-unit="u0023" id="S2.SS3.p4.1"><div class="pair" id="yocsa-paragraph-60" data-reading-id="1"><p class="en">Most current research focuses on 2D video processing, with few addressing trajectory extraction in 3D space.</p><p class="zh">当前多数研究集中于二维视频处理，涉及三维空间轨迹提取的工作较少。</p></div><div class="pair" id="yocsa-paragraph-61" data-reading-id="1"><p class="en">This is likely due to the high cost of building devices capable of supporting 3D trajectory extraction.</p><p class="zh">这可能是因为搭建能够支持三维轨迹提取的设备成本较高。</p></div><div class="pair" id="yocsa-paragraph-62" data-reading-id="1"><p class="en">Furthermore, video analysis tasks, unlike robot game-play, do not require 3D data.The field of robotics is still developing, and current research is relatively limited.</p><p class="zh">此外，与机器人对打不同，视频分析任务并不需要三维数据。机器人领域仍在发展，现有相关研究相对有限。</p></div><div class="pair" id="yocsa-paragraph-63" data-reading-id="1"><p class="en">Therefore, this paper focuses on the development of a real-time, accurate 3D badminton tracking system, aiming to make a meaningful contribution to the field of robotics.</p><p class="zh">因此，本文着重开发实时、准确的羽毛球三维跟踪系统，希望为机器人领域作出有意义的贡献。</p></div></div>
+</div>
+</section>
+</section>
+<section class="ltx_section" id="S3">
+<h2 class="ltx_title ltx_title_section" data-bilingual-id="u0024" id="yocsa-section-7" data-reading-id="1"><span class="heading-en"><span class="ltx_tag ltx_tag_section">III </span><span class="ltx_text ltx_font_smallcaps" id="S3.1">Real-time Detection Module</span></span><span class="zh-head">III 实时检测模块</span></h2>
+<div class="ltx_para" id="S3.p1">
+<div class="bilingual-paragraph" data-source-unit="u0025" id="S3.p1.1"><div class="pair" id="yocsa-paragraph-64" data-reading-id="1"><p class="en">In this section, we introduce a novel detection network integrated contextual and spatial attention mechanisms as well as convolution to balance the trade-off between speed and accuracy in high-speed, small-object detection for badminton.</p><p class="zh">本节介绍一种将上下文注意力、空间注意力与卷积相结合的新型检测网络，以平衡羽毛球高速小目标检测中的速度与精度。</p></div></div>
+</div>
+<figure class="ltx_figure" id="S3.F1"><img alt="Refer to caption" class="ltx_graphics ltx_centering ltx_img_square" id="S3.F1.g1" src="assets/8c309bd8248ba3a69092.png"/>
+<figcaption class="ltx_caption ltx_centering" data-bilingual-id="u0026"><div class="bilingual-paragraph" data-source-unit="u0026"><div class="pair" id="yocsa-paragraph-65" data-reading-id="1"><p class="en">Fig. 1 : Structure of YO-CSA</p><p class="zh">图 1：YO-CSA 的结构。</p></div></div></figcaption>
+<p class="figure-glossary">图内术语：backbone＝主干网络；neck＝颈部网络；head＝检测头；CBS＝卷积、批归一化与 SiLU 激活；SANeck＝融合空间注意力的颈部网络。</p></figure>
+<section class="ltx_subsection" id="S3.SS1">
+<h3 class="ltx_title ltx_title_subsection" data-bilingual-id="u0027" id="yocsa-section-8" data-reading-id="1"><span class="heading-en"><span class="ltx_tag ltx_tag_subsection"><span class="ltx_text" id="S3.SS1.4">III-A</span> </span><span class="ltx_text ltx_font_italic" id="S3.SS1.5">Brief Review of YOLO</span></span><span class="zh-head">III-A YOLO 简述</span></h3>
+<div class="ltx_para" id="S3.SS1.p1">
+<div class="bilingual-paragraph" data-source-unit="u0028" id="S3.SS1.p1.1"><div class="pair" id="yocsa-paragraph-66" data-reading-id="1"><p class="en">Since the introduction of YOLO [ 3 ] in 2016, the YOLO series has undergone annual iterations, consistently leading the field of object detection with its superior performance.</p><p class="zh">自 2016 年 YOLO [3] 提出以来，YOLO 系列逐年迭代，凭借优良性能持续引领目标检测领域。</p></div><div class="pair" id="yocsa-paragraph-67" data-reading-id="1"><p class="en">As an end-to-end architecture, YOLO stands in contrast to models based on region proposals such as Faster-RCNN [ 25 ] , as it unifies a single network to perform detection tasks, streamlining the process.</p><p class="zh">作为端到端架构，YOLO 与 Faster-RCNN [25] 等基于候选区域的模型不同，它用一个统一网络完成检测任务，从而简化了流程。</p></div></div>
+</div>
+<div class="ltx_para" id="S3.SS1.p2">
+<div class="bilingual-paragraph" data-source-unit="u0029" id="S3.SS1.p2.1"><div class="pair" id="yocsa-paragraph-68" data-reading-id="1"><p class="en">YOLO architecture consists of the backbone, neck, and head, which are responsible for representative feature extraction, feature enhancement, and task-specific operations such as classification and regression, respectively.</p><p class="zh">YOLO 架构由主干网络、颈部网络和检测头组成，分别负责表征特征提取、特征增强，以及分类和回归等具体任务。</p></div><div class="pair" id="yocsa-paragraph-69" data-reading-id="1"><p class="en">YOLOv5 achieves 50.5% mAP on the COCO, and was soon surpassed by YOLOv8, which attains 53.9% mAP on the same dataset.</p><p class="zh">YOLOv5 在 COCO 上取得 50.5% 的 mAP，随后被在同一数据集上达到 53.9% mAP 的 YOLOv8 超越。</p></div></div>
+</div>
+</section>
+<section class="ltx_subsection" id="S3.SS2">
+<h3 class="ltx_title ltx_title_subsection" data-bilingual-id="u0030" id="yocsa-section-9" data-reading-id="1"><span class="heading-en"><span class="ltx_tag ltx_tag_subsection"><span class="ltx_text" id="S3.SS2.4">III-B</span> </span><span class="ltx_text ltx_font_italic" id="S3.SS2.5">Overview of Detection Network</span></span><span class="zh-head">III-B 检测网络概述</span></h3>
+<div class="ltx_para" id="S3.SS2.p1">
+<div class="bilingual-paragraph" data-source-unit="u0031" id="S3.SS2.p1.1"><div class="pair" id="yocsa-paragraph-70" data-reading-id="1"><p class="en">Although YOLOv8 has achieved certain results in practical applications, there is still room for improvement in scenarios like badminton matches, where require both high real-time performance and precision.</p><p class="zh">尽管 YOLOv8 在实际应用中已取得一定成果，但在羽毛球比赛等同时要求高实时性与高精度的场景中，仍有改进空间。</p></div></div>
+</div>
+<div class="ltx_para" id="S3.SS2.p2">
+<div class="bilingual-paragraph" data-source-unit="u0032" id="S3.SS2.p2.1"><div class="pair" id="yocsa-paragraph-71" data-reading-id="1"><p class="en">We propose YO-CSA architecture, depicted in Fig. 1 .</p><p class="zh">我们提出的 YO-CSA 架构如图 1 所示。</p></div><div class="pair" id="yocsa-paragraph-72" data-reading-id="1"><p class="en">Inspired by contextual transformer block (CoT) [ 26 ] and spatial group-wise enhance (SGE) [ 27 ] , we introduce contextual transformer block with 2 convolutions (CoT2f) and spatial attention-integrated neck (SANeck), which strengthen the network’s ability to extract and enhance features, particularly in terms of positional distribution, within the backbone and neck processes.</p><p class="zh">受上下文 Transformer 模块（CoT）[26] 和空间分组增强（SGE）[27] 的启发，我们引入包含两个卷积层的上下文 Transformer 模块（CoT2f），以及融合空间注意力的颈部网络（SANeck），增强主干和颈部网络的特征提取与增强能力，尤其是对位置分布信息的处理能力。</p></div><div class="pair" id="yocsa-paragraph-73" data-reading-id="1"><p class="en">Furthermore, we optimize the detection head to facilitate more efficient learning of spatial distributions.</p><p class="zh">此外，我们还优化了检测头，使其能够更有效地学习空间分布。</p></div><div class="pair" id="yocsa-paragraph-74" data-reading-id="1"><p class="en">Further details on the YO-CSA architecture is provided in the following sections.</p><p class="zh">下文将进一步介绍 YO-CSA 架构的细节。</p></div></div>
+</div>
+</section>
+<section class="ltx_subsection" id="S3.SS3">
+<h3 class="ltx_title ltx_title_subsection" data-bilingual-id="u0033" id="yocsa-section-10" data-reading-id="1"><span class="heading-en"><span class="ltx_tag ltx_tag_subsection"><span class="ltx_text" id="S3.SS3.4">III-C</span> </span><span class="ltx_text ltx_font_italic" id="S3.SS3.5">Contextual Transformer Block with 2 Convolutions</span></span><span class="zh-head">III-C 包含两个卷积层的上下文 Transformer 模块</span></h3>
+<div class="ltx_para" id="S3.SS3.p1">
+<div class="bilingual-paragraph" data-source-unit="u0034" id="S3.SS3.p1.1"><div class="pair" id="yocsa-paragraph-75" data-reading-id="1"><p class="en">It is crucial to design a deep neural network with robust representative extraction capability while mitigating computational overhead and minimizing information loss.</p><p class="zh">设计深度神经网络时，既要具备强大的表征提取能力，又要降低计算开销并尽量减少信息损失，这一点至关重要。</p></div><div class="pair" id="yocsa-paragraph-76" data-reading-id="1"><p class="en">CoT2f is implemented in the backbone of YOLO aiming to enhancing the property to extract global context as well as alleviate representative information degradation.</p><p class="zh">我们在 YOLO 的主干网络中引入 CoT2f，旨在增强全局上下文提取能力，并减轻表征信息的退化。</p></div><div class="pair" id="yocsa-paragraph-77" data-reading-id="1"><p class="en">The foundational launching point for our approach is to fully exploit the contextual self-attention mechanism and Bottleneck [ 11 ] recognized as an efficient architectural paradigm to boost network’s learning while reducing computational demands.</p><p class="zh">本方法的基本出发点，是充分利用上下文自注意力机制和 Bottleneck [11]；后者是一种高效的架构范式，能够在降低计算需求的同时增强网络学习能力。</p></div></div>
+</div>
+<div class="ltx_para" id="S3.SS3.p2">
+<div class="bilingual-paragraph" data-source-unit="u0035" id="S3.SS3.p2.1"><div class="pair" id="yocsa-paragraph-78" data-reading-id="1"><p class="en">As Fig. 2 illustrates, CoT2f comprises two convolution layers of different sizes and a CoT-Bottleneck.</p><p class="zh">如图 2 所示，CoT2f 由两个不同尺寸的卷积层和一个 CoT-Bottleneck 组成。</p></div><div class="pair" id="yocsa-paragraph-79" data-reading-id="1"><p class="en">Initially, input X with the size of <math alttext="W\times H\times{C_{1}}" class="ltx_Math" display="inline" id="S3.SS3.p2.m1" intent=":literal"><semantics><mrow><mi>W</mi><mo lspace="0.222em" rspace="0.222em">×</mo><mi>H</mi><mo lspace="0.222em" rspace="0.222em">×</mo><msub><mi>C</mi><mn>1</mn></msub></mrow></semantics></math> is fed into convolution layer 1, resulting in an output with the shape of <math alttext="W\times H\times{2c}" class="ltx_Math" display="inline" id="S3.SS3.p2.m2" intent=":literal"><semantics><mrow><mi>W</mi><mo lspace="0.222em" rspace="0.222em">×</mo><mi>H</mi><mo lspace="0.222em" rspace="0.222em">×</mo><mrow><mn>2</mn><mo lspace="0em" rspace="0em">​</mo><mi>c</mi></mrow></mrow></semantics></math> , here <math alttext="2c" class="ltx_Math" display="inline" id="S3.SS3.p2.m3" intent=":literal"><semantics><mrow><mn>2</mn><mo lspace="0em" rspace="0em">​</mo><mi>c</mi></mrow></semantics></math> denotes the number of channels in the convolution layer 1.</p><p class="zh">首先，将尺寸为 <math alttext="W\times H\times{C_{1}}" class="ltx_Math" display="inline" id="S3.SS3.p2.m1" intent=":literal"><semantics><mrow><mi>W</mi><mo lspace="0.222em" rspace="0.222em">×</mo><mi>H</mi><mo lspace="0.222em" rspace="0.222em">×</mo><msub><mi>C</mi><mn>1</mn></msub></mrow></semantics></math> 的输入 X 送入卷积层 1，得到形状为 <math alttext="W\times H\times{2c}" class="ltx_Math" display="inline" id="S3.SS3.p2.m2" intent=":literal"><semantics><mrow><mi>W</mi><mo lspace="0.222em" rspace="0.222em">×</mo><mi>H</mi><mo lspace="0.222em" rspace="0.222em">×</mo><mrow><mn>2</mn><mo lspace="0em" rspace="0em">​</mo><mi>c</mi></mrow></mrow></semantics></math> 的输出；其中，<math alttext="2c" class="ltx_Math" display="inline" id="S3.SS3.p2.m3" intent=":literal"><semantics><mrow><mn>2</mn><mo lspace="0em" rspace="0em">​</mo><mi>c</mi></mrow></semantics></math> 表示卷积层 1 的通道数。</p></div><div class="pair" id="yocsa-paragraph-80" data-reading-id="1"><p class="en">Subsequently, an inter-mediate product <math alttext="[Y_{1},Y_{2}]" class="ltx_Math" display="inline" id="S3.SS3.p2.m4" intent=":literal"><semantics><mrow><mo stretchy="false">[</mo><msub><mi>Y</mi><mn>1</mn></msub><mo>,</mo><msub><mi>Y</mi><mn>2</mn></msub><mo stretchy="false">]</mo></mrow></semantics></math> is obtained through a chunking operation.</p><p class="zh">随后，通过分块操作得到中间结果 <math alttext="[Y_{1},Y_{2}]" class="ltx_Math" display="inline" id="S3.SS3.p2.m4" intent=":literal"><semantics><mrow><mo stretchy="false">[</mo><msub><mi>Y</mi><mn>1</mn></msub><mo>,</mo><msub><mi>Y</mi><mn>2</mn></msub><mo stretchy="false">]</mo></mrow></semantics></math>。</p></div></div>
+</div>
+<figure class="ltx_figure" id="S3.F2">
+<div class="ltx_flex_figure">
+<div class="ltx_flex_cell ltx_flex_size_2">
+<figure class="ltx_figure ltx_figure_panel ltx_align_center" id="S3.F2.sf1"><img alt="CoT2f structure, extracted from user-provided PDF" src="assets/812b0fe9ec98b958fcf4.png"/>
+<figcaption class="ltx_caption ltx_centering" data-bilingual-id="u0036"><div class="bilingual-paragraph" data-source-unit="u0036"><div class="pair" id="yocsa-paragraph-81" data-reading-id="1"><p class="en">(a) CoT2f</p><p class="zh">（a）CoT2f。</p></div></div></figcaption>
+</figure></div><div class="ltx_flex_cell ltx_flex_size_2">
+<figure class="ltx_figure ltx_figure_panel ltx_align_center" id="S3.F2.sf2"><img alt="CoT2f structure, extracted from user-provided PDF" src="assets/4823b875753990bebd5e.png"/>
+<figcaption class="ltx_caption ltx_centering" data-bilingual-id="u0037"><div class="bilingual-paragraph" data-source-unit="u0037"><div class="pair" id="yocsa-paragraph-82" data-reading-id="1"><p class="en">(b) CoT-Bottleneck</p><p class="zh">（b）CoT-Bottleneck。</p></div></div></figcaption>
+</figure></div></div>
+<figcaption class="ltx_caption ltx_centering" data-bilingual-id="u0038"><div class="bilingual-paragraph" data-source-unit="u0038"><div class="pair" id="yocsa-paragraph-83" data-reading-id="1"><p class="en">Fig. 2 : Structure of CoT2f</p><p class="zh">图 2：CoT2f 的结构。</p></div></div></figcaption>
+<p class="figure-glossary">图内术语：Input＝输入；Output＝输出；chunk＝分块；Concat＝拼接；CoT-Bottleneck＝上下文 Transformer 瓶颈模块。</p></figure>
+<div class="ltx_para" id="S3.SS3.p3">
+<div class="bilingual-paragraph" data-source-unit="u0039" id="S3.SS3.p3.1"><div class="pair" id="yocsa-paragraph-84" data-reading-id="1"><p class="en">CoT-Bottleneck is capable of conducting finer-grained feature extraction on <math alttext="{Y_{1}}" class="ltx_Math" display="inline" id="S3.SS3.p3.m1" intent=":literal"><semantics><msub><mi>Y</mi><mn>1</mn></msub></semantics></math> to yield <math alttext="Y_{\text{CoT-Bottleneck}}" class="ltx_Math" display="inline" id="S3.SS3.p3.m2" intent=":literal"><semantics><msub><mi>Y</mi><mtext>CoT-Bottleneck</mtext></msub></semantics></math> , whereas <math alttext="{Y_{2}}" class="ltx_Math" display="inline" id="S3.SS3.p3.m3" intent=":literal"><semantics><msub><mi>Y</mi><mn>2</mn></msub></semantics></math> is directly injected into the concatenation layer.</p><p class="zh">CoT-Bottleneck 对 <math alttext="{Y_{1}}" class="ltx_Math" display="inline" id="S3.SS3.p3.m1" intent=":literal"><semantics><msub><mi>Y</mi><mn>1</mn></msub></semantics></math> 进行更细粒度的特征提取，得到 <math alttext="Y_{\text{CoT-Bottleneck}}" class="ltx_Math" display="inline" id="S3.SS3.p3.m2" intent=":literal"><semantics><msub><mi>Y</mi><mtext>CoT-Bottleneck</mtext></msub></semantics></math>；而 <math alttext="{Y_{2}}" class="ltx_Math" display="inline" id="S3.SS3.p3.m3" intent=":literal"><semantics><msub><mi>Y</mi><mn>2</mn></msub></semantics></math> 则直接送入拼接层。</p></div><div class="pair" id="yocsa-paragraph-85" data-reading-id="1"><p class="en">Analogous to a residual structure, <math alttext="Y_{\text{CoT-Bottleneck}}" class="ltx_Math" display="inline" id="S3.SS3.p3.m4" intent=":literal"><semantics><msub><mi>Y</mi><mtext>CoT-Bottleneck</mtext></msub></semantics></math> and <math alttext="{Y_{2}}" class="ltx_Math" display="inline" id="S3.SS3.p3.m5" intent=":literal"><semantics><msub><mi>Y</mi><mn>2</mn></msub></semantics></math> are concatenated, followed by processing through convolution layer 2 to facilitate the fusion of features.</p><p class="zh">类似于残差结构，将 <math alttext="Y_{\text{CoT-Bottleneck}}" class="ltx_Math" display="inline" id="S3.SS3.p3.m4" intent=":literal"><semantics><msub><mi>Y</mi><mtext>CoT-Bottleneck</mtext></msub></semantics></math> 与 <math alttext="{Y_{2}}" class="ltx_Math" display="inline" id="S3.SS3.p3.m5" intent=":literal"><semantics><msub><mi>Y</mi><mn>2</mn></msub></semantics></math> 拼接，再通过卷积层 2 处理，以促进特征融合。</p></div><div class="pair" id="yocsa-paragraph-86" data-reading-id="1"><p class="en">CoT [ 26 ] , incorporated within CoT-BottleNeck, integrates contextual information mining with a self-attention mechanism into a cohesive architecture.</p><p class="zh">CoT-Bottleneck 中的 CoT [26] 将上下文信息挖掘与自注意力机制整合为统一架构。</p></div><div class="pair" id="yocsa-paragraph-87" data-reading-id="1"><p class="en">Unlike traditional self-attention designs, it employs <math alttext="3\times 3" class="ltx_Math" display="inline" id="S3.SS3.p3.m6" intent=":literal"><semantics><mrow><mn>3</mn><mo lspace="0.222em" rspace="0.222em">×</mo><mn>3</mn></mrow></semantics></math> convolution kernel to capture contextual information, rather than relying on independent <math alttext="1\times 1" class="ltx_Math" display="inline" id="S3.SS3.p3.m7" intent=":literal"><semantics><mrow><mn>1</mn><mo lspace="0.222em" rspace="0.222em">×</mo><mn>1</mn></mrow></semantics></math> kernel, which decompose the correlations between paired key-value mappings.</p><p class="zh">与传统自注意力设计不同，它使用 <math alttext="3\times 3" class="ltx_Math" display="inline" id="S3.SS3.p3.m6" intent=":literal"><semantics><mrow><mn>3</mn><mo lspace="0.222em" rspace="0.222em">×</mo><mn>3</mn></mrow></semantics></math> 卷积核捕捉上下文信息，而非依赖独立的 <math alttext="1\times 1" class="ltx_Math" display="inline" id="S3.SS3.p3.m7" intent=":literal"><semantics><mrow><mn>1</mn><mo lspace="0.222em" rspace="0.222em">×</mo><mn>1</mn></mrow></semantics></math> 卷积核；后者会将成对键值映射之间的关联分解开来。</p></div></div>
+</div>
+</section>
+<section class="ltx_subsection" id="S3.SS4">
+<h3 class="ltx_title ltx_title_subsection" data-bilingual-id="u0040" id="yocsa-section-11" data-reading-id="1"><span class="heading-en"><span class="ltx_tag ltx_tag_subsection"><span class="ltx_text" id="S3.SS4.4">III-D</span> </span><span class="ltx_text ltx_font_italic" id="S3.SS4.5">Spatial Attention-Integrated Neck</span></span><span class="zh-head">III-D 融合空间注意力的颈部网络</span></h3>
+<div class="ltx_para" id="S3.SS4.p1">
+<div class="bilingual-paragraph" data-source-unit="u0041" id="S3.SS4.p1.1"><div class="pair" id="yocsa-paragraph-88" data-reading-id="1"><p class="en">Within the context of neural networks, the target object is composed of a sequence of sub-features, which implies that accurately identifying these sub-features enables the precise localization of the target object.</p><p class="zh">在神经网络的表征中，目标由一系列子特征组成，因此准确识别这些子特征有助于精确定位目标。</p></div><div class="pair" id="yocsa-paragraph-89" data-reading-id="1"><p class="en">Therefore, we emphasize the importance of sub-features perception and extraction in the neck of YOLO, specifically within the feature fusion process of the dual pyramid structure.</p><p class="zh">因此，我们强调 YOLO 颈部网络中子特征感知与提取的重要性，尤其关注双金字塔结构中的特征融合过程。</p></div><div class="pair" id="yocsa-paragraph-90" data-reading-id="1"><p class="en">To be more precise, a new dual pyramid structure is reconstructed based on SANeck, with the aim of enhancing network’s semantic extraction capability through self-attention mechanism.</p><p class="zh">具体而言，我们基于 SANeck 重构了一种新的双金字塔结构，旨在通过自注意力机制增强网络的语义提取能力。</p></div></div>
+</div>
+<div class="ltx_para" id="S3.SS4.p2">
+<div class="bilingual-paragraph" data-source-unit="u0042" id="S3.SS4.p2.1"><div class="pair" id="yocsa-paragraph-91" data-reading-id="1"><p class="en">For the purpose of minimizing computational overhead, SANeck appropriately references the lightweight structure SGE [ 27 ] , which draws inspiration from CapsNet [ 28 ] .</p><p class="zh">为尽量降低计算开销，SANeck 借鉴了受 CapsNet [28] 启发的轻量化结构 SGE [27]。</p></div><div class="pair" id="yocsa-paragraph-92" data-reading-id="1"><p class="en">Inspired by the C2f structure in YOLOv8, we reconstruct neck by C2f-SGE to explicitly introduce self-attention in the neck.</p><p class="zh">受 YOLOv8 中 C2f 结构的启发，我们利用 C2f-SGE 重构颈部网络，从而显式引入自注意力。</p></div><div class="pair" id="yocsa-paragraph-93" data-reading-id="1"><p class="en">Fig. 3 illustrates detail of SANeck.</p><p class="zh">图 3 展示了 SANeck 的细节。</p></div><div class="pair" id="yocsa-paragraph-94" data-reading-id="1"><p class="en">Firstly, the output from the previous layer is fed to convolution layer 1.</p><p class="zh">首先，将上一层的输出送入卷积层 1。</p></div><div class="pair" id="yocsa-paragraph-95" data-reading-id="1"><p class="en">Then, the convolved output is chunked into two slices, one slice, <math alttext="{Y_{1}}" class="ltx_Math" display="inline" id="S3.SS4.p2.m1" intent=":literal"><semantics><msub><mi>Y</mi><mn>1</mn></msub></semantics></math> , is compressed by n SGE-2f modules, while the other slice, <math alttext="{Y_{2}}" class="ltx_Math" display="inline" id="S3.SS4.p2.m2" intent=":literal"><semantics><msub><mi>Y</mi><mn>2</mn></msub></semantics></math> , is directly transported to the concatenation operation.</p><p class="zh">随后，将卷积输出分成两部分：其中一部分 <math alttext="{Y_{1}}" class="ltx_Math" display="inline" id="S3.SS4.p2.m1" intent=":literal"><semantics><msub><mi>Y</mi><mn>1</mn></msub></semantics></math> 由 n 个 SGE-2f 模块进行压缩，另一部分 <math alttext="{Y_{2}}" class="ltx_Math" display="inline" id="S3.SS4.p2.m2" intent=":literal"><semantics><msub><mi>Y</mi><mn>2</mn></msub></semantics></math> 则直接送入拼接操作。</p></div></div>
+</div>
+<figure class="ltx_figure" id="S3.F3"><img alt="Refer to caption" class="ltx_graphics ltx_centering ltx_img_landscape" id="S3.F3.g1" src="assets/e21843e71a54a525f1fd.png"/>
+<figcaption class="ltx_caption ltx_centering" data-bilingual-id="u0043"><div class="bilingual-paragraph" data-source-unit="u0043"><div class="pair" id="yocsa-paragraph-96" data-reading-id="1"><p class="en">Fig. 3 : Spatial Attention-Integrated Neck</p><p class="zh">图 3：融合空间注意力的颈部网络。</p></div></div></figcaption>
+<p class="figure-glossary">图内术语：Upsample＝上采样；Concat＝拼接；C2f-SGE＝融合空间分组增强的 C2f 模块。</p></figure>
+<figure class="ltx_figure" id="S3.F4"><img alt="Refer to caption" class="ltx_graphics ltx_centering ltx_img_landscape" id="S3.F4.g1" src="assets/bc736f5758183df1f6ac.png"/>
+<figcaption class="ltx_caption ltx_centering" data-bilingual-id="u0044"><div class="bilingual-paragraph" data-source-unit="u0044"><div class="pair" id="yocsa-paragraph-97" data-reading-id="1"><p class="en">Fig. 4 : SGE with 2 Convolution</p><p class="zh">图 4：包含两个卷积层的 SGE。</p></div></div></figcaption>
+</figure>
+</section>
+<section class="ltx_subsection" id="S3.SS5">
+<h3 class="ltx_title ltx_title_subsection" data-bilingual-id="u0045" id="yocsa-section-12" data-reading-id="1"><span class="heading-en"><span class="ltx_tag ltx_tag_subsection"><span class="ltx_text" id="S3.SS5.4">III-E</span> </span><span class="ltx_text ltx_font_italic" id="S3.SS5.5">Decouple head with SGE</span></span><span class="zh-head">III-E 融合 SGE 的解耦检测头</span></h3>
+<div class="ltx_para" id="S3.SS5.p1">
+<div class="bilingual-paragraph" data-source-unit="u0046" id="S3.SS5.p1.1"><div class="pair" id="yocsa-paragraph-98" data-reading-id="1"><p class="en">According to the paradigm of object detection, the backbone extracts representative features, while the downstream layers handle tasks, such as classification and bounding box regression.</p><p class="zh">按照目标检测的常见范式，主干网络提取表征特征，下游网络层则处理分类与边界框回归等任务。</p></div><div class="pair" id="yocsa-paragraph-99" data-reading-id="1"><p class="en">Thus, greater attention should be given to spatial distribution in these downstream layers.</p><p class="zh">因此，这些下游网络层应更加关注空间分布。</p></div></div>
+</div>
+<div class="ltx_para" id="S3.SS5.p2">
+<div class="bilingual-paragraph" data-source-unit="u0047" id="S3.SS5.p2.1"><div class="pair" id="yocsa-paragraph-100" data-reading-id="1"><p class="en">Contrasting with the traditional detection head, the decoupled head no longer shares the parameters between classification and regression.</p><p class="zh">与传统检测头相比，解耦检测头不再在分类与回归之间共享参数。</p></div><div class="pair" id="yocsa-paragraph-101" data-reading-id="1"><p class="en">Instead, it utilities two parallel branches to decouple the two tasks, allowing the network to learn the spatial distribution for each task independently.</p><p class="zh">它通过两个并行分支将这两项任务解耦，使网络能够分别学习各任务所需的空间分布。</p></div></div>
+</div>
+<div class="ltx_para" id="S3.SS5.p3">
+<div class="bilingual-paragraph" data-source-unit="u0048" id="S3.SS5.p3.1"><div class="pair" id="yocsa-paragraph-102" data-reading-id="1"><p class="en">As mentioned, SGE [ 27 ] highlights the similarity between local and global features, helping the network learn spatial distributions more effectively.</p><p class="zh">如前所述，SGE [27] 强调局部特征与全局特征之间的相似性，有助于网络更有效地学习空间分布。</p></div><div class="pair" id="yocsa-paragraph-103" data-reading-id="1"><p class="en">Therefore, the decoupled head integrated with SGE outperforms the traditional version.</p><p class="zh">因此，融合 SGE 的解耦检测头优于传统版本。</p></div></div>
+</div>
+<div class="ltx_para" id="S3.SS5.p4">
+<div class="bilingual-paragraph" data-source-unit="u0049" id="S3.SS5.p4.1"><div class="pair" id="yocsa-paragraph-104" data-reading-id="1"><p class="en">As shown in Fig. 5 , after processed by SGE, the single branch is split into two parallel branches, each containing two 3x3 convolutions, which perform classification and regression, respectively.</p><p class="zh">如图 5 所示，经 SGE 处理后，单个分支被拆分为两个并行分支，每个分支包含两个 3×3 卷积，分别执行分类与回归。</p></div><div class="pair" id="yocsa-paragraph-105" data-reading-id="1"><p class="en">The output of classification and regression are [H, W, nc] (where nc denotes the number of classes) and [H, W, 64] (with 16 channels for the DFL module and 4 essential parameters for the bounding box), respectively.</p><p class="zh">分类输出和回归输出的形状分别为 [H, W, nc]（其中 nc 为类别数）和 [H, W, 64]（DFL 模块使用 16 个通道，边界框具有 4 个基本参数）。</p></div></div>
+</div>
+</section>
+</section>
+<section class="ltx_section" id="S4">
+<h2 class="ltx_title ltx_title_section" data-bilingual-id="u0050" id="yocsa-section-13" data-reading-id="1"><span class="heading-en"><span class="ltx_tag ltx_tag_section">IV </span><span class="ltx_text ltx_font_smallcaps" id="S4.1">YO-CSA-T System Design</span></span><span class="zh-head">IV YO-CSA-T 系统设计</span></h2>
+<div class="ltx_para" id="S4.p1">
+<div class="bilingual-paragraph" data-source-unit="u0051" id="S4.p1.1"><div class="pair" id="yocsa-paragraph-106" data-reading-id="1"><p class="en">Our total system can be decomposed into two main components: hardware infrastructure of stereo vision and software design.</p><p class="zh">整个系统可分为两个主要部分：立体视觉硬件平台与软件设计。</p></div><div class="pair" id="yocsa-paragraph-107" data-reading-id="1"><p class="en">The software design integrates 2D object detection, advanced 3D tracking methodologies and the compensation module.</p><p class="zh">软件部分集成二维目标检测、先进的三维跟踪方法以及补偿模块。</p></div></div>
+</div>
+<section class="ltx_subsection" id="S4.SS1">
+<h3 class="ltx_title ltx_title_subsection" data-bilingual-id="u0052" id="yocsa-section-14" data-reading-id="1"><span class="heading-en"><span class="ltx_tag ltx_tag_subsection"><span class="ltx_text" id="S4.SS1.4">IV-A</span> </span><span class="ltx_text ltx_font_italic" id="S4.SS1.5">Hardware Infrastructure of Stereo Vision</span></span><span class="zh-head">IV-A 立体视觉硬件平台</span></h3>
+<div class="ltx_para" id="S4.SS1.p1">
+<div class="bilingual-paragraph" data-source-unit="u0053" id="S4.SS1.p1.1"><div class="pair" id="yocsa-paragraph-108" data-reading-id="1"><p class="en">To obtain 3D coordinates, cameras with 3D reconstruction capabilities are required.</p><p class="zh">要获得三维坐标，需要采用具备三维重建能力的相机系统。</p></div><div class="pair" id="yocsa-paragraph-109" data-reading-id="1"><p class="en">However, stereo cameras available on the market, like ZED, often struggle to achieve frame rates above 90 fps, which compromises the reliability of trajectory extraction for high-speed shuttlecocks.</p><p class="zh">然而，市售立体相机（例如 ZED）往往难以达到 90 fps 以上的帧率，影响了高速羽毛球轨迹提取的可靠性。</p></div><div class="pair" id="yocsa-paragraph-110" data-reading-id="1"><p class="en">This is particularly problematic when capturing the distinct trajectory of a serve, which involves an initial descent followed by a parabolic ascent and then another descent.</p><p class="zh">这在捕捉发球的特殊轨迹时尤为突出：该轨迹先下降，随后呈抛物线式上升，再次下降。</p></div></div>
+</div>
+<figure class="ltx_figure" id="S4.F5"><img alt="Refer to caption" class="ltx_graphics ltx_centering ltx_img_landscape" id="S4.F5.g1" src="assets/297fc8267abdb493dd91.png"/>
+<figcaption class="ltx_caption ltx_centering" data-bilingual-id="u0054"><div class="bilingual-paragraph" data-source-unit="u0054"><div class="pair" id="yocsa-paragraph-111" data-reading-id="1"><p class="en">Fig. 5 : Decouple head with SGE</p><p class="zh">图 5：融合 SGE 的解耦检测头。</p></div></div></figcaption>
+<p class="figure-glossary">图内术语：Class＝类别；BBox＝边界框；Conv＝卷积；DFL＝分布焦点损失相关模块。</p></figure>
+<figure class="ltx_figure" id="S4.F6"><img alt="Refer to caption" class="ltx_graphics ltx_centering ltx_img_landscape" id="S4.F6.g1" src="assets/989a4e30e662abee810f.png"/>
+<figcaption class="ltx_caption ltx_centering" data-bilingual-id="u0055"><div class="bilingual-paragraph" data-source-unit="u0055"><div class="pair" id="yocsa-paragraph-112" data-reading-id="1"><p class="en">Fig. 6 : Schematic Diagram of a Stereo Vision Setup</p><p class="zh">图 6：立体视觉装置示意图。</p></div></div></figcaption>
+</figure>
+<div class="ltx_para" id="S4.SS1.p2">
+<div class="bilingual-paragraph" data-source-unit="u0056" id="S4.SS1.p2.1"><div class="pair" id="yocsa-paragraph-113" data-reading-id="1"><p class="en">To address this issue, we employ two monocular cameras (model A7200CU130, manufactured by Huairui Technology) to construct a stereo vision system.</p><p class="zh">为解决这一问题，我们采用两台单目相机（型号 A7200CU130，由 Huairui Technology 制造）搭建立体视觉系统。</p></div><div class="pair" id="yocsa-paragraph-114" data-reading-id="1"><p class="en">This setup enables the creation of a high-precision binocular system capable of covering the entire badminton court while maintaining accuracy.</p><p class="zh">该配置能够构建高精度双目系统，在保持精度的同时覆盖整个羽毛球场。</p></div><div class="pair" id="yocsa-paragraph-115" data-reading-id="1"><p class="en">Fig. 6 illustrates the placement of the cameras and their supporting structures during implementation.</p><p class="zh">图 6 展示了实际部署时相机及其支撑结构的布置。</p></div><div class="pair" id="yocsa-paragraph-116" data-reading-id="1"><p class="en">Specifically, the stereo cameras are positioned at the rear of the robot’s court to clearly capture the trajectory of incoming shuttlecocks.</p><p class="zh">具体而言，双目相机位于机器人所在半场的后方，以清晰捕捉来球轨迹。</p></div><div class="pair" id="yocsa-paragraph-117" data-reading-id="1"><p class="en">The baseline between cameras is set at 0.8 m, and the cameras are mounted at a height of approximately 1.8 m to simulate the perspective of an adult male.</p><p class="zh">两台相机之间的基线设为 0.8 m，安装高度约为 1.8 m，以模拟成年男性的观察视角。</p></div></div>
+</div>
+</section>
+<section class="ltx_subsection" id="S4.SS2">
+<h3 class="ltx_title ltx_title_subsection" data-bilingual-id="u0057" id="yocsa-section-15" data-reading-id="1"><span class="heading-en"><span class="ltx_tag ltx_tag_subsection"><span class="ltx_text" id="S4.SS2.4">IV-B</span> </span><span class="ltx_text ltx_font_italic" id="S4.SS2.5">Detection Module</span></span><span class="zh-head">IV-B 检测模块</span></h3>
+<div class="ltx_para" id="S4.SS2.p1">
+<div class="bilingual-paragraph" data-source-unit="u0058" id="S4.SS2.p1.1"><div class="pair" id="yocsa-paragraph-118" data-reading-id="1"><p class="en">The detection network YO-CSA, core of detection module, explicitly incorporates con-textual and spatial attention mechanisms and successfully achieves performance that surpasses YOLOv8 and YOLO11.</p><p class="zh">作为检测模块的核心，YO-CSA 检测网络显式融合上下文与空间注意力机制，取得了优于 YOLOv8 和 YOLO11 的性能。</p></div><div class="pair" id="yocsa-paragraph-119" data-reading-id="1"><p class="en">The specific structure of our detection network is presented in detail in Section III.</p><p class="zh">检测网络的具体结构已在第 III 节中详细介绍。</p></div></div>
+</div>
+<figure class="ltx_figure" id="S4.F7">
+<div class="ltx_flex_figure">
+<div class="ltx_flex_cell ltx_flex_size_1">
+<figure class="ltx_figure ltx_figure_panel ltx_align_center" id="S4.F7.sf1"><img alt="Refer to caption" class="ltx_graphics ltx_centering ltx_img_landscape" id="S4.F7.sf1.g1" src="assets/42a645cebe1d7eb3bbff.png"/>
+<figcaption class="ltx_caption ltx_centering" data-bilingual-id="u0059"><div class="bilingual-paragraph" data-source-unit="u0059"><div class="pair" id="yocsa-paragraph-120" data-reading-id="1"><p class="en">(a) The process of extracting 3D trajectories from the left and right imaging planes.</p><p class="zh">（a）从左右成像平面提取三维轨迹的过程。</p></div></div></figcaption>
+</figure></div><div class="ltx_flex_break"></div><div class="ltx_flex_cell ltx_flex_size_1">
+<figure class="ltx_figure ltx_figure_panel ltx_align_center" id="S4.F7.sf2"><img alt="Refer to caption" class="ltx_graphics ltx_centering ltx_img_landscape" id="S4.F7.sf2.g1" src="assets/9410a0971296fd29e15f.png"/>
+<figcaption class="ltx_caption ltx_centering" data-bilingual-id="u0060"><div class="bilingual-paragraph" data-source-unit="u0060"><div class="pair" id="yocsa-paragraph-121" data-reading-id="1"><p class="en">(b) Compensation process</p><p class="zh">（b）补偿过程。</p></div></div></figcaption>
+</figure></div></div>
+<figcaption class="ltx_caption ltx_centering" data-bilingual-id="u0061"><div class="bilingual-paragraph" data-source-unit="u0061"><div class="pair" id="yocsa-paragraph-122" data-reading-id="1"><p class="en">Fig. 7 : System workflow: (a) The process of extracting 3D trajectories from the left and right imaging planes, (b) Compensation process.</p><p class="zh">图 7：系统工作流程。（a）从左右成像平面提取三维轨迹的过程；（b）补偿过程。</p></div></div></figcaption>
+<p class="figure-glossary">图内术语：Input＝输入；Predicted 2D Coordinates＝预测二维坐标；Detection Network Module＝检测网络模块；Stereo Vision＝立体视觉；Compensation Module＝补偿模块；Compensated 3D Trajectory＝补偿后的三维轨迹；Mask＝掩码。</p></figure>
+</section>
+<section class="ltx_subsection" id="S4.SS3">
+<h3 class="ltx_title ltx_title_subsection" data-bilingual-id="u0062" id="yocsa-section-16" data-reading-id="1"><span class="heading-en"><span class="ltx_tag ltx_tag_subsection"><span class="ltx_text" id="S4.SS3.4">IV-C</span> </span><span class="ltx_text ltx_font_italic" id="S4.SS3.5">Comprehensive Tracking Workflow</span></span><span class="zh-head">IV-C 完整跟踪流程</span></h3>
+<div class="ltx_para" id="S4.SS3.p1">
+<div class="bilingual-paragraph" data-source-unit="u0063" id="S4.SS3.p1.1"><div class="pair" id="yocsa-paragraph-123" data-reading-id="1"><p class="en">Our pipeline not only detects the shuttlecock in the current frame, but also predicts its future trajectory based on historical information, thereby incorporating reasonable constraints to enhances the plausibility of the detection range.</p><p class="zh">本流程不仅检测当前帧中的羽毛球，还依据历史信息预测其未来轨迹，从而引入合理约束，使检测范围的设定更加合理。</p></div><div class="pair" id="yocsa-paragraph-124" data-reading-id="1"><p class="en">Throughout the process, we implement constraints to ensure trajectory consistency, such as region of interest (ROI) and threshold settings <math alttext="\varepsilon_{1}" class="ltx_Math" display="inline" id="S4.SS3.p1.m1" intent=":literal"><semantics><msub><mi>ε</mi><mn>1</mn></msub></semantics></math> , <math alttext="\varepsilon_{2}" class="ltx_Math" display="inline" id="S4.SS3.p1.m2" intent=":literal"><semantics><msub><mi>ε</mi><mn>2</mn></msub></semantics></math> , <math alttext="\varepsilon_{3}" class="ltx_Math" display="inline" id="S4.SS3.p1.m3" intent=":literal"><semantics><msub><mi>ε</mi><mn>3</mn></msub></semantics></math> evaluating the plausibility of coordinates.</p><p class="zh">在整个过程中，我们通过感兴趣区域（ROI）以及用于判断坐标合理性的阈值 <math alttext="\varepsilon_{1}" class="ltx_Math" display="inline" id="S4.SS3.p1.m1" intent=":literal"><semantics><msub><mi>ε</mi><mn>1</mn></msub></semantics></math>、<math alttext="\varepsilon_{2}" class="ltx_Math" display="inline" id="S4.SS3.p1.m2" intent=":literal"><semantics><msub><mi>ε</mi><mn>2</mn></msub></semantics></math>、<math alttext="\varepsilon_{3}" class="ltx_Math" display="inline" id="S4.SS3.p1.m3" intent=":literal"><semantics><msub><mi>ε</mi><mn>3</mn></msub></semantics></math> 等约束，保证轨迹的一致性。</p></div></div>
+</div>
+<div class="ltx_para" id="S4.SS3.p2">
+<div class="bilingual-paragraph" data-source-unit="u0064" id="S4.SS3.p2.1"><div class="pair" id="yocsa-paragraph-125" data-reading-id="1"><p class="en">Fig. 7 displays our entire tracking pipeline based on 2 image sequences, denoted as <math alttext="\mathbf{I}_{L}=[{\mathbf{I}^{(1)}_{L}},…,{\mathbf{I}^{(n)}_{L}}]" class="ltx_Math" display="inline" id="S4.SS3.p2.m1" intent=":literal"><semantics><mrow><msub><mi>𝐈</mi><mi>L</mi></msub><mo>=</mo><mrow><mo stretchy="false">[</mo><mrow><msubsup><mi>𝐈</mi><mi>L</mi><mrow><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></msubsup><mo>,</mo><mi>…</mi><mo>,</mo><msubsup><mi>𝐈</mi><mi>L</mi><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></msubsup></mrow><mo stretchy="false">]</mo></mrow></mrow></semantics></math> , <math alttext="\mathbf{I}_{R}=[{\mathbf{I}^{(1)}_{R}},…,{\mathbf{I}^{(n)}_{R}}]" class="ltx_Math" display="inline" id="S4.SS3.p2.m2" intent=":literal"><semantics><mrow><msub><mi>𝐈</mi><mi>R</mi></msub><mo>=</mo><mrow><mo stretchy="false">[</mo><mrow><msubsup><mi>𝐈</mi><mi>R</mi><mrow><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></msubsup><mo>,</mo><mi>…</mi><mo>,</mo><msubsup><mi>𝐈</mi><mi>R</mi><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></msubsup></mrow><mo stretchy="false">]</mo></mrow></mrow></semantics></math> , captured by the left and right monocular cameras respectively, where each image in the sequences corresponds to a specific timestamp, ensuring temporal alignment between the left and right camera frames.</p><p class="zh">图 7 展示了完整的跟踪流程，其输入为左右单目相机分别采集的两个图像序列 <math alttext="\mathbf{I}_{L}=[{\mathbf{I}^{(1)}_{L}},…,{\mathbf{I}^{(n)}_{L}}]" class="ltx_Math" display="inline" id="S4.SS3.p2.m1" intent=":literal"><semantics><mrow><msub><mi>𝐈</mi><mi>L</mi></msub><mo>=</mo><mrow><mo stretchy="false">[</mo><mrow><msubsup><mi>𝐈</mi><mi>L</mi><mrow><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></msubsup><mo>,</mo><mi>…</mi><mo>,</mo><msubsup><mi>𝐈</mi><mi>L</mi><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></msubsup></mrow><mo stretchy="false">]</mo></mrow></mrow></semantics></math>、<math alttext="\mathbf{I}_{R}=[{\mathbf{I}^{(1)}_{R}},…,{\mathbf{I}^{(n)}_{R}}]" class="ltx_Math" display="inline" id="S4.SS3.p2.m2" intent=":literal"><semantics><mrow><msub><mi>𝐈</mi><mi>R</mi></msub><mo>=</mo><mrow><mo stretchy="false">[</mo><mrow><msubsup><mi>𝐈</mi><mi>R</mi><mrow><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></msubsup><mo>,</mo><mi>…</mi><mo>,</mo><msubsup><mi>𝐈</mi><mi>R</mi><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></msubsup></mrow><mo stretchy="false">]</mo></mrow></mrow></semantics></math>；序列中的每幅图像均对应一个时间戳，从而保证左右相机帧在时间上对齐。</p></div></div>
+</div>
+<div class="ltx_para" id="S4.SS3.p3">
+<div class="bilingual-paragraph" data-source-unit="u0065" id="S4.SS3.p3.1"><div class="pair" id="yocsa-paragraph-126" data-reading-id="1"><p class="en">In accordance with the rules of the game, the shuttlecock’s initial position is typically located at the center of the frame.</p><p class="zh">根据比赛规则，羽毛球的初始位置通常位于画面中心。</p></div><div class="pair" id="yocsa-paragraph-127" data-reading-id="1"><p class="en">So we center a <math alttext="640\times 640" class="ltx_Math" display="inline" id="S4.SS3.p3.m1" intent=":literal"><semantics><mrow><mn>640</mn><mo lspace="0.222em" rspace="0.222em">×</mo><mn>640</mn></mrow></semantics></math> ROI area on <math alttext="{\mathbf{I}^{(i)}_{L}}" class="ltx_Math" display="inline" id="S4.SS3.p3.m2" intent=":literal"><semantics><msubsup><mi>𝐈</mi><mi>L</mi><mrow><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo></mrow></msubsup></semantics></math> and <math alttext="{\mathbf{I}^{(i)}_{R}}" class="ltx_Math" display="inline" id="S4.SS3.p3.m3" intent=":literal"><semantics><msubsup><mi>𝐈</mi><mi>R</mi><mrow><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo></mrow></msubsup></semantics></math> , which not only focuses the detection process on a smaller region but also alleviates the computational burden on the detection network.</p><p class="zh">因此，我们分别在 <math alttext="{\mathbf{I}^{(i)}_{L}}" class="ltx_Math" display="inline" id="S4.SS3.p3.m2" intent=":literal"><semantics><msubsup><mi>𝐈</mi><mi>L</mi><mrow><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo></mrow></msubsup></semantics></math> 和 <math alttext="{\mathbf{I}^{(i)}_{R}}" class="ltx_Math" display="inline" id="S4.SS3.p3.m3" intent=":literal"><semantics><msubsup><mi>𝐈</mi><mi>R</mi><mrow><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo></mrow></msubsup></semantics></math> 的中心设置一个 <math alttext="640\times 640" class="ltx_Math" display="inline" id="S4.SS3.p3.m1" intent=":literal"><semantics><mrow><mn>640</mn><mo lspace="0.222em" rspace="0.222em">×</mo><mn>640</mn></mrow></semantics></math> 的 ROI 区域；这既将检测集中到较小区域，也减轻了检测网络的计算负担。</p></div></div>
+</div>
+<div class="ltx_para" id="S4.SS3.p4">
+<div class="bilingual-paragraph" data-source-unit="u0066" id="S4.SS3.p4.1"><div class="pair" id="yocsa-paragraph-128" data-reading-id="1"><p class="en">The detection network YO-CSA performs parallel detection tasks on the paired images <math alttext="{\mathbf{I}^{(i)}_{L}}" class="ltx_Math" display="inline" id="S4.SS3.p4.m1" intent=":literal"><semantics><msubsup><mi>𝐈</mi><mi>L</mi><mrow><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo></mrow></msubsup></semantics></math> , <math alttext="{\mathbf{I}^{(i)}_{R}}" class="ltx_Math" display="inline" id="S4.SS3.p4.m2" intent=":literal"><semantics><msubsup><mi>𝐈</mi><mi>R</mi><mrow><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo></mrow></msubsup></semantics></math> .</p><p class="zh">YO-CSA 检测网络对成对图像 <math alttext="{\mathbf{I}^{(i)}_{L}}" class="ltx_Math" display="inline" id="S4.SS3.p4.m1" intent=":literal"><semantics><msubsup><mi>𝐈</mi><mi>L</mi><mrow><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo></mrow></msubsup></semantics></math>、<math alttext="{\mathbf{I}^{(i)}_{R}}" class="ltx_Math" display="inline" id="S4.SS3.p4.m2" intent=":literal"><semantics><msubsup><mi>𝐈</mi><mi>R</mi><mrow><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo></mrow></msubsup></semantics></math> 并行执行检测任务。</p></div><div class="pair" id="yocsa-paragraph-129" data-reading-id="1"><p class="en">A detection is considered valid, and tracking is initiated only when both <math alttext="{\mathbf{I}^{(i)}_{L}}" class="ltx_Math" display="inline" id="S4.SS3.p4.m3" intent=":literal"><semantics><msubsup><mi>𝐈</mi><mi>L</mi><mrow><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo></mrow></msubsup></semantics></math> and <math alttext="{\mathbf{I}^{(i)}_{R}}" class="ltx_Math" display="inline" id="S4.SS3.p4.m4" intent=":literal"><semantics><msubsup><mi>𝐈</mi><mi>R</mi><mrow><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo></mrow></msubsup></semantics></math> successfully detect the shuttlecock at <math alttext="\mathbf{P}^{(i)}_{L}(u^{(i)}_{L},v^{(i)}_{L})" class="ltx_Math" display="inline" id="S4.SS3.p4.m5" intent=":literal"><semantics><mrow><msubsup><mi>𝐏</mi><mi>L</mi><mrow><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo></mrow></msubsup><mo lspace="0em" rspace="0em">​</mo><mrow><mo stretchy="false">(</mo><msubsup><mi>u</mi><mi>L</mi><mrow><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo></mrow></msubsup><mo>,</mo><msubsup><mi>v</mi><mi>L</mi><mrow><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo></mrow></msubsup><mo stretchy="false">)</mo></mrow></mrow></semantics></math> and <math alttext="\mathbf{P}^{(i)}_{R}(u^{(i)}_{R},v^{(i)}_{R})" class="ltx_Math" display="inline" id="S4.SS3.p4.m6" intent=":literal"><semantics><mrow><msubsup><mi>𝐏</mi><mi>R</mi><mrow><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo></mrow></msubsup><mo lspace="0em" rspace="0em">​</mo><mrow><mo stretchy="false">(</mo><msubsup><mi>u</mi><mi>R</mi><mrow><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo></mrow></msubsup><mo>,</mo><msubsup><mi>v</mi><mi>R</mi><mrow><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo></mrow></msubsup><mo stretchy="false">)</mo></mrow></mrow></semantics></math> , and their displacement (especially along the vertical axis) is within the predefined threshold <math alttext="\varepsilon_{1}" class="ltx_Math" display="inline" id="S4.SS3.p4.m7" intent=":literal"><semantics><msub><mi>ε</mi><mn>1</mn></msub></semantics></math> .</p><p class="zh">只有当 <math alttext="{\mathbf{I}^{(i)}_{L}}" class="ltx_Math" display="inline" id="S4.SS3.p4.m3" intent=":literal"><semantics><msubsup><mi>𝐈</mi><mi>L</mi><mrow><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo></mrow></msubsup></semantics></math> 与 <math alttext="{\mathbf{I}^{(i)}_{R}}" class="ltx_Math" display="inline" id="S4.SS3.p4.m4" intent=":literal"><semantics><msubsup><mi>𝐈</mi><mi>R</mi><mrow><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo></mrow></msubsup></semantics></math> 都成功检测到羽毛球，其位置分别为 <math alttext="\mathbf{P}^{(i)}_{L}(u^{(i)}_{L},v^{(i)}_{L})" class="ltx_Math" display="inline" id="S4.SS3.p4.m5" intent=":literal"><semantics><mrow><msubsup><mi>𝐏</mi><mi>L</mi><mrow><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo></mrow></msubsup><mo lspace="0em" rspace="0em">​</mo><mrow><mo stretchy="false">(</mo><msubsup><mi>u</mi><mi>L</mi><mrow><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo></mrow></msubsup><mo>,</mo><msubsup><mi>v</mi><mi>L</mi><mrow><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo></mrow></msubsup><mo stretchy="false">)</mo></mrow></mrow></semantics></math> 和 <math alttext="\mathbf{P}^{(i)}_{R}(u^{(i)}_{R},v^{(i)}_{R})" class="ltx_Math" display="inline" id="S4.SS3.p4.m6" intent=":literal"><semantics><mrow><msubsup><mi>𝐏</mi><mi>R</mi><mrow><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo></mrow></msubsup><mo lspace="0em" rspace="0em">​</mo><mrow><mo stretchy="false">(</mo><msubsup><mi>u</mi><mi>R</mi><mrow><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo></mrow></msubsup><mo>,</mo><msubsup><mi>v</mi><mi>R</mi><mrow><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo></mrow></msubsup><mo stretchy="false">)</mo></mrow></mrow></semantics></math>，且二者的位置差异（尤其是竖直方向）处于预设阈值 <math alttext="\varepsilon_{1}" class="ltx_Math" display="inline" id="S4.SS3.p4.m7" intent=":literal"><semantics><msub><mi>ε</mi><mn>1</mn></msub></semantics></math> 以内时，才将本次检测视为有效并启动跟踪。</p></div></div>
+</div>
+<div class="ltx_para" id="S4.SS3.p5">
+<div class="bilingual-paragraph" data-source-unit="u0067" id="S4.SS3.p5.1"><div class="pair" id="yocsa-paragraph-130" data-reading-id="1"><p class="en">Simultaneously, the detected 2D positions <math alttext="[\mathbf{P}^{(i)}_{L},\mathbf{P}^{(i)}_{R}]" class="ltx_Math" display="inline" id="S4.SS3.p5.m1" intent=":literal"><semantics><mrow><mo stretchy="false">[</mo><msubsup><mi>𝐏</mi><mi>L</mi><mrow><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo></mrow></msubsup><mo>,</mo><msubsup><mi>𝐏</mi><mi>R</mi><mrow><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo></mrow></msubsup><mo stretchy="false">]</mo></mrow></semantics></math> are fed into the stereo matching module to obtain the corresponding 3D coordinates.</p><p class="zh">同时，将检测到的二维位置 <math alttext="[\mathbf{P}^{(i)}_{L},\mathbf{P}^{(i)}_{R}]" class="ltx_Math" display="inline" id="S4.SS3.p5.m1" intent=":literal"><semantics><mrow><mo stretchy="false">[</mo><msubsup><mi>𝐏</mi><mi>L</mi><mrow><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo></mrow></msubsup><mo>,</mo><msubsup><mi>𝐏</mi><mi>R</mi><mrow><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo></mrow></msubsup><mo stretchy="false">]</mo></mrow></semantics></math> 输入立体匹配模块，获得对应的三维坐标。</p></div><div class="pair" id="yocsa-paragraph-131" data-reading-id="1"><p class="en">In 3D space, we perform timestamp-based fitting along all three axes on the trajectory sequence, making a prior prediction <math alttext="\mathbf{P}^{(j)}_{w}" class="ltx_Math" display="inline" id="S4.SS3.p5.m2" intent=":literal"><semantics><msubsup><mi>𝐏</mi><mi>w</mi><mrow><mo stretchy="false">(</mo><mi>j</mi><mo stretchy="false">)</mo></mrow></msubsup></semantics></math> of the shuttlecock’s trajectory.</p><p class="zh">在三维空间中，我们利用时间戳对轨迹序列的三个坐标轴分别进行拟合，得到羽毛球轨迹的先验预测 <math alttext="\mathbf{P}^{(j)}_{w}" class="ltx_Math" display="inline" id="S4.SS3.p5.m2" intent=":literal"><semantics><msubsup><mi>𝐏</mi><mi>w</mi><mrow><mo stretchy="false">(</mo><mi>j</mi><mo stretchy="false">)</mo></mrow></msubsup></semantics></math>。</p></div><div class="pair" id="yocsa-paragraph-132" data-reading-id="1"><p class="en">Every 10 frames, this 3D prior prediction is projected onto the left and right image planes as <math alttext="\mathbf{P}^{(j)}_{L,pred}" class="ltx_Math" display="inline" id="S4.SS3.p5.m3" intent=":literal"><semantics><msubsup><mi>𝐏</mi><mrow><mi>L</mi><mo>,</mo><mrow><mi>p</mi><mo lspace="0em" rspace="0em">​</mo><mi>r</mi><mo lspace="0em" rspace="0em">​</mo><mi>e</mi><mo lspace="0em" rspace="0em">​</mo><mi>d</mi></mrow></mrow><mrow><mo stretchy="false">(</mo><mi>j</mi><mo stretchy="false">)</mo></mrow></msubsup></semantics></math> , <math alttext="\mathbf{P}^{(j)}_{R,pred}" class="ltx_Math" display="inline" id="S4.SS3.p5.m4" intent=":literal"><semantics><msubsup><mi>𝐏</mi><mrow><mi>R</mi><mo>,</mo><mrow><mi>p</mi><mo lspace="0em" rspace="0em">​</mo><mi>r</mi><mo lspace="0em" rspace="0em">​</mo><mi>e</mi><mo lspace="0em" rspace="0em">​</mo><mi>d</mi></mrow></mrow><mrow><mo stretchy="false">(</mo><mi>j</mi><mo stretchy="false">)</mo></mrow></msubsup></semantics></math> , providing feedback to adjust the ROI displacement error.</p><p class="zh">每隔 10 帧，将这一三维先验预测分别投影到左右图像平面，得到 <math alttext="\mathbf{P}^{(j)}_{L,pred}" class="ltx_Math" display="inline" id="S4.SS3.p5.m3" intent=":literal"><semantics><msubsup><mi>𝐏</mi><mrow><mi>L</mi><mo>,</mo><mrow><mi>p</mi><mo lspace="0em" rspace="0em">​</mo><mi>r</mi><mo lspace="0em" rspace="0em">​</mo><mi>e</mi><mo lspace="0em" rspace="0em">​</mo><mi>d</mi></mrow></mrow><mrow><mo stretchy="false">(</mo><mi>j</mi><mo stretchy="false">)</mo></mrow></msubsup></semantics></math>、<math alttext="\mathbf{P}^{(j)}_{R,pred}" class="ltx_Math" display="inline" id="S4.SS3.p5.m4" intent=":literal"><semantics><msubsup><mi>𝐏</mi><mrow><mi>R</mi><mo>,</mo><mrow><mi>p</mi><mo lspace="0em" rspace="0em">​</mo><mi>r</mi><mo lspace="0em" rspace="0em">​</mo><mi>e</mi><mo lspace="0em" rspace="0em">​</mo><mi>d</mi></mrow></mrow><mrow><mo stretchy="false">(</mo><mi>j</mi><mo stretchy="false">)</mo></mrow></msubsup></semantics></math>，通过反馈修正 ROI 的位移误差。</p></div></div>
+</div>
+<div class="ltx_para" id="S4.SS3.p6">
+<div class="bilingual-paragraph" data-source-unit="u0068" id="S4.SS3.p6.1"><div class="pair" id="yocsa-paragraph-133" data-reading-id="1"><p class="en">To ensure trajectory consistency, we also perform a plausibility check on the predicted future coordinates based on the threshold <math alttext="\varepsilon_{2}" class="ltx_Math" display="inline" id="S4.SS3.p6.m1" intent=":literal"><semantics><msub><mi>ε</mi><mn>2</mn></msub></semantics></math> .</p><p class="zh">为保证轨迹一致性，我们还依据阈值 <math alttext="\varepsilon_{2}" class="ltx_Math" display="inline" id="S4.SS3.p6.m1" intent=":literal"><semantics><msub><mi>ε</mi><mn>2</mn></msub></semantics></math> 对预测的未来坐标进行合理性检查。</p></div></div>
+</div>
+</section>
+<section class="ltx_subsection" id="S4.SS4">
+<h3 class="ltx_title ltx_title_subsection" data-bilingual-id="u0069" id="yocsa-section-17" data-reading-id="1"><span class="heading-en"><span class="ltx_tag ltx_tag_subsection"><span class="ltx_text" id="S4.SS4.4">IV-D</span> </span><span class="ltx_text ltx_font_italic" id="S4.SS4.5">Compensation Module</span></span><span class="zh-head">IV-D 补偿模块</span></h3>
+<div class="ltx_para" id="S4.SS4.p1">
+<div class="bilingual-paragraph" data-source-unit="u0070" id="S4.SS4.p1.1"><div class="pair" id="yocsa-paragraph-134" data-reading-id="1"><p class="en">Inspired by TrackNetv3 [ 29 ] , we add a compensation module as an auxiliary branch.</p><p class="zh">受 TrackNetv3 [29] 启发，我们增加了一个作为辅助分支的补偿模块。</p></div><div class="pair" id="yocsa-paragraph-135" data-reading-id="1"><p class="en">We use the 2D trajectory <math alttext="\textbf{\^{P}}_{L}" class="ltx_Math" display="inline" id="S4.SS4.p1.m1" intent=":literal"><semantics><msub><mtext class="ltx_mathvariant_bold">P̂</mtext><mi>L</mi></msub></semantics></math> , <math alttext="\textbf{\^{P}}_{R}" class="ltx_Math" display="inline" id="S4.SS4.p1.m2" intent=":literal"><semantics><msub><mtext class="ltx_mathvariant_bold">P̂</mtext><mi>R</mi></msub></semantics></math> obtained from the detection module and a corresponding trajectory mask as input, employing a compensation network for interpolation.</p><p class="zh">该模块以检测模块输出的二维轨迹 <math alttext="\textbf{\^{P}}_{L}" class="ltx_Math" display="inline" id="S4.SS4.p1.m1" intent=":literal"><semantics><msub><mtext class="ltx_mathvariant_bold">P̂</mtext><mi>L</mi></msub></semantics></math>、<math alttext="\textbf{\^{P}}_{R}" class="ltx_Math" display="inline" id="S4.SS4.p1.m2" intent=":literal"><semantics><msub><mtext class="ltx_mathvariant_bold">P̂</mtext><mi>R</mi></msub></semantics></math> 及相应的轨迹掩码为输入，利用补偿网络进行插值。</p></div><div class="pair" id="yocsa-paragraph-136" data-reading-id="1"><p class="en">This network compensates for missing frames that were either missed during detection or discarded due to violations of spatiotemporal constraints.</p><p class="zh">该网络用于补齐检测漏失的帧，以及因不满足时空约束而被丢弃的帧。</p></div><div class="pair" id="yocsa-paragraph-137" data-reading-id="1"><p class="en">The compensation network is a U-shaped network [ 18 ] based on 1D convolution operations, leveraging an encoder-decoder architecture to extract and integrate both shallow spatial information and deep semantic features from the 2D trajectory.</p><p class="zh">补偿网络采用基于一维卷积运算的 U 形网络 [18]，利用编码器—解码器架构提取并融合二维轨迹中的浅层空间信息和深层语义特征。</p></div></div>
+</div>
+<div class="ltx_para" id="S4.SS4.p2">
+<div class="bilingual-paragraph" data-source-unit="u0071" id="S4.SS4.p2.1"><div class="pair" id="yocsa-paragraph-138" data-reading-id="1"><p class="en">We reintroduce the compensated trajectory <math display="inline"><msubsup><mover accent="true"><mi mathvariant="bold">P</mi><mo>^</mo></mover><mi>L</mi><mo>′</mo></msubsup></math> , <math display="inline"><msubsup><mover accent="true"><mi mathvariant="bold">P</mi><mo>^</mo></mover><mi>R</mi><mo>′</mo></msubsup></math> into the stereo vision module to obtain the complete 3D trajectory <math alttext="\hat{\mathbf{P}}_{w}" class="ltx_Math" display="inline" id="S4.SS4.p2.m3" intent=":literal"><semantics><msub><mover accent="true"><mi>𝐏</mi><mo>^</mo></mover><mi>w</mi></msub></semantics></math> .</p><p class="zh">我们将补偿后的轨迹 <math display="inline"><msubsup><mover accent="true"><mi mathvariant="bold">P</mi><mo>^</mo></mover><mi>L</mi><mo>′</mo></msubsup></math>、<math display="inline"><msubsup><mover accent="true"><mi mathvariant="bold">P</mi><mo>^</mo></mover><mi>R</mi><mo>′</mo></msubsup></math> 重新输入立体视觉模块，得到完整的三维轨迹 <math alttext="\hat{\mathbf{P}}_{w}" class="ltx_Math" display="inline" id="S4.SS4.p2.m3" intent=":literal"><semantics><msub><mover accent="true"><mi>𝐏</mi><mo>^</mo></mover><mi>w</mi></msub></semantics></math>。</p></div><div class="pair" id="yocsa-paragraph-139" data-reading-id="1"><p class="en">Based on spline interpolation, we generated another complete trajectory <math alttext="\tilde{\mathbf{P}}_{w}" class="ltx_Math" display="inline" id="S4.SS4.p2.m4" intent=":literal"><semantics><msub><mover accent="true"><mi>𝐏</mi><mo>~</mo></mover><mi>w</mi></msub></semantics></math> from the trajectory <math alttext="{\mathbf{P}}_{w}" class="ltx_Math" display="inline" id="S4.SS4.p2.m5" intent=":literal"><semantics><msub><mi>𝐏</mi><mi>w</mi></msub></semantics></math> .</p><p class="zh">同时，基于样条插值，从轨迹 <math alttext="{\mathbf{P}}_{w}" class="ltx_Math" display="inline" id="S4.SS4.p2.m5" intent=":literal"><semantics><msub><mi>𝐏</mi><mi>w</mi></msub></semantics></math> 生成另一条完整轨迹 <math alttext="\tilde{\mathbf{P}}_{w}" class="ltx_Math" display="inline" id="S4.SS4.p2.m4" intent=":literal"><semantics><msub><mover accent="true"><mi>𝐏</mi><mo>~</mo></mover><mi>w</mi></msub></semantics></math>。</p></div><div class="pair" id="yocsa-paragraph-140" data-reading-id="1"><p class="en">Subsequently, <math alttext="\tilde{\mathbf{P}}_{w}" class="ltx_Math" display="inline" id="S4.SS4.p2.m6" intent=":literal"><semantics><msub><mover accent="true"><mi>𝐏</mi><mo>~</mo></mover><mi>w</mi></msub></semantics></math> , the compensated trajectory <math alttext="\hat{\mathbf{P}}_{w}" class="ltx_Math" display="inline" id="S4.SS4.p2.m7" intent=":literal"><semantics><msub><mover accent="true"><mi>𝐏</mi><mo>^</mo></mover><mi>w</mi></msub></semantics></math> and mask <math alttext="\mathbf{M}" class="ltx_Math" display="inline" id="S4.SS4.p2.m8" intent=":literal"><semantics><mi>𝐌</mi></semantics></math> are integrated through function <math alttext="\theta" class="ltx_Math" display="inline" id="S4.SS4.p2.m9" intent=":literal"><semantics><mi>θ</mi></semantics></math> to obtain fully completed trajectory <math display="inline"><msubsup><mover accent="true"><mi mathvariant="bold">P</mi><mo>^</mo></mover><mi>w</mi><mo>′</mo></msubsup></math> as ( 1 ).</p><p class="zh">随后，通过函数 <math alttext="\theta" class="ltx_Math" display="inline" id="S4.SS4.p2.m9" intent=":literal"><semantics><mi>θ</mi></semantics></math> 将 <math alttext="\tilde{\mathbf{P}}_{w}" class="ltx_Math" display="inline" id="S4.SS4.p2.m6" intent=":literal"><semantics><msub><mover accent="true"><mi>𝐏</mi><mo>~</mo></mover><mi>w</mi></msub></semantics></math>、补偿轨迹 <math alttext="\hat{\mathbf{P}}_{w}" class="ltx_Math" display="inline" id="S4.SS4.p2.m7" intent=":literal"><semantics><msub><mover accent="true"><mi>𝐏</mi><mo>^</mo></mover><mi>w</mi></msub></semantics></math> 以及掩码 <math alttext="\mathbf{M}" class="ltx_Math" display="inline" id="S4.SS4.p2.m8" intent=":literal"><semantics><mi>𝐌</mi></semantics></math> 融合，得到完全补齐的轨迹 <math display="inline"><msubsup><mover accent="true"><mi mathvariant="bold">P</mi><mo>^</mo></mover><mi>w</mi><mo>′</mo></msubsup></math>，如式（1）所示。</p></div></div>
+<div class="equation pdf-equation" id="S4.E1"><img alt="Equation (1), preserved from the supplied PDF" src="assets/0ff17292af8c73dc6f38.png"/></div>
+</div>
+</section>
+</section>
+<section class="ltx_section" id="S5">
+<h2 class="ltx_title ltx_title_section" data-bilingual-id="u0072" id="yocsa-section-18" data-reading-id="1"><span class="heading-en"><span class="ltx_tag ltx_tag_section">V </span><span class="ltx_text ltx_font_smallcaps" id="S5.1">Experiments and Results</span></span><span class="zh-head">V 实验与结果</span></h2>
+<section class="ltx_subsection" id="S5.SS1">
+<h3 class="ltx_title ltx_title_subsection" data-bilingual-id="u0073" id="yocsa-section-19" data-reading-id="1"><span class="heading-en"><span class="ltx_tag ltx_tag_subsection"><span class="ltx_text" id="S5.SS1.4">V-A</span> </span><span class="ltx_text ltx_font_italic" id="S5.SS1.5">Dataset</span></span><span class="zh-head">V-A 数据集</span></h3>
+<figure class="ltx_figure" id="S5.F8">
+<div class="ltx_flex_figure">
+<div class="ltx_flex_cell ltx_flex_size_2">
+<figure class="ltx_figure ltx_figure_panel ltx_align_center" id="S5.F8.sf1"><img alt="Refer to caption" class="ltx_graphics ltx_centering ltx_img_portrait" id="S5.F8.sf1.g1" src="assets/9f5363a6a82fcd6126a9.png"/>
+<figcaption class="ltx_caption ltx_centering" data-bilingual-id="u0074"><div class="bilingual-paragraph" data-source-unit="u0074"><div class="pair" id="yocsa-paragraph-141" data-reading-id="1"><p class="en">(a) Different Scenes from the Dataset</p><p class="zh">（a）数据集中的不同场景。</p></div></div></figcaption>
+</figure></div><div class="ltx_flex_cell ltx_flex_size_2">
+<figure class="ltx_figure ltx_figure_panel ltx_align_center" id="S5.F8.sf2"><img alt="Refer to caption" class="ltx_graphics ltx_centering ltx_img_square" id="S5.F8.sf2.g1" src="assets/8022bee3e509abb324ad.png"/>
+<figcaption class="ltx_caption ltx_centering" data-bilingual-id="u0075"><div class="bilingual-paragraph" data-source-unit="u0075"><div class="pair" id="yocsa-paragraph-142" data-reading-id="1"><p class="en">(b) Shuttlecock Distribution in the Training Set</p><p class="zh">（b）训练集中羽毛球的分布。</p></div></div></figcaption>
+</figure></div></div>
+<figcaption class="ltx_caption ltx_centering" data-bilingual-id="u0076"><div class="bilingual-paragraph" data-source-unit="u0076"><div class="pair" id="yocsa-paragraph-143" data-reading-id="1"><p class="en">Fig. 8 : Representative scenes in our dataset.</p><p class="zh">图 8：数据集中的代表性场景。</p></div></div></figcaption>
+<p class="figure-glossary">图内术语：instances＝实例数；shuttlecock＝羽毛球；width/height＝宽度/高度。</p></figure>
+<div class="ltx_para" id="S5.SS1.p1">
+<div class="bilingual-paragraph" data-source-unit="u0077" id="S5.SS1.p1.1"><div class="pair" id="yocsa-paragraph-144" data-reading-id="1"><p class="en">Based on the custom-built 3D vision system, we collect badminton rally data from 10 distinct venues or environments, encompassing various angles and natural lighting conditions, totaling 32,539 images.</p><p class="zh">利用自建三维视觉系统，我们从 10 个不同场馆或环境中采集了羽毛球对打数据，涵盖不同视角和自然光照条件，共计 32,539 幅图像。</p></div><div class="pair" id="yocsa-paragraph-145" data-reading-id="1"><p class="en">Random <math alttext="640\times 640" class="ltx_Math" display="inline" id="S5.SS1.p1.m1" intent=":literal"><semantics><mrow><mn>640</mn><mo lspace="0.222em" rspace="0.222em">×</mo><mn>640</mn></mrow></semantics></math> pixel regions were sampled from the original images, with the condition that the shuttlecock must be present within the cropped area.</p><p class="zh">我们从原始图像中随机裁取 <math alttext="640\times 640" class="ltx_Math" display="inline" id="S5.SS1.p1.m1" intent=":literal"><semantics><mrow><mn>640</mn><mo lspace="0.222em" rspace="0.222em">×</mo><mn>640</mn></mrow></semantics></math> 像素区域，并要求裁剪区域内必须包含羽毛球。</p></div><div class="pair" id="yocsa-paragraph-146" data-reading-id="1"><p class="en">Specifically, the shuttlecock is not necessarily centered within the cropping region but is randomly distributed across the <math alttext="640\times 640" class="ltx_Math" display="inline" id="S5.SS1.p1.m2" intent=":literal"><semantics><mrow><mn>640</mn><mo lspace="0.222em" rspace="0.222em">×</mo><mn>640</mn></mrow></semantics></math> area.</p><p class="zh">具体而言，羽毛球不一定处于裁剪区域的中心，而是随机分布在 <math alttext="640\times 640" class="ltx_Math" display="inline" id="S5.SS1.p1.m2" intent=":literal"><semantics><mrow><mn>640</mn><mo lspace="0.222em" rspace="0.222em">×</mo><mn>640</mn></mrow></semantics></math> 区域内。</p></div><div class="pair" id="yocsa-paragraph-147" data-reading-id="1"><p class="en">Fig. 8(a) illustrates a subset of our dataset.</p><p class="zh">图 8（a）展示了数据集中的部分样本。</p></div></div>
+</div>
+<div class="ltx_para" id="S5.SS1.p2">
+<div class="bilingual-paragraph" data-source-unit="u0078" id="S5.SS1.p2.1"><div class="pair" id="yocsa-paragraph-148" data-reading-id="1"><p class="en">During actual training, to enhance the generalization and robustness of the network, we also applies data augmentation techniques, including adjustments to the HSV hue, saturation, and value, as well as geometric transformations such as rotation, translation, scaling, and flipping.</p><p class="zh">实际训练时，为增强网络的泛化能力与鲁棒性，我们还采用了数据增强技术，包括调整 HSV 色彩空间中的色相、饱和度和明度，以及旋转、平移、缩放、翻转等几何变换。</p></div></div>
+</div>
+<div class="ltx_para" id="S5.SS1.p3">
+<div class="bilingual-paragraph" data-source-unit="u0079" id="S5.SS1.p3.1"><div class="pair" id="yocsa-paragraph-149" data-reading-id="1"><p class="en">The training set label description for our dataset is shown in Fig. 8(b) .</p><p class="zh">数据集训练标签的统计情况如图 8（b）所示。</p></div><div class="pair" id="yocsa-paragraph-150" data-reading-id="1"><p class="en">As observed from the figure, the shape of the shuttlecock in the dataset predominantly appears as a nearly square-like rectangle, which aligns with the fact that the standard dimensions of a shuttlecock are 68-78mm in height and 58-68mm in diameter.</p><p class="zh">从图中可以看出，数据集中羽毛球的外形主要呈接近正方形的矩形，这与羽毛球的标准高度为 68–78 mm、直径为 58–68 mm 相符。</p></div></div>
+</div>
+</section>
+<section class="ltx_subsection" id="S5.SS2">
+<h3 class="ltx_title ltx_title_subsection" data-bilingual-id="u0080" id="yocsa-section-20" data-reading-id="1"><span class="heading-en"><span class="ltx_tag ltx_tag_subsection"><span class="ltx_text" id="S5.SS2.4">V-B</span> </span><span class="ltx_text ltx_font_italic" id="S5.SS2.5">Detection Experiments</span></span><span class="zh-head">V-B 检测实验</span></h3>
+<div class="ltx_para" id="S5.SS2.p1">
+<div class="bilingual-paragraph" data-source-unit="u0081" id="S5.SS2.p1.1"><div class="pair" id="yocsa-paragraph-151" data-reading-id="1"><p class="en">Aside from enhancing the data augmentation techniques, we retain the original parameters of YOLOv8 and train the model for 300 epochs on our custom dataset.</p><p class="zh">除增强数据增强策略外，我们保留了 YOLOv8 的原始参数设置，并在自建数据集上训练模型 300 个轮次。</p></div></div>
+</div>
+<figure class="ltx_figure" id="S5.F9"><img alt="Refer to caption" class="ltx_graphics ltx_centering ltx_img_portrait" id="S5.F9.g1" src="assets/92d7cea6bc97b0821232.png"/>
+<figcaption class="ltx_caption ltx_centering" data-bilingual-id="u0082"><div class="bilingual-paragraph" data-source-unit="u0082"><div class="pair" id="yocsa-paragraph-152" data-reading-id="1"><p class="en">Fig. 9 : Detection results including labels and confidence scores.</p><p class="zh">图 9：包含标签和置信度的检测结果。</p></div><div class="pair" id="yocsa-paragraph-153" data-reading-id="1"><p class="en">Each image’s detected bounding boxes are magnified and displayed in the bottom-right corner with black borders.</p><p class="zh">每幅图像中的检测框均被放大，并以黑色边框显示在该图像的右下角。</p></div></div></figcaption>
+</figure>
+<figure class="ltx_table" id="S5.T1">
+<figcaption class="ltx_caption ltx_centering" data-bilingual-id="u0083"><div class="bilingual-paragraph" data-source-unit="u0083"><div class="pair" id="yocsa-paragraph-154" data-reading-id="1"><p class="en">TABLE I : COMPARISON EXPERIMENTS WITH OTHER MAINSTREAM MODELS</p><p class="zh">表 I：与其他主流模型的对比实验。</p></div></div></figcaption>
+<div class="ltx_inline-block ltx_align_center ltx_transformed_outer" id="S5.T1.5"><span class="ltx_transformed_inner">
+<div class="table-scroll"><table class="ltx_tabular ltx_align_middle" id="S5.T1.5.1">
+<tr class="ltx_tr" id="S5.T1.5.1.1">
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t" data-bilingual-id="u0102" id="S5.T1.5.1.1.1">Model<span class="cell-zh">模型</span></td>
+<td class="ltx_td ltx_align_center ltx_border_t" data-bilingual-id="u0103" id="S5.T1.5.1.1.2">mAP@0.5(%)<span class="cell-zh">mAP@0.5（%）</span></td>
+<td class="ltx_td ltx_align_center ltx_border_t" data-bilingual-id="u0104" id="S5.T1.5.1.1.3">mAP@0.75(%)<span class="cell-zh">mAP@0.75（%）</span></td>
+<td class="ltx_td ltx_align_center ltx_border_t" data-bilingual-id="u0105" id="S5.T1.5.1.1.4">mAP@0.5:0.95(%)<span class="cell-zh">mAP@0.5:0.95（%）</span></td>
+<td class="ltx_td ltx_align_center ltx_border_t" data-bilingual-id="u0106" id="S5.T1.5.1.1.5">Recall(%)<span class="cell-zh">召回率（%）</span></td>
+<td class="ltx_td ltx_align_center ltx_border_t" data-bilingual-id="u0107" id="S5.T1.5.1.1.6">FPS<span class="cell-zh">帧/秒</span></td></tr>
+<tr class="ltx_tr" id="S5.T1.5.1.2">
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t" data-bilingual-id="u0108" id="S5.T1.5.1.2.1">Faster R-CNN<span class="cell-zh">Faster R-CNN</span></td>
+<td class="ltx_td ltx_align_center ltx_border_t" id="S5.T1.5.1.2.2">98.30</td>
+<td class="ltx_td ltx_align_center ltx_border_t" id="S5.T1.5.1.2.3">78.29</td>
+<td class="ltx_td ltx_align_center ltx_border_t" id="S5.T1.5.1.2.4">58.52</td>
+<td class="ltx_td ltx_align_center ltx_border_t" id="S5.T1.5.1.2.5">87.10</td>
+<td class="ltx_td ltx_align_center ltx_border_t" id="S5.T1.5.1.2.6">229.6</td></tr>
+<tr class="ltx_tr" id="S5.T1.5.1.3">
+<td class="ltx_td ltx_align_center ltx_border_r" data-bilingual-id="u0109" id="S5.T1.5.1.3.1">RetinaNet<span class="cell-zh">RetinaNet</span></td>
+<td class="ltx_td ltx_align_center" id="S5.T1.5.1.3.2">93.87</td>
+<td class="ltx_td ltx_align_center" id="S5.T1.5.1.3.3">72.76</td>
+<td class="ltx_td ltx_align_center" id="S5.T1.5.1.3.4">59.57</td>
+<td class="ltx_td ltx_align_center" id="S5.T1.5.1.3.5">74.09</td>
+<td class="ltx_td ltx_align_center" id="S5.T1.5.1.3.6">222.4</td></tr>
+<tr class="ltx_tr" id="S5.T1.5.1.4">
+<td class="ltx_td ltx_align_center ltx_border_r" data-bilingual-id="u0110" id="S5.T1.5.1.4.1">YOLOv5s<span class="cell-zh">YOLOv5s</span></td>
+<td class="ltx_td ltx_align_center" id="S5.T1.5.1.4.2">98.49</td>
+<td class="ltx_td ltx_align_center" id="S5.T1.5.1.4.3">76.06</td>
+<td class="ltx_td ltx_align_center" id="S5.T1.5.1.4.4">65.59</td>
+<td class="ltx_td ltx_align_center" id="S5.T1.5.1.4.5">95.28</td>
+<td class="ltx_td ltx_align_center" id="S5.T1.5.1.4.6"><span class="ltx_text ltx_font_bold" id="S5.T1.5.1.4.6.1">285.7</span></td></tr>
+<tr class="ltx_tr" id="S5.T1.5.1.5">
+<td class="ltx_td ltx_align_center ltx_border_r" data-bilingual-id="u0111" id="S5.T1.5.1.5.1">YOLOv8s<span class="cell-zh">YOLOv8s</span></td>
+<td class="ltx_td ltx_align_center" id="S5.T1.5.1.5.2">99.38</td>
+<td class="ltx_td ltx_align_center" id="S5.T1.5.1.5.3">82.67</td>
+<td class="ltx_td ltx_align_center" id="S5.T1.5.1.5.4">71.50</td>
+<td class="ltx_td ltx_align_center" id="S5.T1.5.1.5.5">98.62</td>
+<td class="ltx_td ltx_align_center" id="S5.T1.5.1.5.6">250.0</td></tr>
+<tr class="ltx_tr" id="S5.T1.5.1.6">
+<td class="ltx_td ltx_align_center ltx_border_r" data-bilingual-id="u0112" id="S5.T1.5.1.6.1">YOLO11s<span class="cell-zh">YOLO11s</span></td>
+<td class="ltx_td ltx_align_center" id="S5.T1.5.1.6.2">99.37</td>
+<td class="ltx_td ltx_align_center" id="S5.T1.5.1.6.3">86.94</td>
+<td class="ltx_td ltx_align_center" id="S5.T1.5.1.6.4">71.56</td>
+<td class="ltx_td ltx_align_center" id="S5.T1.5.1.6.5">98.25</td>
+<td class="ltx_td ltx_align_center" id="S5.T1.5.1.6.6">238.1</td></tr>
+<tr class="ltx_tr" id="S5.T1.5.1.7">
+<td class="ltx_td ltx_align_center ltx_border_b ltx_border_r" data-bilingual-id="u0113" id="S5.T1.5.1.7.1"><span class="ltx_text ltx_font_bold" id="S5.T1.5.1.7.1.1">YO-CSA(Ours)</span><span class="cell-zh">YO-CSA（本文）</span></td>
+<td class="ltx_td ltx_align_center ltx_border_b" id="S5.T1.5.1.7.2"><span class="ltx_text ltx_font_bold" id="S5.T1.5.1.7.2.1">99.43</span></td>
+<td class="ltx_td ltx_align_center ltx_border_b" id="S5.T1.5.1.7.3"><span class="ltx_text ltx_font_bold" id="S5.T1.5.1.7.3.1">90.43</span></td>
+<td class="ltx_td ltx_align_center ltx_border_b" id="S5.T1.5.1.7.4"><span class="ltx_text ltx_font_bold" id="S5.T1.5.1.7.4.1">74.00</span></td>
+<td class="ltx_td ltx_align_center ltx_border_b" id="S5.T1.5.1.7.5"><span class="ltx_text ltx_font_bold" id="S5.T1.5.1.7.5.1">99.02</span></td>
+<td class="ltx_td ltx_align_center ltx_border_b" id="S5.T1.5.1.7.6">243.9</td></tr>
+</table></div>
+</span></div>
+</figure>
+<div class="ltx_para" id="S5.SS2.p2">
+<div class="bilingual-paragraph" data-source-unit="u0084" id="S5.SS2.p2.1"><div class="pair" id="yocsa-paragraph-155" data-reading-id="1"><p class="en">Our detection network achieves 74.00% mAP@0.5:0.95 on our dataset, while YOLOv5s achieving 65.59% and YOLOv8s achieving 71.50%.</p><p class="zh">在本数据集上，我们的检测网络取得 74.00% 的 mAP@0.5:0.95，而 YOLOv5s 为 65.59%，YOLOv8s 为 71.50%。</p></div><div class="pair" id="yocsa-paragraph-156" data-reading-id="1"><p class="en">Table I presents the detection results of the YO-CSA algorithm alongside other mainstream detection models.</p><p class="zh">表 I 列出了 YO-CSA 算法与其他主流检测模型的检测结果。</p></div><div class="pair" id="yocsa-paragraph-157" data-reading-id="1"><p class="en">Fig. 9 shows the visual results of the YO-CSA on our dataset, demonstrating a high level of accuracy.</p><p class="zh">图 9 展示了 YO-CSA 在本数据集上的可视化结果，表明其具有较高的检测精度。</p></div></div>
+</div>
+<div class="ltx_para" id="S5.SS2.p3">
+<div class="bilingual-paragraph" data-source-unit="u0085" id="S5.SS2.p3.1"><div class="pair" id="yocsa-paragraph-158" data-reading-id="1"><p class="en">The accuracy of boxes directly influences the precision of trajectory prediction.</p><p class="zh">边界框的准确程度会直接影响轨迹预测的精度。</p></div><div class="pair" id="yocsa-paragraph-159" data-reading-id="1"><p class="en">Therefore, in addition to focusing on precision, we place particular emphasis on the mAP metric.</p><p class="zh">因此，除关注精确率外，我们还特别重视 mAP 指标。</p></div><div class="pair" id="yocsa-paragraph-160" data-reading-id="1"><p class="en">Considering that mAP@0.5 does not fully capture the improvements, we have also highlighted mAP@0.75.</p><p class="zh">考虑到 mAP@0.5 不能充分体现改进效果，我们进一步强调 mAP@0.75。</p></div><div class="pair" id="yocsa-paragraph-161" data-reading-id="1"><p class="en">Our detection network achieves 90.43% mAP@0.75, outperforming YOLOv8s by 7.76% and YOLO11s by 3.49%.</p><p class="zh">我们的检测网络取得 90.43% 的 mAP@0.75，分别比 YOLOv8s 和 YOLO11s 高出 7.76 和 3.49 个百分点。</p></div></div>
+</div>
+<div class="ltx_para" id="S5.SS2.p4">
+<div class="bilingual-paragraph" data-source-unit="u0086" id="S5.SS2.p4.1"><div class="pair" id="yocsa-paragraph-162" data-reading-id="1"><p class="en">To validate the effectiveness of our optimizations, we conducts a series of ablation experiments, with results presented in Table II .</p><p class="zh">为验证各项优化的有效性，我们开展了一系列消融实验，结果见表 II。</p></div><div class="pair" id="yocsa-paragraph-163" data-reading-id="1"><p class="en">The data demonstrate that the improved YO-CSA achieves the best performance while even reducing the network’s GFLOPs.</p><p class="zh">数据显示，改进后的 YO-CSA 在降低网络 GFLOPs 的同时，取得了最佳性能。</p></div></div>
+</div>
+</section>
+<section class="ltx_subsection" id="S5.SS3">
+<h3 class="ltx_title ltx_title_subsection" data-bilingual-id="u0087" id="yocsa-section-21" data-reading-id="1"><span class="heading-en"><span class="ltx_tag ltx_tag_subsection"><span class="ltx_text" id="S5.SS3.4">V-C</span> </span><span class="ltx_text ltx_font_italic" id="S5.SS3.5">Tracking Experiments</span></span><span class="zh-head">V-C 跟踪实验</span></h3>
+<div class="ltx_para" id="S5.SS3.p1">
+<div class="bilingual-paragraph" data-source-unit="u0088" id="S5.SS3.p1.1"><div class="pair" id="yocsa-paragraph-164" data-reading-id="1"><p class="en">In order to assess the effectiveness of our approach, we collect 12 video clips of serve and hit actions, each captured at 160fps, using our custom-built vision system.</p><p class="zh">为评估方法的有效性，我们利用自建视觉系统，以 160 fps 采集了 12 段发球与击球动作视频。</p></div><div class="pair" id="yocsa-paragraph-165" data-reading-id="1"><p class="en">Although the YO-CSA design already incorporates a lightweight structure, we aim to further optimize the detection speed to meet the demands of high-level competitions.</p><p class="zh">尽管 YO-CSA 的设计已经采用轻量化结构，我们仍希望进一步优化检测速度，以满足高水平比赛的需求。</p></div><div class="pair" id="yocsa-paragraph-166" data-reading-id="1"><p class="en">Therefore, we accelerate the model using ONNX.</p><p class="zh">因此，我们使用 ONNX 对模型进行加速。</p></div><div class="pair" id="yocsa-paragraph-167" data-reading-id="1"><p class="en">Table III presents the detection performance of the accelerated YO-CSA.</p><p class="zh">表 III 列出了加速后的 YO-CSA 检测性能。</p></div><div class="pair" id="yocsa-paragraph-168" data-reading-id="1"><p class="en">Despite maintaining a detection accuracy of 73.94% mAP, we are able to improve the detection speed to 5.82ms per frame, achieving a speedup of 12.74%.</p><p class="zh">在保持 73.94% mAP 检测精度的同时，我们将检测时间缩短至每帧 5.82 ms，实现了 12.74% 的加速。</p></div></div>
+</div>
+<div class="ltx_para" id="S5.SS3.p2">
+<div class="bilingual-paragraph" data-source-unit="u0089" id="S5.SS3.p2.1"><div class="pair" id="yocsa-paragraph-169" data-reading-id="1"><p class="en">In the whole tracking process, in addition to defining ROI to alleviate the detection module, we further impose constraints in the 3D visual space on the 2D detections.</p><p class="zh">在整个跟踪过程中，除通过设置 ROI 减轻检测模块负担外，我们还利用三维视觉空间中的约束来限制二维检测结果。</p></div></div>
+</div>
+<div class="ltx_para" id="S5.SS3.p3">
+<div class="bilingual-paragraph" data-source-unit="u0090" id="S5.SS3.p3.1"><div class="pair" id="yocsa-paragraph-170" data-reading-id="1"><p class="en">We compare the performance of 4 strategies in Table IV : (a) performing object detection directly on the 2D image sequences, obtaining paired left and right view coordinate sequences, and then conducting 3D vision matching; (b) restricting fixed 640x640 ROI regions on the left and right views; (c) based on (b), utilizing historical trajectory information to predict the next 3D position in 3D space and projecting it onto the left and right views to update the ROI; (d) based on (c), adopting compensation module to optimize the trajectory.</p><p class="zh">表 IV 比较了四种策略：（a）直接对二维图像序列执行目标检测，获得成对的左右视图坐标序列，再进行三维视觉匹配；（b）在左右视图中限定固定的 640×640 ROI 区域；（c）在（b）的基础上，利用历史轨迹信息在三维空间中预测下一位置，并投影到左右视图以更新 ROI；（d）在（c）的基础上，采用补偿模块优化轨迹。</p></div></div>
+</div>
+<figure class="ltx_table" id="S5.T2">
+<figcaption class="ltx_caption ltx_centering" data-bilingual-id="u0091"><div class="bilingual-paragraph" data-source-unit="u0091"><div class="pair" id="yocsa-paragraph-171" data-reading-id="1"><p class="en">TABLE II : ABLATION EXPERIMENTS</p><p class="zh">表 II：消融实验。</p></div></div></figcaption>
+<div class="ltx_inline-block ltx_align_center ltx_transformed_outer" id="S5.T2.5"><span class="ltx_transformed_inner">
+<div class="table-scroll"><table class="ltx_tabular ltx_align_middle" id="S5.T2.5.1">
+<tr class="ltx_tr" id="S5.T2.5.1.1">
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t" data-bilingual-id="u0114" id="S5.T2.5.1.1.1">Model<span class="cell-zh">模型</span></td>
+<td class="ltx_td ltx_align_center ltx_border_t" data-bilingual-id="u0115" id="S5.T2.5.1.1.2">mAP@0.5(%)<span class="cell-zh">mAP@0.5（%）</span></td>
+<td class="ltx_td ltx_align_center ltx_border_t" data-bilingual-id="u0116" id="S5.T2.5.1.1.3">mAP@0.75(%)<span class="cell-zh">mAP@0.75（%）</span></td>
+<td class="ltx_td ltx_align_center ltx_border_t" data-bilingual-id="u0117" id="S5.T2.5.1.1.4">mAP@0.5:0.95(%)<span class="cell-zh">mAP@0.5:0.95（%）</span></td>
+<td class="ltx_td ltx_align_center ltx_border_t" data-bilingual-id="u0118" id="S5.T2.5.1.1.5">Recall(%)<span class="cell-zh">召回率（%）</span></td>
+<td class="ltx_td ltx_align_center ltx_border_t" data-bilingual-id="u0119" id="S5.T2.5.1.1.6">GFLOPs<span class="cell-zh">十亿次浮点运算</span></td></tr>
+<tr class="ltx_tr" id="S5.T2.5.1.2">
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t" data-bilingual-id="u0120" id="S5.T2.5.1.2.1">YOLOv8s<span class="cell-zh">YOLOv8s</span></td>
+<td class="ltx_td ltx_align_center ltx_border_t" id="S5.T2.5.1.2.2">99.38</td>
+<td class="ltx_td ltx_align_center ltx_border_t" id="S5.T2.5.1.2.3">82.67</td>
+<td class="ltx_td ltx_align_center ltx_border_t" id="S5.T2.5.1.2.4">71.50</td>
+<td class="ltx_td ltx_align_center ltx_border_t" id="S5.T2.5.1.2.5">98.62</td>
+<td class="ltx_td ltx_align_center ltx_border_t" id="S5.T2.5.1.2.6">23.6</td></tr>
+<tr class="ltx_tr" id="S5.T2.5.1.3">
+<td class="ltx_td ltx_align_center ltx_border_r" data-bilingual-id="u0121" id="S5.T2.5.1.3.1">YOLOv8+ab<span class="cell-zh">YOLOv8+ab</span></td>
+<td class="ltx_td ltx_align_center" id="S5.T2.5.1.3.2">99.40</td>
+<td class="ltx_td ltx_align_center" id="S5.T2.5.1.3.3">89.21</td>
+<td class="ltx_td ltx_align_center" id="S5.T2.5.1.3.4">73.32</td>
+<td class="ltx_td ltx_align_center" id="S5.T2.5.1.3.5">98.91</td>
+<td class="ltx_td ltx_align_center" id="S5.T2.5.1.3.6">20.9</td></tr>
+<tr class="ltx_tr" id="S5.T2.5.1.4">
+<td class="ltx_td ltx_align_center ltx_border_r" data-bilingual-id="u0122" id="S5.T2.5.1.4.1">YOLOv8+ac<span class="cell-zh">YOLOv8+ac</span></td>
+<td class="ltx_td ltx_align_center" id="S5.T2.5.1.4.2">99.40</td>
+<td class="ltx_td ltx_align_center" id="S5.T2.5.1.4.3">89.37</td>
+<td class="ltx_td ltx_align_center" id="S5.T2.5.1.4.4">73.56</td>
+<td class="ltx_td ltx_align_center" id="S5.T2.5.1.4.5">98.40</td>
+<td class="ltx_td ltx_align_center" id="S5.T2.5.1.4.6">20.9</td></tr>
+<tr class="ltx_tr" id="S5.T2.5.1.5">
+<td class="ltx_td ltx_align_center ltx_border_r" data-bilingual-id="u0123" id="S5.T2.5.1.5.1">YOLOv8+bc<span class="cell-zh">YOLOv8+bc</span></td>
+<td class="ltx_td ltx_align_center" id="S5.T2.5.1.5.2">99.42</td>
+<td class="ltx_td ltx_align_center" id="S5.T2.5.1.5.3">88.37</td>
+<td class="ltx_td ltx_align_center" id="S5.T2.5.1.5.4">73.54</td>
+<td class="ltx_td ltx_align_center" id="S5.T2.5.1.5.5">98.97</td>
+<td class="ltx_td ltx_align_center" id="S5.T2.5.1.5.6">23.6</td></tr>
+<tr class="ltx_tr" id="S5.T2.5.1.6">
+<td class="ltx_td ltx_align_center ltx_border_b ltx_border_r" data-bilingual-id="u0124" id="S5.T2.5.1.6.1"><span class="ltx_text ltx_font_bold" id="S5.T2.5.1.6.1.1">YOLOv8+abc(Ours)</span><span class="cell-zh">YOLOv8+abc（本文）</span></td>
+<td class="ltx_td ltx_align_center ltx_border_b" id="S5.T2.5.1.6.2"><span class="ltx_text ltx_font_bold" id="S5.T2.5.1.6.2.1">99.43</span></td>
+<td class="ltx_td ltx_align_center ltx_border_b" id="S5.T2.5.1.6.3"><span class="ltx_text ltx_font_bold" id="S5.T2.5.1.6.3.1">90.43</span></td>
+<td class="ltx_td ltx_align_center ltx_border_b" id="S5.T2.5.1.6.4"><span class="ltx_text ltx_font_bold" id="S5.T2.5.1.6.4.1">74.00</span></td>
+<td class="ltx_td ltx_align_center ltx_border_b" id="S5.T2.5.1.6.5"><span class="ltx_text ltx_font_bold" id="S5.T2.5.1.6.5.1">99.02</span></td>
+<td class="ltx_td ltx_align_center ltx_border_b" id="S5.T2.5.1.6.6"><span class="ltx_text ltx_font_bold" id="S5.T2.5.1.6.6.1">20.9</span></td></tr>
+</table></div>
+</span></div>
+</figure>
+<figure class="ltx_table" id="S5.T3">
+<figcaption class="ltx_caption ltx_centering" data-bilingual-id="u0092"><div class="bilingual-paragraph" data-source-unit="u0092"><div class="pair" id="yocsa-paragraph-172" data-reading-id="1"><p class="en">TABLE III : LIGHTWEIGHT PERFORMANCE COMPARISON EXPERIMENTS</p><p class="zh">表 III：轻量化性能对比实验。</p></div></div></figcaption>
+<div class="ltx_inline-block ltx_align_center ltx_transformed_outer" id="S5.T3.5"><span class="ltx_transformed_inner">
+<div class="table-scroll"><table class="ltx_tabular ltx_align_middle" id="S5.T3.5.1">
+<tr class="ltx_tr" id="S5.T3.5.1.1">
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t" data-bilingual-id="u0125" id="S5.T3.5.1.1.1">Model<span class="cell-zh">模型</span></td>
+<td class="ltx_td ltx_align_center ltx_border_t" data-bilingual-id="u0126" id="S5.T3.5.1.1.2">mAP@0.5(%)<span class="cell-zh">mAP@0.5（%）</span></td>
+<td class="ltx_td ltx_align_center ltx_border_t" data-bilingual-id="u0127" id="S5.T3.5.1.1.3">mAP@0.75(%)<span class="cell-zh">mAP@0.75（%）</span></td>
+<td class="ltx_td ltx_align_center ltx_border_t" data-bilingual-id="u0128" id="S5.T3.5.1.1.4">mAP@0.5:0.95(%)<span class="cell-zh">mAP@0.5:0.95（%）</span></td>
+<td class="ltx_td ltx_align_center ltx_border_t" data-bilingual-id="u0129" id="S5.T3.5.1.1.5">Recall(%)<span class="cell-zh">召回率（%）</span></td>
+<td class="ltx_td ltx_align_center ltx_border_t" data-bilingual-id="u0130" id="S5.T3.5.1.1.6">Inference Time(ms)<span class="cell-zh">推理时间（ms）</span></td></tr>
+<tr class="ltx_tr" id="S5.T3.5.1.2">
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t" data-bilingual-id="u0131" id="S5.T3.5.1.2.1">YOLOv8s<span class="cell-zh">YOLOv8s</span></td>
+<td class="ltx_td ltx_align_center ltx_border_t" id="S5.T3.5.1.2.2">99.38</td>
+<td class="ltx_td ltx_align_center ltx_border_t" id="S5.T3.5.1.2.3">82.67</td>
+<td class="ltx_td ltx_align_center ltx_border_t" id="S5.T3.5.1.2.4">71.50</td>
+<td class="ltx_td ltx_align_center ltx_border_t" id="S5.T3.5.1.2.5">98.62</td>
+<td class="ltx_td ltx_align_center ltx_border_t" id="S5.T3.5.1.2.6">6.84</td></tr>
+<tr class="ltx_tr" id="S5.T3.5.1.3">
+<td class="ltx_td ltx_align_center ltx_border_r" data-bilingual-id="u0132" id="S5.T3.5.1.3.1">YOLOv8s(accelerated)<span class="cell-zh">YOLOv8s（加速后）</span></td>
+<td class="ltx_td ltx_align_center" id="S5.T3.5.1.3.2">99.34</td>
+<td class="ltx_td ltx_align_center" id="S5.T3.5.1.3.3">82.65</td>
+<td class="ltx_td ltx_align_center" id="S5.T3.5.1.3.4">71.27</td>
+<td class="ltx_td ltx_align_center" id="S5.T3.5.1.3.5">98.55</td>
+<td class="ltx_td ltx_align_center" id="S5.T3.5.1.3.6">5.93</td></tr>
+<tr class="ltx_tr" id="S5.T3.5.1.4">
+<td class="ltx_td ltx_align_center ltx_border_r" data-bilingual-id="u0133" id="S5.T3.5.1.4.1">YOLO11s<span class="cell-zh">YOLO11s</span></td>
+<td class="ltx_td ltx_align_center" id="S5.T3.5.1.4.2">99.37</td>
+<td class="ltx_td ltx_align_center" id="S5.T3.5.1.4.3">86.94</td>
+<td class="ltx_td ltx_align_center" id="S5.T3.5.1.4.4">71.56</td>
+<td class="ltx_td ltx_align_center" id="S5.T3.5.1.4.5">98.25</td>
+<td class="ltx_td ltx_align_center" id="S5.T3.5.1.4.6">7.03</td></tr>
+<tr class="ltx_tr" id="S5.T3.5.1.5">
+<td class="ltx_td ltx_align_center ltx_border_r" data-bilingual-id="u0134" id="S5.T3.5.1.5.1">YOLO11s(accelerated)<span class="cell-zh">YOLO11s（加速后）</span></td>
+<td class="ltx_td ltx_align_center" id="S5.T3.5.1.5.2">99.36</td>
+<td class="ltx_td ltx_align_center" id="S5.T3.5.1.5.3">86.45</td>
+<td class="ltx_td ltx_align_center" id="S5.T3.5.1.5.4">71.23</td>
+<td class="ltx_td ltx_align_center" id="S5.T3.5.1.5.5">98.17</td>
+<td class="ltx_td ltx_align_center" id="S5.T3.5.1.5.6">6.66</td></tr>
+<tr class="ltx_tr" id="S5.T3.5.1.6">
+<td class="ltx_td ltx_align_center ltx_border_r" data-bilingual-id="u0135" id="S5.T3.5.1.6.1">YO-CSA(Ours)<span class="cell-zh">YO-CSA（本文）</span></td>
+<td class="ltx_td ltx_align_center" id="S5.T3.5.1.6.2"><span class="ltx_text ltx_font_bold" id="S5.T3.5.1.6.2.1">99.43</span></td>
+<td class="ltx_td ltx_align_center" id="S5.T3.5.1.6.3"><span class="ltx_text ltx_font_bold" id="S5.T3.5.1.6.3.1">90.43</span></td>
+<td class="ltx_td ltx_align_center" id="S5.T3.5.1.6.4"><span class="ltx_text ltx_font_bold" id="S5.T3.5.1.6.4.1">74.00</span></td>
+<td class="ltx_td ltx_align_center" id="S5.T3.5.1.6.5"><span class="ltx_text ltx_font_bold" id="S5.T3.5.1.6.5.1">99.02</span></td>
+<td class="ltx_td ltx_align_center" id="S5.T3.5.1.6.6">6.67</td></tr>
+<tr class="ltx_tr" id="S5.T3.5.1.7">
+<td class="ltx_td ltx_align_center ltx_border_b ltx_border_r" data-bilingual-id="u0136" id="S5.T3.5.1.7.1"><span class="ltx_text ltx_font_bold" id="S5.T3.5.1.7.1.1">YO-CSA(Ours, accelerated)</span><span class="cell-zh">YO-CSA（本文，加速后）</span></td>
+<td class="ltx_td ltx_align_center ltx_border_b" id="S5.T3.5.1.7.2">99.42</td>
+<td class="ltx_td ltx_align_center ltx_border_b" id="S5.T3.5.1.7.3">90.41</td>
+<td class="ltx_td ltx_align_center ltx_border_b" id="S5.T3.5.1.7.4">73.94</td>
+<td class="ltx_td ltx_align_center ltx_border_b" id="S5.T3.5.1.7.5">99.01</td>
+<td class="ltx_td ltx_align_center ltx_border_b" id="S5.T3.5.1.7.6"><span class="ltx_text ltx_font_bold" id="S5.T3.5.1.7.6.1">5.82</span></td></tr>
+</table></div>
+</span></div>
+</figure>
+<div class="ltx_para" id="S5.SS3.p4">
+<div class="bilingual-paragraph" data-source-unit="u0093" id="S5.SS3.p4.1"><div class="pair" id="yocsa-paragraph-173" data-reading-id="1"><p class="en">Since obtaining the ground truth of 3D trajectories is highly costly, we evaluate 4 strategies by computing the smoothness of the trajectory based on velocity and acceleration, namely velocity smoothness ( <math alttext="S_{v}" class="ltx_Math" display="inline" id="S5.SS3.p4.m1" intent=":literal"><semantics><msub><mi>S</mi><mi>v</mi></msub></semantics></math> ) ans acceleration smoothness ( <math alttext="S_{a}" class="ltx_Math" display="inline" id="S5.SS3.p4.m2" intent=":literal"><semantics><msub><mi>S</mi><mi>a</mi></msub></semantics></math> ), as well as the average centroid shift of the trajectory ( <math alttext="C_{avg}" class="ltx_Math" display="inline" id="S5.SS3.p4.m3" intent=":literal"><semantics><msub><mi>C</mi><mrow><mi>a</mi><mo lspace="0em" rspace="0em">​</mo><mi>v</mi><mo lspace="0em" rspace="0em">​</mo><mi>g</mi></mrow></msub></semantics></math> ).</p><p class="zh">由于获取三维轨迹真值的成本很高，我们通过计算基于速度和加速度的轨迹平滑度，即速度平滑度（<math alttext="S_{v}" class="ltx_Math" display="inline" id="S5.SS3.p4.m1" intent=":literal"><semantics><msub><mi>S</mi><mi>v</mi></msub></semantics></math>）和加速度平滑度（<math alttext="S_{a}" class="ltx_Math" display="inline" id="S5.SS3.p4.m2" intent=":literal"><semantics><msub><mi>S</mi><mi>a</mi></msub></semantics></math>），以及轨迹的平均质心偏移（<math alttext="C_{avg}" class="ltx_Math" display="inline" id="S5.SS3.p4.m3" intent=":literal"><semantics><msub><mi>C</mi><mrow><mi>a</mi><mo lspace="0em" rspace="0em">​</mo><mi>v</mi><mo lspace="0em" rspace="0em">​</mo><mi>g</mi></mrow></msub></semantics></math>），来评估四种策略。</p></div><div class="pair" id="yocsa-paragraph-174" data-reading-id="1"><p class="en">For the 3D trajectory <math alttext="{\textbf{P}_{w}(x^{(i)}_{w},y^{(i)}_{w},z^{(i)}_{w})}" class="ltx_Math" display="inline" id="S5.SS3.p4.m4" intent=":literal"><semantics><mrow><msub><mtext class="ltx_mathvariant_bold">P</mtext><mi>w</mi></msub><mo lspace="0em" rspace="0em">​</mo><mrow><mo stretchy="false">(</mo><msubsup><mi>x</mi><mi>w</mi><mrow><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo></mrow></msubsup><mo>,</mo><msubsup><mi>y</mi><mi>w</mi><mrow><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo></mrow></msubsup><mo>,</mo><msubsup><mi>z</mi><mi>w</mi><mrow><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo></mrow></msubsup><mo stretchy="false">)</mo></mrow></mrow></semantics></math> :</p><p class="zh">对于三维轨迹 <math alttext="{\textbf{P}_{w}(x^{(i)}_{w},y^{(i)}_{w},z^{(i)}_{w})}" class="ltx_Math" display="inline" id="S5.SS3.p4.m4" intent=":literal"><semantics><mrow><msub><mtext class="ltx_mathvariant_bold">P</mtext><mi>w</mi></msub><mo lspace="0em" rspace="0em">​</mo><mrow><mo stretchy="false">(</mo><msubsup><mi>x</mi><mi>w</mi><mrow><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo></mrow></msubsup><mo>,</mo><msubsup><mi>y</mi><mi>w</mi><mrow><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo></mrow></msubsup><mo>,</mo><msubsup><mi>z</mi><mi>w</mi><mrow><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo></mrow></msubsup><mo stretchy="false">)</mo></mrow></mrow></semantics></math>：</p></div></div>
+</div>
+<div class="ltx_para" id="S5.SS3.p5">
+<div class="equation pdf-equation" id="S5.E2"><img alt="Equation (2), preserved from the supplied PDF" src="assets/1994f2228334eee707b6.png"/></div>
+<div class="equation pdf-equation" id="S5.E3"><img alt="Equation (3), preserved from the supplied PDF" src="assets/c49ab3993a7c625ec477.png"/></div>
+<div class="equation pdf-equation" id="S5.E4"><img alt="Equation (4), preserved from the supplied PDF" src="assets/82e94993d0ff87cc0628.png"/></div>
+<div class="equation pdf-equation" id="S5.E5"><img alt="Equation (5), preserved from the supplied PDF" src="assets/8a4a12b7cae53b6c4569.png"/></div>
+<div class="equation pdf-equation" id="S5.E6"><img alt="Equation (6), preserved from the supplied PDF" src="assets/d22a3cae39f57e1e5fc4.png"/></div>
+</div>
+<div class="ltx_para" id="S5.SS3.p6">
+<div class="bilingual-paragraph" data-source-unit="u0094" id="S5.SS3.p6.1"><div class="pair" id="yocsa-paragraph-175" data-reading-id="1"><p class="en">We assume that smaller smoothness and centroid shifts indicate trajectories that are closer to reality.</p><p class="zh">我们假定，平滑度指标和质心偏移越小，轨迹就越接近真实情况。</p></div><div class="pair" id="yocsa-paragraph-176" data-reading-id="1"><p class="en">As displayed in Table IV , Strategy D performs the best.</p><p class="zh">如表 IV 所示，策略 D 的表现最好。</p></div><div class="pair" id="yocsa-paragraph-177" data-reading-id="1"><p class="en">Fig. 10 illustrates the results of four strategies .</p><p class="zh">图 10 展示了四种策略的结果。</p></div></div>
+</div>
+<figure class="ltx_figure" id="S5.F10">
+<div class="ltx_flex_figure">
+<div class="ltx_flex_cell ltx_flex_size_2">
+<figure class="ltx_figure ltx_figure_panel ltx_align_center" id="S5.F10.sf1"><img alt="Refer to caption" class="ltx_graphics ltx_centering ltx_img_landscape" id="S5.F10.sf1.g1" src="assets/dd9f0f49aeffac3ceaa7.png"/>
+<figcaption class="ltx_caption ltx_centering" data-bilingual-id="u0095"><div class="bilingual-paragraph" data-source-unit="u0095"><div class="pair" id="yocsa-paragraph-178" data-reading-id="1"><p class="en">(a) Comparison of 2D trajectories on the left imaging plane</p><p class="zh">（a）左成像平面上的二维轨迹对比。</p></div></div></figcaption>
+</figure></div><div class="ltx_flex_cell ltx_flex_size_2">
+<figure class="ltx_figure ltx_figure_panel ltx_align_center" id="S5.F10.sf2"><img alt="Refer to caption" class="ltx_graphics ltx_centering ltx_img_landscape" id="S5.F10.sf2.g1" src="assets/1de73545bf0ecf94a630.png"/>
+<figcaption class="ltx_caption ltx_centering" data-bilingual-id="u0096"><div class="bilingual-paragraph" data-source-unit="u0096"><div class="pair" id="yocsa-paragraph-179" data-reading-id="1"><p class="en">(b) Comparison of 2D trajectories on the right imaging plane</p><p class="zh">（b）右成像平面上的二维轨迹对比。</p></div></div></figcaption>
+</figure></div><div class="ltx_flex_break"></div><div class="ltx_flex_cell ltx_flex_size_1">
+<figure class="ltx_figure ltx_figure_panel ltx_align_center" id="S5.F10.sf3"><img alt="Refer to caption" class="ltx_graphics ltx_centering ltx_img_landscape" id="S5.F10.sf3.g1" src="assets/2cf72dffcb11d239f1ec.png"/>
+<figcaption class="ltx_caption ltx_centering" data-bilingual-id="u0097"><div class="bilingual-paragraph" data-source-unit="u0097"><div class="pair" id="yocsa-paragraph-180" data-reading-id="1"><p class="en">(c) Comparison of 3D trajectories</p><p class="zh">（c）三维轨迹对比。</p></div></div></figcaption>
+</figure></div></div>
+<figcaption class="ltx_caption ltx_centering" data-bilingual-id="u0098"><div class="bilingual-paragraph" data-source-unit="u0098"><div class="pair" id="yocsa-paragraph-181" data-reading-id="1"><p class="en">Fig. 10 : Comparison of trajectories extracted using four different strategies.</p><p class="zh">图 10：采用四种不同策略提取的轨迹对比。</p></div></div></figcaption>
+</figure>
+<figure class="ltx_table" id="S5.T4">
+<figcaption class="ltx_caption ltx_centering" data-bilingual-id="u0099"><div class="bilingual-paragraph" data-source-unit="u0099"><div class="pair" id="yocsa-paragraph-182" data-reading-id="1"><p class="en">TABLE IV : SYSTEM PERFORMANCE WITH DIFFERENT STRATEGIES</p><p class="zh">表 IV：不同策略下的系统性能。</p></div></div></figcaption>
+<div class="ltx_inline-block ltx_align_center ltx_transformed_outer" id="S5.T4.5"><span class="ltx_transformed_inner">
+<div class="table-scroll"><table class="ltx_tabular ltx_align_middle" id="S5.T4.5.1">
+<tr class="ltx_tr" id="S5.T4.5.1.1">
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t" data-bilingual-id="u0137" id="S5.T4.5.1.1.1">Strategy<span class="cell-zh">策略</span></td>
+<td class="ltx_td ltx_align_center ltx_border_t" data-bilingual-id="u0138" id="S5.T4.5.1.1.2">Acceleration(%)<span class="cell-zh">Acceleration（%）〔原文列名，见译者注〕</span></td>
+<td class="ltx_td ltx_align_center ltx_border_t" data-bilingual-id="u0139" id="S5.T4.5.1.1.3">Velocity Smoothness<span class="cell-zh">速度平滑度指标</span></td>
+<td class="ltx_td ltx_align_center ltx_border_t" data-bilingual-id="u0140" id="S5.T4.5.1.1.4">Acceleration Smoothness<span class="cell-zh">加速度平滑度指标</span></td>
+<td class="ltx_td ltx_align_center ltx_border_t" data-bilingual-id="u0141" id="S5.T4.5.1.1.5">Average Centroid Shift(cm)<span class="cell-zh">平均质心偏移（cm）</span></td>
+<td class="ltx_td ltx_align_center ltx_border_t" data-bilingual-id="u0142" id="S5.T4.5.1.1.6">FPS<span class="cell-zh">帧/秒</span></td></tr>
+<tr class="ltx_tr" id="S5.T4.5.1.2">
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t" data-bilingual-id="u0143" id="S5.T4.5.1.2.1">Strategy A<span class="cell-zh">策略 A</span></td>
+<td class="ltx_td ltx_align_center ltx_border_t" id="S5.T4.5.1.2.2">27.86</td>
+<td class="ltx_td ltx_align_center ltx_border_t" id="S5.T4.5.1.2.3"><math alttext="&gt;" class="ltx_Math" display="inline" id="S5.T4.m1" intent=":literal"><semantics><mo>&gt;</mo></semantics></math>100</td>
+<td class="ltx_td ltx_align_center ltx_border_t" id="S5.T4.5.1.2.4"><math alttext="&gt;" class="ltx_Math" display="inline" id="S5.T4.m2" intent=":literal"><semantics><mo>&gt;</mo></semantics></math>1e7</td>
+<td class="ltx_td ltx_align_center ltx_border_t" id="S5.T4.5.1.2.5">19.10</td>
+<td class="ltx_td ltx_align_center ltx_border_t" id="S5.T4.5.1.2.6">85.7</td></tr>
+<tr class="ltx_tr" id="S5.T4.5.1.3">
+<td class="ltx_td ltx_align_center ltx_border_r" data-bilingual-id="u0144" id="S5.T4.5.1.3.1">Strategy B<span class="cell-zh">策略 B</span></td>
+<td class="ltx_td ltx_align_center" id="S5.T4.5.1.3.2">30.38</td>
+<td class="ltx_td ltx_align_center" id="S5.T4.5.1.3.3">6.91</td>
+<td class="ltx_td ltx_align_center" id="S5.T4.5.1.3.4">1.13e6</td>
+<td class="ltx_td ltx_align_center" id="S5.T4.5.1.3.5">5.76</td>
+<td class="ltx_td ltx_align_center" id="S5.T4.5.1.3.6">90.9</td></tr>
+<tr class="ltx_tr" id="S5.T4.5.1.4">
+<td class="ltx_td ltx_align_center ltx_border_r" data-bilingual-id="u0145" id="S5.T4.5.1.4.1">Strategy C<span class="cell-zh">策略 C</span></td>
+<td class="ltx_td ltx_align_center" id="S5.T4.5.1.4.2">81.28</td>
+<td class="ltx_td ltx_align_center" id="S5.T4.5.1.4.3">3.92</td>
+<td class="ltx_td ltx_align_center" id="S5.T4.5.1.4.4">2.77e5</td>
+<td class="ltx_td ltx_align_center" id="S5.T4.5.1.4.5">2.35</td>
+<td class="ltx_td ltx_align_center" id="S5.T4.5.1.4.6"><span class="ltx_text ltx_font_bold" id="S5.T4.5.1.4.6.1">133.3</span></td></tr>
+<tr class="ltx_tr" id="S5.T4.5.1.5">
+<td class="ltx_td ltx_align_center ltx_border_b ltx_border_r" data-bilingual-id="u0146" id="S5.T4.5.1.5.1"><span class="ltx_text ltx_font_bold" id="S5.T4.5.1.5.1.1">Strategy D</span><span class="cell-zh">策略 D</span></td>
+<td class="ltx_td ltx_align_center ltx_border_b" id="S5.T4.5.1.5.2"><span class="ltx_text ltx_font_bold" id="S5.T4.5.1.5.2.1">100.00</span></td>
+<td class="ltx_td ltx_align_center ltx_border_b" id="S5.T4.5.1.5.3"><span class="ltx_text ltx_font_bold" id="S5.T4.5.1.5.3.1">2.31</span></td>
+<td class="ltx_td ltx_align_center ltx_border_b" id="S5.T4.5.1.5.4"><span class="ltx_text ltx_font_bold" id="S5.T4.5.1.5.4.1">2.25e5</span></td>
+<td class="ltx_td ltx_align_center ltx_border_b" id="S5.T4.5.1.5.5"><span class="ltx_text ltx_font_bold" id="S5.T4.5.1.5.5.1">2.35</span></td>
+<td class="ltx_td ltx_align_center ltx_border_b" id="S5.T4.5.1.5.6">-</td></tr>
+</table></div>
+</span></div>
+</figure>
+</section>
+</section>
+<section class="ltx_section" id="S6">
+<h2 class="ltx_title ltx_title_section" data-bilingual-id="u0100" id="yocsa-section-22" data-reading-id="1"><span class="heading-en"><span class="ltx_tag ltx_tag_section">VI </span><span class="ltx_text ltx_font_smallcaps" id="S6.1">CONCLUSION AND FUTURE WORK</span></span><span class="zh-head">VI 结论与未来工作</span></h2>
+<div class="ltx_para" id="S6.p1">
+<div class="bilingual-paragraph" data-source-unit="u0101" id="S6.p1.1"><div class="pair" id="yocsa-paragraph-183" data-reading-id="1"><p class="en">We construct YO-CSA, a network built upon YOLOv8s, leveraging spatial and contextual attention mechanisms to achieve a substantial improvement in detection performance.</p><p class="zh">我们构建了基于 YOLOv8s 的 YO-CSA 网络，利用空间与上下文注意力机制，显著提升了检测性能。</p></div><div class="pair" id="yocsa-paragraph-184" data-reading-id="1"><p class="en">Additionally, we introduce a multi-dimensional spatiotemporal constraint strategy and design a real-time system for the precise extraction of the shuttlecock’s 3D trajectory based on YO-CSA.</p><p class="zh">此外，我们提出了多维时空约束策略，并基于 YO-CSA 设计了实时系统，以精确提取羽毛球三维轨迹。</p></div><div class="pair" id="yocsa-paragraph-185" data-reading-id="1"><p class="en">Experimental results demonstrate that our system can extract the shuttlecock’s trajectory with high accuracy and in real-time.</p><p class="zh">实验结果表明，本系统能够实时、高精度地提取羽毛球轨迹。</p></div><div class="pair" id="yocsa-paragraph-186" data-reading-id="1"><p class="en">Building upon the current foundation, we intend to further investigate the practical implementation of human-machine competitions in future work.</p><p class="zh">在现有工作的基础上，我们计划在未来进一步研究人机对抗的实际实现。</p></div></div>
+</div>
+</section>
+<section class="ltx_bibliography" id="bib">
+<h2 class="ltx_title ltx_title_bibliography" id="yocsa-section-23" data-reading-id="1"><span class="heading-en">References</span><span class="zh-head">参考文献（保留原文）</span></h2>
+<ul class="ltx_biblist">
+<li class="ltx_bibitem" id="bib.bib1"><span class="ltx_tag ltx_tag_bibitem">[1]</span>
+<span class="ltx_bibblock">
+R. Girshick, J. Donahue, T. Darrell, and J. Malik, “Rich feature hierarchies for accurate object detection and semantic segmentation,” in <span class="ltx_text ltx_font_italic" id="bib.bib1.1">Proceedings of the IEEE conference on computer vision and pattern recognition</span>, pp. 580–587, 2014.
+
+</span></li>
+<li class="ltx_bibitem" id="bib.bib2"><span class="ltx_tag ltx_tag_bibitem">[2]</span>
+<span class="ltx_bibblock">
+M. Everingham, S. A. Eslami, L. Van Gool, C. K. Williams, J. Winn, and A. Zisserman, “The pascal visual object classes challenge: A retrospective,” <span class="ltx_text ltx_font_italic" id="bib.bib2.1">International journal of computer vision</span>, vol. 111, pp. 98–136, 2015.
+
+</span></li>
+<li class="ltx_bibitem" id="bib.bib3"><span class="ltx_tag ltx_tag_bibitem">[3]</span>
+<span class="ltx_bibblock">
+J. Redmon, “You only look once: Unified, real-time object detection,” in <span class="ltx_text ltx_font_italic" id="bib.bib3.1">Proceedings of the IEEE conference on computer vision and pattern recognition</span>, 2016.
+
+</span></li>
+<li class="ltx_bibitem" id="bib.bib4"><span class="ltx_tag ltx_tag_bibitem">[4]</span>
+<span class="ltx_bibblock">
+K. Duan, S. Bai, L. Xie, H. Qi, Q. Huang, and Q. Tian, “Centernet: Keypoint triplets for object detection,” in <span class="ltx_text ltx_font_italic" id="bib.bib4.1">Proceedings of the IEEE/CVF international conference on computer vision</span>, pp. 6569–6578, 2019.
+
+</span></li>
+<li class="ltx_bibitem" id="bib.bib5"><span class="ltx_tag ltx_tag_bibitem">[5]</span>
+<span class="ltx_bibblock">
+M. Tan and Q. Le, “Efficientnet: Rethinking model scaling for convolutional neural networks,” in <span class="ltx_text ltx_font_italic" id="bib.bib5.1">International conference on machine learning</span>, pp. 6105–6114, PMLR, 2019.
+
+</span></li>
+<li class="ltx_bibitem" id="bib.bib6"><span class="ltx_tag ltx_tag_bibitem">[6]</span>
+<span class="ltx_bibblock">
+A. Vaswani, “Attention is all you need,” <span class="ltx_text ltx_font_italic" id="bib.bib6.1">Advances in Neural Information Processing Systems</span>, 2017.
+
+</span></li>
+<li class="ltx_bibitem" id="bib.bib7"><span class="ltx_tag ltx_tag_bibitem">[7]</span>
+<span class="ltx_bibblock">
+X. Zhu, W. Su, L. Lu, B. Li, X. Wang, and J. Dai, “Deformable detr: Deformable transformers for end-to-end object detection,” <span class="ltx_text ltx_font_italic" id="bib.bib7.1">arXiv preprint arXiv:2010.04159</span>, 2020.
+
+</span></li>
+<li class="ltx_bibitem" id="bib.bib8"><span class="ltx_tag ltx_tag_bibitem">[8]</span>
+<span class="ltx_bibblock">
+Z. Liu, Y. Lin, Y. Cao, H. Hu, Y. Wei, Z. Zhang, S. Lin, and B. Guo, “Swin transformer: Hierarchical vision transformer using shifted windows,” in <span class="ltx_text ltx_font_italic" id="bib.bib8.1">Proceedings of the IEEE/CVF international conference on computer vision</span>, pp. 10012–10022, 2021.
+
+</span></li>
+<li class="ltx_bibitem" id="bib.bib9"><span class="ltx_tag ltx_tag_bibitem">[9]</span>
+<span class="ltx_bibblock">
+A. Dosovitskiy, “An image is worth 16x16 words: Transformers for image recognition at scale,” <span class="ltx_text ltx_font_italic" id="bib.bib9.1">arXiv preprint arXiv:2010.11929</span>, 2020.
+
+</span></li>
+<li class="ltx_bibitem" id="bib.bib10"><span class="ltx_tag ltx_tag_bibitem">[10]</span>
+<span class="ltx_bibblock">
+J. Deng, W. Dong, R. Socher, L.-J. Li, K. Li, and L. Fei-Fei, “Imagenet: A large-scale hierarchical image database,” in <span class="ltx_text ltx_font_italic" id="bib.bib10.1">2009 IEEE conference on computer vision and pattern recognition</span>, pp. 248–255, Ieee, 2009.
+
+</span></li>
+<li class="ltx_bibitem" id="bib.bib11"><span class="ltx_tag ltx_tag_bibitem">[11]</span>
+<span class="ltx_bibblock">
+K. He, X. Zhang, S. Ren, and J. Sun, “Deep residual learning for image recognition,” in <span class="ltx_text ltx_font_italic" id="bib.bib11.1">Proceedings of the IEEE conference on computer vision and pattern recognition</span>, pp. 770–778, 2016.
+
+</span></li>
+<li class="ltx_bibitem" id="bib.bib12"><span class="ltx_tag ltx_tag_bibitem">[12]</span>
+<span class="ltx_bibblock">
+S. Dai, Y. Zhu, X. Jiang, F. Yu, J. Lin, and D. Yang, “Td-net: Trans-deformer network for automatic pancreas segmentation,” <span class="ltx_text ltx_font_italic" id="bib.bib12.1">Neurocomputing</span>, vol. 517, pp. 279–293, 2023.
+
+</span></li>
+<li class="ltx_bibitem" id="bib.bib13"><span class="ltx_tag ltx_tag_bibitem">[13]</span>
+<span class="ltx_bibblock">
+J. Yang, J. Tu, X. Zhang, S. Yu, and X. Zheng, “Tse deeplab: An efficient visual transformer for medical image segmentation,” <span class="ltx_text ltx_font_italic" id="bib.bib13.1">Biomedical Signal Processing and Control</span>, vol. 80, p. 104376, 2023.
+
+</span></li>
+<li class="ltx_bibitem" id="bib.bib14"><span class="ltx_tag ltx_tag_bibitem">[14]</span>
+<span class="ltx_bibblock">
+S. Wang, H. Wang, S. She, Y. Zhang, Q. Qiu, and Z. Xiao, “Swin-t-nfc crfs: An encoder–decoder neural model for high-precision uav positioning via point cloud super resolution and image semantic segmentation,” <span class="ltx_text ltx_font_italic" id="bib.bib14.1">Computer Communications</span>, vol. 197, pp. 52–60, 2023.
+
+</span></li>
+<li class="ltx_bibitem" id="bib.bib15"><span class="ltx_tag ltx_tag_bibitem">[15]</span>
+<span class="ltx_bibblock">
+R. Voeikov, N. Falaleev, and R. Baikulov, “Ttnet: Real-time temporal and spatial video analysis of table tennis,” in <span class="ltx_text ltx_font_italic" id="bib.bib15.1">Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops</span>, pp. 884–885, 2020.
+
+</span></li>
+<li class="ltx_bibitem" id="bib.bib16"><span class="ltx_tag ltx_tag_bibitem">[16]</span>
+<span class="ltx_bibblock">
+N.-E. Sun, Y.-C. Lin, S.-P. Chuang, T.-H. Hsu, D.-R. Yu, H.-Y. Chung, and T.-U. İk, “Tracknetv2: Efficient shuttlecock tracking network,” in <span class="ltx_text ltx_font_italic" id="bib.bib16.1">2020 International Conference on Pervasive Artificial Intelligence (ICPAI)</span>, pp. 86–91, IEEE, 2020.
+
+</span></li>
+<li class="ltx_bibitem" id="bib.bib17"><span class="ltx_tag ltx_tag_bibitem">[17]</span>
+<span class="ltx_bibblock">
+S. Tarashima, M. A. Haq, Y. Wang, and N. Tagawa, “Widely applicable strong baseline for sports ball detection and tracking,” <span class="ltx_text ltx_font_italic" id="bib.bib17.1">arXiv preprint arXiv:2311.05237</span>, 2023.
+
+</span></li>
+<li class="ltx_bibitem" id="bib.bib18"><span class="ltx_tag ltx_tag_bibitem">[18]</span>
+<span class="ltx_bibblock">
+O. Ronneberger, P. Fischer, and T. Brox, “U-net: Convolutional networks for biomedical image segmentation,” in <span class="ltx_text ltx_font_italic" id="bib.bib18.1">Medical image computing and computer-assisted intervention–MICCAI 2015: 18th international conference, Munich, Germany, October 5-9, 2015, proceedings, part III 18</span>, pp. 234–241, Springer, 2015.
+
+</span></li>
+<li class="ltx_bibitem" id="bib.bib19"><span class="ltx_tag ltx_tag_bibitem">[19]</span>
+<span class="ltx_bibblock">
+J. Wang, K. Sun, T. Cheng, B. Jiang, C. Deng, Y. Zhao, D. Liu, Y. Mu, M. Tan, X. Wang, <span class="ltx_text ltx_font_italic" id="bib.bib19.1">et al.</span>, “Deep high-resolution representation learning for visual recognition,” <span class="ltx_text ltx_font_italic" id="bib.bib19.2">IEEE transactions on pattern analysis and machine intelligence</span>, vol. 43, no. 10, pp. 3349–3364, 2020.
+
+</span></li>
+<li class="ltx_bibitem" id="bib.bib20"><span class="ltx_tag ltx_tag_bibitem">[20]</span>
+<span class="ltx_bibblock">
+D. Wu and A. Xiao, “Deep learning-based algorithm for recognizing tennis balls,” <span class="ltx_text ltx_font_italic" id="bib.bib20.1">Applied Sciences</span>, vol. 12, no. 23, p. 12116, 2022.
+
+</span></li>
+<li class="ltx_bibitem" id="bib.bib21"><span class="ltx_tag ltx_tag_bibitem">[21]</span>
+<span class="ltx_bibblock">
+T. Zhang, X. Zhang, Y. Yang, Z. Wang, and G. Wang, “Efficient golf ball detection and tracking based on convolutional neural networks and kalman filter,” <span class="ltx_text ltx_font_italic" id="bib.bib21.1">arXiv preprint arXiv:2012.09393</span>, 2020.
+
+</span></li>
+<li class="ltx_bibitem" id="bib.bib22"><span class="ltx_tag ltx_tag_bibitem">[22]</span>
+<span class="ltx_bibblock">
+J. Redmon, “Yolov3: An incremental improvement,” <span class="ltx_text ltx_font_italic" id="bib.bib22.1">arXiv preprint arXiv:1804.02767</span>, 2018.
+
+</span></li>
+<li class="ltx_bibitem" id="bib.bib23"><span class="ltx_tag ltx_tag_bibitem">[23]</span>
+<span class="ltx_bibblock">
+G. Bishop, G. Welch, <span class="ltx_text ltx_font_italic" id="bib.bib23.1">et al.</span>, “An introduction to the kalman filter,” <span class="ltx_text ltx_font_italic" id="bib.bib23.2">Proc of SIGGRAPH, Course</span>, vol. 8, no. 27599-23175, p. 41, 2001.
+
+</span></li>
+<li class="ltx_bibitem" id="bib.bib24"><span class="ltx_tag ltx_tag_bibitem">[24]</span>
+<span class="ltx_bibblock">
+W. Li, X. Liu, K. An, C. Qin, and Y. Cheng, “Table tennis track detection based on temporal feature multiplexing network,” <span class="ltx_text ltx_font_italic" id="bib.bib24.1">Sensors</span>, vol. 23, no. 3, p. 1726, 2023.
+
+</span></li>
+<li class="ltx_bibitem" id="bib.bib25"><span class="ltx_tag ltx_tag_bibitem">[25]</span>
+<span class="ltx_bibblock">
+S. Ren, K. He, R. Girshick, and J. Sun, “Faster r-cnn: Towards real-time object detection with region proposal networks,” <span class="ltx_text ltx_font_italic" id="bib.bib25.1">IEEE transactions on pattern analysis and machine intelligence</span>, vol. 39, no. 6, pp. 1137–1149, 2016.
+
+</span></li>
+<li class="ltx_bibitem" id="bib.bib26"><span class="ltx_tag ltx_tag_bibitem">[26]</span>
+<span class="ltx_bibblock">
+Y. Li, T. Yao, Y. Pan, and T. Mei, “Contextual transformer networks for visual recognition,” <span class="ltx_text ltx_font_italic" id="bib.bib26.1">IEEE Transactions on Pattern Analysis and Machine Intelligence</span>, vol. 45, no. 2, pp. 1489–1500, 2022.
+
+</span></li>
+<li class="ltx_bibitem" id="bib.bib27"><span class="ltx_tag ltx_tag_bibitem">[27]</span>
+<span class="ltx_bibblock">
+X. Li, X. Hu, and J. Yang, “Spatial group-wise enhance: Improving semantic feature learning in convolutional networks,” <span class="ltx_text ltx_font_italic" id="bib.bib27.1">arXiv preprint arXiv:1905.09646</span>, 2019.
+
+</span></li>
+<li class="ltx_bibitem" id="bib.bib28"><span class="ltx_tag ltx_tag_bibitem">[28]</span>
+<span class="ltx_bibblock">
+S. Sabour, N. Frosst, and G. E. Hinton, “Dynamic routing between capsules,” <span class="ltx_text ltx_font_italic" id="bib.bib28.1">Advances in neural information processing systems</span>, vol. 30, 2017.
+
+</span></li>
+<li class="ltx_bibitem" id="bib.bib29"><span class="ltx_tag ltx_tag_bibitem">[29]</span>
+<span class="ltx_bibblock">
+Y.-J. Chen and Y.-S. Wang, “Tracknetv3: Enhancing shuttlecock tracking with augmentations and trajectory rectification,” in <span class="ltx_text ltx_font_italic" id="bib.bib29.1">Proceedings of the 5th ACM International Conference on Multimedia in Asia</span>, pp. 1–7, 2023.
+
+</span></li>
+</ul>
+</section>
+</article></main></article><footer class="reader-footer"><a href="index.html">返回论文书架</a> · <a href="../index.html#yocsa">返回分享讲解</a></footer><dialog id="image-viewer"><button id="close-image" aria-label="关闭图片">×</button><img alt="论文图示"></dialog><script src="../reader.js"></script></body></html>

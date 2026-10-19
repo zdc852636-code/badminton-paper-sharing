@@ -1,0 +1,27 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>YO-CSA-T · 中文导读</title><link rel="stylesheet" href="../reader.css"><header class="shelf-shell"><a href="index.html">← 论文书架</a> · <a href="../index.html#yocsa">分享讲解</a><h1>YO-CSA-T</h1></header><main class="guide-text"># YO-CSA-T：基于上下文与空间注意力 YOLO 的实时羽毛球跟踪系统
+
+作者：Yuan Lai、Zhiwei Shi、Chengxi Zhu。
+
+正式发表：2025 IEEE/RSJ International Conference on Intelligent Robots and Systems（IROS），732–739 页。IEEE 注册的 Crossref 元数据确认为正式会议论文。
+
+- [正式论文 DOI](https://doi.org/10.1109/IROS60139.2025.11246442)
+- [全文中英对照](bilingual/YO_CSA_T_中英对照.html)
+- [本地英文 PDF](YO_CSA_T_arxiv_v1.pdf)
+- [公开作者稿](https://arxiv.org/abs/2501.06472v1)
+
+## 下载版本与翻译状态
+
+2026-09-25 下载并验证：8 页，3,915,816 字节，PDF 可正常解析，文件尾完整；校验值见 source.json。本地文件是 2025-01-11 的 arXiv v1 作者稿，并非 IEEE 最终出版版，未声称两版逐字一致。
+
+用户已提供 PDF，现已完成 WBC 风格的全文中英对照：英文在上、蓝色中文在下，包含 10 幅图、4 张表、6 个编号公式及 29 条参考文献。图内英文标签和参考文献保留原文，关键图内术语附中文释义。译文由 Codex 直接翻译，未经过领域专家逐句审定。原稿公式疑点已单独加注，未擅自修改。
+
+## 简短导读
+
+这项工作面向羽毛球机器人，采用双目立体视觉恢复三维轨迹。它在 YOLOv8s 中引入上下文与空间注意力，并将检测、预测和缺帧补偿结合。历史三维轨迹的预测结果被投影回左右图像，用于约束后续检测区域。
+
+作者报告的二维检测 mAP@0.75 为 90.43%，系统在 12 个测试序列上的速度超过 130 fps。这些数字属于论文实验条件下的结果，不能直接视为本项目可达到的性能。
+
+对当前单目项目，可重点参考预测反馈与检测区域更新机制。三维恢复依赖第二个相机，因此不能把该系统的三维能力直接当作单目重建的证据。mAP 评价的是检测质量，也不等于三维位置精度。
+
+来源：[作者稿全文](https://arxiv.org/html/2501.06472v1)。导读为非官方概述。
+</main></html>

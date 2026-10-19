@@ -1,0 +1,17 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>TT3D · 中文导读</title><link rel="stylesheet" href="../reader.css"><header class="shelf-shell"><a href="index.html">← 论文书架</a> · <a href="../index.html#tt3d">分享讲解</a><h1>TT3D</h1></header><main class="guide-text"># TT3D：阅读导读
+
+原文：Thomas Gossard、Andreas Ziegler、Andreas Zell，*TT3D: Table Tennis 3D Reconstruction*，CVPR 2025 Workshops，5867–5877。
+
+- [官方论文页](https://openaccess.thecvf.com/content/CVPR2025W/CVSPORTS/html/Gossard_TT3D_Table_Tennis_3D_Reconstruction_CVPRW_2025_paper.html)
+- [本地原文](TT3D.pdf)
+
+该方法利用乒乓球的运动规律和触台事件，从单目比赛视频恢复三维球路，并结合相机标定与人体姿态重建。触台时，球的位置受已知球台平面约束，因而可以用相机视线与平面的交点限制深度；随后以轨迹的二维重投影误差优化运动状态。论文还考虑了旋转对运动的影响。
+
+建议优先阅读第 3 节相机标定，以及第 5.1、5.2 节球路重建。阅读时分别记录：直接观测了什么、哪些参数来自标定、哪些状态需要估计，以及物理模型作了哪些假设。
+
+对羽毛球项目的启发是利用已知事件约束深度。羽毛球在一般往返飞行中没有中途触台事件，因此应重新寻找可靠的端点或接触约束，不能直接照搬乒乓球反弹模型。这一段为项目阅读建议，并非作者关于羽毛球的结论。
+
+## 当前交付范围
+
+本文件是中文导读，不是全文翻译。arXiv 标注的是非独占分发许可；CVF 页面也保留作者或其他权利人的版权，未查到允许全文改编的许可。因此目前保留原文与导读，未生成逐句全文译本。用户提供论文文件后，可继续处理该文件的全文翻译。
+</main></html>
