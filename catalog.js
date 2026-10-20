@@ -221,9 +221,10 @@ window.PAPERS = [
       "For badminton, replace dynamics and shot distributions before tackling detection domain shift."
     ],
     "availability": [
-      "已下载原文；当前提供中文概要与原图讲解，尚无全文译文。",
-      "See the Chinese availability note: full bilingual text is not yet available."
-    ]
+      "本地 PDF 已制作中英对照全文，并经 AI 对照修订；保留原文图表与公式。",
+      "Full bilingual text is available, revised by AI against the local PDF, with original figures and equations retained."
+    ],
+    "folder": "08_Uplifting"
   },
   {
     "id": "tt4d",
@@ -370,8 +371,8 @@ window.PAPERS = [
       "Useful for evaluation tooling; table-bounce constraints do not transfer directly to badminton."
     ],
     "availability": [
-      "已下载原文；当前提供中文导读，尚无全文译文。",
-      "See the Chinese availability note: full bilingual text is not yet available."
+      "本地 PDF 已制作中英对照全文，并经 AI 对照修订；保留原文图表与公式。",
+      "Full bilingual text is available, revised by AI against the local PDF, with original figures and equations retained."
     ]
   },
   {
@@ -664,10 +665,11 @@ window.PAPERS = [
       "Read this, then Uplifting, then TT4D to follow the progression."
     ],
     "availability": [
-      "已下载原文；当前提供中文概要与原图讲解，尚无全文译文。",
-      "See the Chinese availability note: full bilingual text is not yet available."
+      "本地 PDF 已制作中英对照全文，并经 AI 对照修订；保留原文图表与公式。",
+      "Full bilingual text is available, revised by AI against the local PDF, with original figures and equations retained."
     ],
-    "paper": "https://arxiv.org/pdf/2504.19863v1"
+    "paper": "https://arxiv.org/pdf/2504.19863v1",
+    "folder": "09_Spin_Trajectory"
   },
   {
     "id": "decay",
@@ -960,10 +962,11 @@ window.PAPERS = [
       "Evaluate viewpoint, flight direction and observation duration."
     ],
     "availability": [
-      "已下载原文；当前提供中文概要与原图讲解，尚无全文译文。",
-      "See the Chinese availability note: full bilingual text is not yet available."
+      "本地 PDF 已制作中英对照全文，并经 AI 对照修订；保留原文图表与公式。",
+      "Full bilingual text is available, revised by AI against the local PDF, with original figures and equations retained."
     ],
-    "paper": "https://www.iainm.com/assets/pdf/Park-2015.pdf"
+    "paper": "https://www.iainm.com/assets/pdf/Park-2015.pdf",
+    "folder": "13_Perspective"
   },
   {
     "id": "laws",
@@ -1036,10 +1039,11 @@ window.PAPERS = [
       "Study conditions for combining 2D supervision and dynamics."
     ],
     "availability": [
-      "已下载原文；当前提供中文概要与原图讲解，尚无全文译文。",
-      "See the Chinese availability note: full bilingual text is not yet available."
+      "本地 PDF 已制作中英对照全文，并经 AI 对照修订；保留原文图表与公式。",
+      "Full bilingual text is available, revised by AI against the local PDF, with original figures and equations retained."
     ],
-    "paper": "https://arxiv.org/pdf/2310.17462v2"
+    "paper": "https://arxiv.org/pdf/2310.17462v2",
+    "folder": "11_Physical_Laws"
   },
   {
     "id": "smash",
@@ -1112,10 +1116,11 @@ window.PAPERS = [
       "Borrow the coupling strategy, not the contact equations unchanged."
     ],
     "availability": [
-      "已下载原文；当前提供中文概要与原图讲解，尚无全文译文。",
-      "See the Chinese availability note: full bilingual text is not yet available."
+      "本地 PDF 已制作中英对照全文，并经 AI 对照修订；保留原文图表与公式。",
+      "Full bilingual text is available, revised by AI against the local PDF, with original figures and equations retained."
     ],
-    "paper": "https://geometry.cs.ucl.ac.uk/projects/2016/smash/paper_docs/SMASH_MonszpartThuereyMitra_SIGGRAPH_Asia_2016_compressed.pdf"
+    "paper": "https://geometry.cs.ucl.ac.uk/projects/2016/smash/paper_docs/SMASH_MonszpartThuereyMitra_SIGGRAPH_Asia_2016_compressed.pdf",
+    "folder": "12_SMASH"
   },
   {
     "id": "blur",

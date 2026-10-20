@@ -11,7 +11,8 @@ window.LOCAL_ASSETS = {
   },
   "tt3d": {
     "pdf": "papers/tt3d.pdf",
-    "guide": "reader/tt3d-guide.html"
+    "guide": "reader/tt3d-guide.html",
+    "translation": "reader/tt3d.html"
   },
   "tracknet": {
     "pdf": "papers/tracknet.pdf",
@@ -42,5 +43,25 @@ window.LOCAL_ASSETS = {
   "blur": {
     "pdf": "papers/blur.pdf",
     "translation": "reader/blur.html"
+  },
+  "uplifting": {
+    "pdf": "papers/uplifting.pdf",
+    "translation": "reader/uplifting.html"
+  },
+  "spin2025": {
+    "pdf": "papers/spin2025.pdf",
+    "translation": "reader/spin2025.html"
+  },
+  "perspective": {
+    "pdf": "papers/perspective.pdf",
+    "translation": "reader/perspective.html"
+  },
+  "laws": {
+    "pdf": "papers/laws.pdf",
+    "translation": "reader/laws.html"
+  },
+  "smash": {
+    "pdf": "papers/smash.pdf",
+    "translation": "reader/smash.html"
   }
 };
