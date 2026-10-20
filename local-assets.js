@@ -34,5 +34,13 @@ window.LOCAL_ASSETS = {
     "pdf": "papers/decay.pdf",
     "translation": "reader/decay.html",
     "figure": "assets/decay.png"
+  },
+  "latte": {
+    "pdf": "papers/latte.pdf",
+    "translation": "reader/latte.html"
+  },
+  "blur": {
+    "pdf": "papers/blur.pdf",
+    "translation": "reader/blur.html"
   }
 };

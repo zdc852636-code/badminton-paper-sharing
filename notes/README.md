@@ -2,7 +2,7 @@
 
 书单依据：ChatGPT 会话[“调研单目三维重建”](https://chatgpt.com/c/6aad083a-e548-83ed-bbed-8703752c5579)中“现在最值得读的五篇论文”一节，已核对完整标题及 arXiv 编号。
 
-主入口：[阅读入口.html](阅读入口.html)。原有五篇及新增 YO-CSA-T、TrackNetV3 的英文 PDF 均已下载，共七篇、88 页。六篇提供全文中英对照；TT3D 提供原文与中文导读，尚未完成全文翻译。
+主入口：[论文分享网页](sharing/index.html)。本地现有 14 篇 PDF；网站内可读 9 篇 PDF、8 篇中英全文。2026-10-20 已逐段对照复核全部 8 篇译文，共 3179 个文本单元；详见[下载与审校记录](sharing/notes/review-20261020.html)。
 
 新增：[论文发表核实与进阶书单](论文发表核实与进阶书单.md)（2026-09-22）：原五篇发表去向、七篇进阶阅读及研究启发；包含速度衰减论文的期刊发表更新与 TT4D 的作者稿会议标注说明。
 
@@ -10,13 +10,13 @@
 
 | 论文 | 原文页数 | 当前交付 | 阅读文件 |
 |---|---:|---|---|
-| MonoTrack | 10 | 全文初译 · 重点校对 | [打开中英对照](01_MonoTrack/bilingual/MonoTrack_中英对照.html) |
-| Where Is The Ball | 22 | 全文初译 · 重点校对 | [打开中英对照](02_Where_Is_The_Ball/bilingual/Where_Is_The_Ball_中英对照.html) |
+| MonoTrack | 10 | 全文译文 · AI 逐段对照复核 | [打开中英对照](01_MonoTrack/bilingual/MonoTrack_中英对照.html) |
+| Where Is The Ball | 22 | 全文译文 · AI 逐段对照复核 | [打开中英对照](02_Where_Is_The_Ball/bilingual/Where_Is_The_Ball_中英对照.html) |
 | TT3D | 11 | 原文 + 导读 | [中文导读](03_TT3D/TT3D_中文导读.md) |
-| Shuttlecock Velocity Decay | 8 | 全文初译 · 重点校对 | [打开中英对照](04_Shuttlecock_Velocity_Decay/bilingual/Shuttlecock_Velocity_Decay_中英对照.html) |
-| TT4D | 22 | 全文初译 · 重点校对 | [打开中英对照](05_TT4D/bilingual/TT4D_中英对照.html) |
-| YO-CSA-T | 8 | 全文中英对照 · Codex 直接翻译 | [打开中英对照](06_YO_CSA_T/bilingual/YO_CSA_T_中英对照.html) |
-| TrackNetV3 | 7 | 全文中英对照 · Codex 直接翻译 | [打开中英对照](07_TrackNetV3/bilingual/TrackNetV3_中英对照.html) |
+| Shuttlecock Velocity Decay | 8 | 全文译文 · AI 逐段对照复核 | [打开中英对照](04_Shuttlecock_Velocity_Decay/bilingual/Shuttlecock_Velocity_Decay_中英对照.html) |
+| TT4D | 22 | 全文译文 · AI 逐段对照复核 | [打开中英对照](05_TT4D/bilingual/TT4D_中英对照.html) |
+| YO-CSA-T | 8 | 全文中英对照 · AI 逐段对照复核 | [打开中英对照](06_YO_CSA_T/bilingual/YO_CSA_T_中英对照.html) |
+| TrackNetV3 | 7 | 全文中英对照 · AI 逐段对照复核 | [打开中英对照](07_TrackNetV3/bilingual/TrackNetV3_中英对照.html) |
 
 2026-10-02 补充：TrackNetV3 已依据用户提供的 PDF 完成全文翻译。包含 4 幅图、4 张表、2 个编号公式和 30 条参考文献。原文中基线准确率、YOLOv7 数值及末尾日期的差异已说明。
 
@@ -26,10 +26,10 @@
 - 主交付为自包含 HTML，所有图片内嵌，无在线字体、脚本或公式渲染依赖；来源链接和本地 PDF 链接需要对应资源。
 - 为保持数学表达完整，算法论文采用 arXiv 原生 HTML/MathML；羽毛球物理论文由 PDF 提取正文，公式和图表以原页局部图像保留。按章节重排，不与原 PDF 强制分页对齐。
 - 作者、机构与参考文献保留原文，图内文字和表格中的数值保留原样；图表标题有中文对照，算法表格中自然语言标签也有翻译。物理论文表 1 保留原图。
-- 原有四篇译文由 Google Translate 自动初译后进行了术语统一。Codex 重点校对共 148 个句子：MonoTrack 摘要及第 4.5 节，Where Is The Ball 摘要、方法关键段落和局限性，TT4D 摘要及第 3.4 节，物理论文摘要和第 4.2 节的主要定义。另有 14 句直接翻译。详见各篇 `manual_review.json`。
+- 历史版本采用机器初译和重点段落校对。本次已扩展为全部 8 篇正文、标题、图注、表格文本与附录的逐段核对。各篇 `review-20261020.json` 保存逐单元核查记录，`corrections-20261020.json` 保存修订；`revision-20261020/review-final.json` 保存总核验结果。
 - YO-CSA-T 由 Codex 根据用户提供的 PDF 逐句翻译，核对技术术语、数字与数学占位符；10 幅图和 6 个编号公式来自原 PDF。保留并单独注释原式疑点。尚未经过领域专家逐句审定。
 - TrackNetV3 采用完整段落对照，正文、图表标题、致谢和版权声明由 Codex 直接翻译；原图、表格和编号公式保留 PDF 图像，配中文术语释义。重建脚本为 `tools/build_tracknetv3.py`，译文源为该篇 `bilingual/translation_a.json` 和 `translation_b.json`。
-- **这是全文初译，不是逐句精校终稿。** 不应把自动结构检查当作全部语义正确的证明。
+- **2026-10-20 已完成 8 篇全文 AI 逐段对照复核，未经独立领域专家审定。** 语义修订与结构验证分开记录，不能把自动检查当作语义正确的证明。
 - TT3D 的公开版本只查到 arXiv 非独占分发许可与 CVF 版权保留声明，因此暂未制作整篇译本；用户提供论文文件后可继续翻译。
 
 ## 版本与证据
@@ -55,6 +55,8 @@
 
 ## Paper Sharing 网页（2026-10-20）
 
-打开 [论文分享网页](sharing/index.html)：17 篇论文与延伸阅读，中英切换、搜索筛选、逐步流程、演示模式、图示放大与数据精度对比。沿用现有 7 篇 PDF 和 6 篇中英初译，其余条目提供外部来源。
+打开 [论文分享网页](sharing/index.html)：17 篇论文与延伸阅读，中英切换、搜索筛选、逐步流程、演示模式、图示放大与数据精度对比。网站现有 9 篇 PDF、8 篇已对照复核的中英译文、15 篇论文原图或算法面板。阅读工具栏可以收起；其余条目明确标注下载与翻译状态。
 
 网页可以本地直接打开。GitHub 站点：[在线阅读](https://zdc852636-code.github.io/badminton-paper-sharing/)；[仓库](https://github.com/zdc852636-code/badminton-paper-sharing)。维护与验证说明见 [使用说明](sharing/使用说明.txt)。
+
+2026-10-20 新增全文译文： [LATTE-MV](10_LATTE_MV/bilingual/LATTE_MV_中英对照.html)（CC BY 4.0）、[Motion-from-Blur](14_Motion_From_Blur/bilingual/Motion_From_Blur_中英对照.html)（CC BY-NC-SA 4.0，非商业、相同许可共享）。另新增 Uplifting、SpinTrajectory、Physical Laws、SMASH、Perspective 原文 PDF，当前仅有概要与原图解释。FreeTrack 已核实正式发表于 Machine Vision and Applications 37, 167 (2026)，旧仓库投稿状态已更正。

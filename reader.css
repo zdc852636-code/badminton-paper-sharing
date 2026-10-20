@@ -11,3 +11,8 @@ html{scroll-behavior:auto!important}
 .paper-content table{display:block;overflow-x:auto;max-width:100%;width:100%;-webkit-overflow-scrolling:touch}
 
 .embedded-reader .reader-row>a,.embedded-reader .reader-footer,.embedded-reader .reader-meta>a{display:none}.embedded-reader .reader-row{justify-content:flex-end}.embedded-reader .reader-meta{margin:10px auto}.embedded-reader .reader-meta .hint{margin:0}.embedded-reader .reader-nav{padding:8px 14px}
+
+.reader-chrome-collapsed .reader-nav,.reader-chrome-collapsed .reader-meta{display:none!important}
+.reader-chrome-collapsed .paper-content [data-reading-id]{scroll-margin-top:12px!important}
+.reader-chrome-collapsed .paper-content .container,.reader-chrome-collapsed .paper-content>main{padding-top:14px!important}
+@media(max-width:650px){.embedded-reader .reader-row{justify-content:flex-start}.reader-nav button{margin-right:0!important}.embedded-reader .reader-row #fullscreen{display:none}.embedded-reader .font-controls{margin-top:6px}.embedded-reader .reader-nav{padding:7px 9px}}
