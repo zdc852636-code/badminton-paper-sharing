@@ -67,3 +67,26 @@ html{scroll-behavior:auto!important}
  .source-note{font-size:10px;margin-bottom:20px;padding-bottom:10px}
  .paper-content .source-note .meta{font-size:11px!important;padding:12px!important}
 }
+
+/* Relative paragraph rhythm follows the selected font size. */
+.paper-content .pair{font-size:var(--reader-size);margin:.85em 0!important}
+.paper-content .pair>.en,.paper-content .pair>.zh{line-height:1.8!important;margin-top:0!important;margin-bottom:.45em!important}
+.only-zh .paper-content .pair,.only-en .paper-content .pair{margin:.8em 0!important}
+.paper-content .pair p{margin:0 0 .55em!important;line-height:inherit!important}
+.font-controls input[type=range]{height:32px;cursor:pointer}
+@media(max-width:650px){
+ .reader-nav,.embedded-reader .reader-nav{padding:4px 9px}
+ .reader-nav button{min-height:30px;padding:5px 7px}
+ .font-controls{margin-top:2px;gap:7px;flex-wrap:nowrap}
+ .font-controls label{flex:none}
+ .font-controls input[type=range]{width:auto;min-width:80px;max-width:none;flex:1;margin:0}
+ .font-controls input[type=number]{flex:none;width:40px;padding:3px;font-size:12px}
+ .font-controls button{flex:none;min-height:30px;padding:4px 6px}
+ .font-controls output{flex:none;min-width:26px;font-size:10px}
+ .paper-content .container,.paper-content>main{padding:16px 14px!important}
+ .paper-content .pair,.only-zh .paper-content .pair,.only-en .paper-content .pair{margin:.7em 0!important}
+ .paper-content .pair>.en,.paper-content .pair>.zh{line-height:1.7!important;margin-bottom:.35em!important}
+ .paper-content .pair>.zh{padding:8px 10px!important}
+ .only-zh .paper-content .pair>.zh{padding:0!important}
+ .source-note{margin-bottom:14px;padding-bottom:8px}
+}
