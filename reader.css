@@ -16,3 +16,54 @@ html{scroll-behavior:auto!important}
 .reader-chrome-collapsed .paper-content [data-reading-id]{scroll-margin-top:12px!important}
 .reader-chrome-collapsed .paper-content .container,.reader-chrome-collapsed .paper-content>main{padding-top:14px!important}
 @media(max-width:650px){.embedded-reader .reader-row{justify-content:flex-start}.reader-nav button{margin-right:0!important}.embedded-reader .reader-row #fullscreen{display:none}.embedded-reader .font-controls{margin-top:6px}.embedded-reader .reader-nav{padding:7px 9px}}
+
+/* UI refinement 20261020 */
+/* Reading surface: restrained color, comfortable measure, compact controls. */
+:root{--paper:#f7f6f1;--ink:#24372f;--line:#dce2da;--accent:#22634f}
+.reader-nav{background:#f7f6f1f5;padding:10px 18px}
+.reader-nav button{background:transparent;border-color:transparent;min-height:35px;padding:7px 10px;font-size:12px}
+.reader-nav button:hover{background:#e9eee5}
+.reader-nav button[aria-pressed=true]{background:#22634f;color:white;border-color:#22634f}
+.reader-row{gap:5px}
+.font-controls{gap:8px;font-size:12px;margin-top:8px}
+.font-controls input[type=range]{accent-color:#22634f;width:115px}
+.font-controls input[type=number]{width:53px;padding:4px 6px;font-size:12px;background:#fffefa}
+.font-controls button{min-height:28px;padding:3px 8px;font-size:11px}
+.font-controls output{font-variant-numeric:tabular-nums;color:#64766a}
+.paper-content{max-width:960px;padding-bottom:50px}
+.paper-content .container,.paper-content>main{max-width:940px!important;padding:32px 48px!important;background:#fffefa!important}
+.paper-content .pair>.en{color:#46544d;line-height:1.85!important}
+.paper-content .pair>.zh{color:#285c76;background:#eef4f7!important;line-height:1.85!important;padding:12px 16px!important;border-radius:5px!important}
+.paper-content .pair{border-left:0!important;padding:0!important;margin:20px 0!important}
+.paper-content h1{line-height:1.4!important}
+.paper-content h2,.paper-content h3{line-height:1.5!important}
+.paper-content .zh-head,.paper-content .cell-zh{color:#285c76!important}
+.only-zh .paper-content .pair>.zh{background:transparent!important;padding:0!important;color:#253f39}
+.only-zh .paper-content .pair{margin:16px 0!important}
+.source-note{font:12px/1.8 system-ui;color:#667469;border-bottom:1px solid #e1e5dc;padding-bottom:14px;margin:0 0 25px}
+.source-note summary{cursor:pointer;color:#4e6756;padding:5px 0}
+.source-note[open] summary{margin-bottom:10px}
+.paper-content .source-note .meta{background:#f3f5ee!important;color:#607063!important;font:12px/1.9 system-ui!important;padding:15px!important;border:0!important;border-radius:5px!important}
+.reader-meta{max-width:940px;font-size:11px;margin:12px auto}
+.embedded-reader .reader-meta{display:none}
+.embedded-reader .reader-row{justify-content:flex-start}
+.reader-toc{padding:8px 0}.reader-toc a{font-size:13px;padding:9px 10px;border-radius:4px}
+.reader-toc a:hover{background:#eaf0e5}
+.original-page{font-size:12px}
+.paper-content .pdf-page>h2{font-size:13px!important;margin:20px 0 10px!important;padding:0!important;border:0!important;color:#748174}
+.paper-content .pdf-page>h2 .zh-head{font-size:12px!important}
+.paper-content .original-page{margin:8px 0 20px;padding:5px 0;border-top:0}
+.paper-content .original-page summary{font-size:12px;line-height:1.7}
+@media(max-width:650px){
+ .reader-nav,.embedded-reader .reader-nav{padding:7px 10px}
+ .reader-row{gap:3px}.reader-nav button{font-size:11px;padding:6px 8px;min-height:33px}
+ .font-controls{margin-top:5px;font-size:11px;gap:8px}
+ .font-controls input[type=range]{width:84px;max-width:24vw}
+ .font-controls input[type=number]{font-size:12px;width:47px;padding:3px 5px}
+ .paper-content .container,.paper-content>main{padding:21px 20px!important}
+ .paper-content .pair{margin:17px 0!important}
+ .paper-content .pair>.zh{padding:10px 12px!important}
+ .paper-content h1{font-size:25px!important}
+ .source-note{font-size:10px;margin-bottom:20px;padding-bottom:10px}
+ .paper-content .source-note .meta{font-size:11px!important;padding:12px!important}
+}
