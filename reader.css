@@ -90,3 +90,10 @@ html{scroll-behavior:auto!important}
  .only-zh .paper-content .pair>.zh{padding:0!important}
  .source-note{margin-bottom:14px;padding-bottom:8px}
 }
+
+/* Translation revision: restrained emphasis and readable secondary text. */
+.paper-content .translation-key{font-weight:700;color:inherit}
+.paper-content .pair>.en,.paper-content .pair>.zh{font-family:"Noto Sans CJK SC","Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.paper-content figcaption .pair>.en,.paper-content figcaption .pair>.zh,.paper-content .caption .pair>.en,.paper-content .caption .pair>.zh{font-size:max(13px,calc(var(--reader-size) - 3px))!important;line-height:1.65!important}
+.paper-content th,.paper-content td{font-size:max(12px,calc(var(--reader-size) - 4px));line-height:1.55;padding:7px 8px}
+.paper-content .cell-zh{font-size:inherit!important;line-height:1.55!important;margin-top:3px}
