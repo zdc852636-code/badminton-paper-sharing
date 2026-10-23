@@ -247,3 +247,43 @@ body.chrome-collapsed #reading-frame{border:0;border-radius:0}
  #collapse-chrome{min-height:30px;padding:5px 8px}
  #reading-frame{height:calc(100dvh - 124px);border-radius:6px 6px 0 0}
 }
+
+/* Laptop viewports, including Windows display scaling. */
+@media screen and (min-width:601px) and (max-width:1600px){
+ .view{padding:28px clamp(22px,3vw,40px) 64px;max-width:1200px}
+ .home-heading{gap:24px;padding:4px 0 22px}.home-heading .eyebrow{margin-bottom:12px}
+ .home-heading h1{font-size:36px;margin-bottom:10px}.home-heading h1 span{font-size:27px}
+ .home-heading p{font-size:14px;line-height:1.7}.library-stats{gap:24px}.library-stats strong{font-size:32px}
+ .toolbar{padding:20px 0 14px}.filters{margin-top:12px}.paperrow{padding:20px 0;gap:18px}
+ .paperrow h2{font-size:23px}.paperrow .links{margin-top:10px}
+ .detail{max-width:1050px}.breadcrumb{margin-bottom:18px}.paper-head h1{font-size:36px}
+ .detail>.links{margin-bottom:24px}.question{padding:18px 22px}.method{margin:20px 0}
+ .pipeline-section{margin-top:30px}.pipeline-stage{padding-top:22px;padding-bottom:22px}
+ .bottom{padding:7px max(22px,calc((100vw - 1008px)/2));gap:16px}
+}
+@media screen and (min-width:820px) and (max-width:1600px){
+ .topbar{flex-wrap:nowrap;min-height:56px;padding:8px clamp(20px,3vw,40px);gap:24px}
+ .primary-nav{order:0;flex-basis:auto;gap:20px}.topbar .primary-nav a{padding:7px 0}
+ .topbar .actions{gap:3px}.topbar .actions button{font-size:12px;padding:6px 8px;min-height:34px}
+ #menu{top:58px}.pipeline-stage{scroll-margin-top:76px}
+}
+@media screen and (min-width:601px) and (max-width:1000px){
+ .home-heading{align-items:center}.home-heading h1{font-size:30px}.home-heading h1 span{font-size:23px}
+ .library-stats{gap:15px}.library-stats strong{font-size:27px}.library-stats span{font-size:11px}
+ .paperrow{grid-template-columns:24px minmax(0,1fr) 150px;gap:14px}.list-heading>span:last-child{width:150px}
+}
+/* Let the reader fill remaining height instead of estimating stacked toolbar heights. */
+@media screen and (min-width:601px){
+ body[data-view=reader]{height:100dvh;overflow:hidden;display:flex;flex-direction:column}
+ body[data-view=reader]>.topbar{width:100%;flex:none}
+ body[data-view=reader] #reading{display:flex;flex-direction:column;flex:1;min-height:0;width:100%;max-width:1440px;margin:0 auto;padding:10px 20px 8px}
+ body[data-view=reader] #reading>.breadcrumb{display:none}
+ body[data-view=reader] .reading-controls{flex:none;margin-bottom:8px;gap:8px}
+ body[data-view=reader] #select-label{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+ body[data-view=reader] .reading-controls select{max-width:160px}
+ body[data-view=reader] #collapse-chrome{font-size:11px;padding:6px 9px}
+ body[data-view=reader] #reader-mount{flex:1;min-height:0}
+ body[data-view=reader] #reading-frame{height:100%;min-height:0;border-radius:7px}
+ body[data-view=reader] .focus-bar{flex:none}
+ body.chrome-collapsed[data-view=reader] #reading{padding:0 8px 8px;max-width:none}
+}
